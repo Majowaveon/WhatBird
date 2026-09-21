@@ -1,0 +1,681 @@
+[gd_scene load_steps=25 format=4]
+
+[ext_resource type="Script" path="res://scripts/editable_room.gd" id="1_pcpwc"]
+[ext_resource type="Script" path="res://scripts/world_object.gd" id="2_8aowe"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_Door_Bottom_e4c9a53f.tres" id="3_32k44"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_Door_Middle_fb7782a9.tres" id="4_xoupu"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_Door_Top_24bda1dd.tres" id="5_fvfx0"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_按钮_2_ef8f66ed.tres" id="6_5wlqg"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_按钮_1_1d91bb2f.tres" id="7_31k14"]
+[ext_resource type="TileSet" path="res://resources/tilesets/ForeGround_w0_1_4d4e861830f30480.tres" id="8_4x4mr"]
+[ext_resource type="TileSet" path="res://resources/tilesets/w0l6_83e24e3339612bcc.tres" id="9_q6hit"]
+[ext_resource type="TileSet" path="res://resources/tilesets/BackGround_w0_9b9c90e76f81def2.tres" id="10_mnavk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_naqxo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3ju7"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ugs6s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jjpmu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ai263"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbabp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xvaq3"]
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nawsa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_erft2"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjb00"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yb0mk"]
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2xui3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0mmal"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c3s2p"]
+
+[node name="w0l6" type="Node2D"]
+script = ExtResource("1_pcpwc")
+room_tag = "SubLevel_w0l6"
+foreground_water_enabled = true
+foreground_waterline = 0.82
+transform_limit = 0
+
+[node name="Actors" type="Node2D" parent="."]
+
+[node name="BP_CheckPoint_w0l6_2" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(329, 199)
+script = ExtResource("2_8aowe")
+object_id = "BP_CheckPoint_C_UAID_B025AA764F67DABA02_1156030323"
+display_name = "BP_CheckPoint_w0l6_2"
+kind = "BP_CheckPoint"
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_CheckPoint_w0l6_2"]
+
+[node name="@Area2D@122" type="Area2D" parent="Actors/BP_CheckPoint_w0l6_2/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@123" type="CollisionShape2D" parent="Actors/BP_CheckPoint_w0l6_2/TriggerBoxComponent/@Area2D@122"]
+shape = SubResource("RectangleShape2D_naqxo")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_CheckPoint_w0l6_2"]
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_CheckPoint_w0l6_2"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_CheckPoint_w0l6_2"]
+position = Vector2(-20, 0)
+
+[node name="BP_Door_w0l6_1" type="Node2D" parent="Actors"]
+position = Vector2(366, 233)
+rotation = -4.712389
+scale = Vector2(1.1, 1.1)
+script = ExtResource("2_8aowe")
+object_id = "BP_Door_C_UAID_B025AA764F67DABA02_1432000329"
+display_name = "BP_Door_w0l6_1"
+kind = "BP_Door"
+linked_buttons = Array[NodePath]([NodePath("../BP_Button_w0l6")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_Door_w0l6_1"]
+
+[node name="@StaticBody2D@304" type="StaticBody2D" parent="Actors/BP_Door_w0l6_1/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@305" type="CollisionShape2D" parent="Actors/BP_Door_w0l6_1/Box/@StaticBody2D@304"]
+shape = SubResource("RectangleShape2D_d3ju7")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_Door_w0l6_1"]
+
+[node name="@Area2D@306" type="Area2D" parent="Actors/BP_Door_w0l6_1/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@307" type="CollisionShape2D" parent="Actors/BP_Door_w0l6_1/TriggerBoxComponent/@Area2D@306"]
+shape = SubResource("RectangleShape2D_ugs6s")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_Door_w0l6_1"]
+
+[node name="@AnimatedSprite2D@308" type="AnimatedSprite2D" parent="Actors/BP_Door_w0l6_1/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("3_32k44")
+metadata/heron_geometry_ppu = 2.0
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_Door_w0l6_1"]
+
+[node name="BP_ChangeSubLevelVolumeLeft_w0l6" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(330, 195)
+script = ExtResource("2_8aowe")
+object_id = "BP_ChangeSubLevelVolume_C_UAID_B025AA764F67C3BA02_1912274242"
+display_name = "BP_ChangeSubLevelVolumeLeft_w0l6"
+kind = "BP_ChangeSubLevelVolume"
+target_room = "SubLevel_w0l6"
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w0l6"]
+
+[node name="@Area2D@359" type="Area2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w0l6/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@360" type="CollisionShape2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w0l6/TriggerBoxComponent/@Area2D@359"]
+shape = SubResource("RectangleShape2D_jjpmu")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w0l6"]
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w0l6"]
+
+[node name="BP_Door_w0l6_2" type="Node2D" parent="Actors"]
+position = Vector2(383, 233)
+rotation = -4.712389
+scale = Vector2(1.1, 1.1)
+script = ExtResource("2_8aowe")
+object_id = "BP_Door_C_UAID_B025AA764F67DABA02_1432003330"
+display_name = "BP_Door_w0l6_2"
+kind = "BP_Door"
+linked_buttons = Array[NodePath]([NodePath("../BP_Button_w0l6")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_Door_w0l6_2"]
+
+[node name="@StaticBody2D@637" type="StaticBody2D" parent="Actors/BP_Door_w0l6_2/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@638" type="CollisionShape2D" parent="Actors/BP_Door_w0l6_2/Box/@StaticBody2D@637"]
+shape = SubResource("RectangleShape2D_ai263")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_Door_w0l6_2"]
+
+[node name="@Area2D@639" type="Area2D" parent="Actors/BP_Door_w0l6_2/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@640" type="CollisionShape2D" parent="Actors/BP_Door_w0l6_2/TriggerBoxComponent/@Area2D@639"]
+shape = SubResource("RectangleShape2D_pbabp")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_Door_w0l6_2"]
+
+[node name="@AnimatedSprite2D@641" type="AnimatedSprite2D" parent="Actors/BP_Door_w0l6_2/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("4_xoupu")
+metadata/heron_geometry_ppu = 2.0
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_Door_w0l6_2"]
+
+[node name="BP_WaterTriggerVolume_w0l6" type="Node2D" parent="Actors"]
+z_index = 18
+position = Vector2(227, 230)
+scale = Vector2(1, 0.3)
+script = ExtResource("2_8aowe")
+object_id = "BP_WaterTriggerVolume_C_UAID_E8B0C58C1256E5BA02_2005774218"
+display_name = "BP_WaterTriggerVolume_w0l6"
+kind = "BP_WaterTriggerVolume"
+
+[node name="@Area2D@805" type="Area2D" parent="Actors/BP_WaterTriggerVolume_w0l6"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@806" type="CollisionShape2D" parent="Actors/BP_WaterTriggerVolume_w0l6/@Area2D@805"]
+shape = SubResource("RectangleShape2D_xvaq3")
+
+[node name="BP_CheckPoint_w0l6_1" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(440, 107)
+script = ExtResource("2_8aowe")
+object_id = "BP_CheckPoint_C_UAID_B025AA764F67DABA02_1137915322"
+display_name = "BP_CheckPoint_w0l6_1"
+kind = "BP_CheckPoint"
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_CheckPoint_w0l6_1"]
+
+[node name="@Area2D@945" type="Area2D" parent="Actors/BP_CheckPoint_w0l6_1/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@946" type="CollisionShape2D" parent="Actors/BP_CheckPoint_w0l6_1/TriggerBoxComponent/@Area2D@945"]
+shape = SubResource("RectangleShape2D_nawsa")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_CheckPoint_w0l6_1"]
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_CheckPoint_w0l6_1"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_CheckPoint_w0l6_1"]
+position = Vector2(-20, 0)
+
+[node name="BP_Door_w0l6_3" type="Node2D" parent="Actors"]
+position = Vector2(400, 233)
+rotation = -4.712389
+scale = Vector2(1.1, 1.1)
+script = ExtResource("2_8aowe")
+object_id = "BP_Door_C_UAID_B025AA764F67DABA02_1465628331"
+display_name = "BP_Door_w0l6_3"
+kind = "BP_Door"
+linked_buttons = Array[NodePath]([NodePath("../BP_Button_w0l6")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_Door_w0l6_3"]
+
+[node name="@StaticBody2D@1021" type="StaticBody2D" parent="Actors/BP_Door_w0l6_3/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@1022" type="CollisionShape2D" parent="Actors/BP_Door_w0l6_3/Box/@StaticBody2D@1021"]
+shape = SubResource("RectangleShape2D_erft2")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_Door_w0l6_3"]
+
+[node name="@Area2D@1023" type="Area2D" parent="Actors/BP_Door_w0l6_3/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@1024" type="CollisionShape2D" parent="Actors/BP_Door_w0l6_3/TriggerBoxComponent/@Area2D@1023"]
+shape = SubResource("RectangleShape2D_yjb00")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_Door_w0l6_3"]
+
+[node name="@AnimatedSprite2D@1025" type="AnimatedSprite2D" parent="Actors/BP_Door_w0l6_3/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("5_fvfx0")
+metadata/heron_geometry_ppu = 2.0
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_Door_w0l6_3"]
+
+[node name="BP_空气墙" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(-30, 263)
+scale = Vector2(1, 12)
+script = ExtResource("2_8aowe")
+object_id = "BP_空气墙_C_UAID_80FA5B9A0FA2E8BA02_1421841743"
+display_name = "BP_空气墙"
+kind = "BP_空气墙"
+
+[node name="Box" type="Node2D" parent="Actors/BP_空气墙"]
+
+[node name="@StaticBody2D@1072" type="StaticBody2D" parent="Actors/BP_空气墙/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@1073" type="CollisionShape2D" parent="Actors/BP_空气墙/Box/@StaticBody2D@1072"]
+shape = SubResource("RectangleShape2D_yb0mk")
+
+[node name="BP_ChangeSubLevelVolumeRight_w0l6" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(441, 105)
+script = ExtResource("2_8aowe")
+object_id = "BP_ChangeSubLevelVolume_C_UAID_B025AA764F67C3BA02_1912276243"
+display_name = "BP_ChangeSubLevelVolumeRight_w0l6"
+kind = "BP_ChangeSubLevelVolume"
+target_room = "SubLevel_w0l6"
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeRight_w0l6"]
+
+[node name="@Area2D@1086" type="Area2D" parent="Actors/BP_ChangeSubLevelVolumeRight_w0l6/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@1087" type="CollisionShape2D" parent="Actors/BP_ChangeSubLevelVolumeRight_w0l6/TriggerBoxComponent/@Area2D@1086"]
+shape = SubResource("RectangleShape2D_2xui3")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeRight_w0l6"]
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeRight_w0l6"]
+
+[node name="BP_Button_w0l6" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(96, 205)
+script = ExtResource("2_8aowe")
+object_id = "BP_Button_C_UAID_B025AA764F67DABA02_1381006328"
+display_name = "BP_Button_w0l6"
+kind = "BP_Button"
+pressed_animation = ExtResource("6_5wlqg")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_Button_w0l6"]
+scale = Vector2(0.75, 0.75)
+
+[node name="@Area2D@1116" type="Area2D" parent="Actors/BP_Button_w0l6/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@1117" type="CollisionShape2D" parent="Actors/BP_Button_w0l6/TriggerBoxComponent/@Area2D@1116"]
+shape = SubResource("RectangleShape2D_0mmal")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_Button_w0l6"]
+scale = Vector2(0.35, 0.35)
+
+[node name="@AnimatedSprite2D@1118" type="AnimatedSprite2D" parent="Actors/BP_Button_w0l6/RenderComponent"]
+texture_filter = 1
+sprite_frames = ExtResource("7_31k14")
+metadata/heron_geometry_ppu = 1.0
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_Button_w0l6"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_Button_w0l6"]
+
+[node name="BP_ChangeSubLevelVolumeLeft_w1l1" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(384, 319)
+script = ExtResource("2_8aowe")
+object_id = "BP_ChangeSubLevelVolume_C_UAID_B025AA764F67C3BA02_2101804247"
+display_name = "BP_ChangeSubLevelVolumeLeft_w1l1"
+kind = "BP_ChangeSubLevelVolume"
+target_room = "SubLevel_w1l1"
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w1l1"]
+
+[node name="@Area2D@1189" type="Area2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w1l1/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@1190" type="CollisionShape2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w1l1/TriggerBoxComponent/@Area2D@1189"]
+shape = SubResource("RectangleShape2D_c3s2p")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w1l1"]
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w1l1"]
+
+[node name="Foreground" type="Node2D" parent="."]
+
+[node name="FG_w0l6" type="Node2D" parent="Foreground"]
+z_index = 10
+texture_filter = 1
+position = Vector2(122, 73)
+scale = Vector2(0.94, 0.94)
+metadata/source_ref = "/Game/TileMap/ForeGround_w0_1.ForeGround_w0_1"
+metadata/original_bounds = Rect2(-256, -256, 512, 512)
+metadata/map_size = Vector2i(1, 1)
+metadata/tile_size = Vector2i(512, 512)
+metadata/ppu = 1.0
+metadata/tileset_path = "res://resources/tilesets/ForeGround_w0_1_4d4e861830f30480.tres"
+metadata/source_ids = Dictionary[String, int]({
+"/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet": 0,
+"/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet": 1,
+"/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet": 2,
+"/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet": 3,
+"/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet": 4,
+"/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet": 5,
+"/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet": 6,
+"/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet": 7
+})
+metadata/atlas_sources = Array[Dictionary]([{
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 0,
+"source_ref": "/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet",
+"texture": "res://assets/TileMap/resource/L4-图层_16.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 1,
+"source_ref": "/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet",
+"texture": "res://assets/TileMap/resource/L5-图层_17.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 2,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙1.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 3,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙2.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 4,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙3.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 5,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙1.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 6,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙2.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 7,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙3.png",
+"tile_size": Vector2i(512, 512)
+}])
+metadata/terrain_textures = PackedStringArray()
+
+[node name="PaperTileLayer_1" type="TileMapLayer" parent="Foreground/FG_w0l6"]
+texture_filter = 1
+position = Vector2(-256, -256)
+tile_map_data = PackedByteArray("AAAAAAAAAQABAAAAAAA=")
+tile_set = ExtResource("8_4x4mr")
+metadata/source_ref = "/Game/TileMap/ForeGround_w0_1.ForeGround_w0_1"
+metadata/original_layer_index = 0
+metadata/original_name = "PaperTileLayer_1"
+metadata/map_size = Vector2i(1, 1)
+
+[node name="PaperTileLayer_0" type="TileMapLayer" parent="Foreground/FG_w0l6"]
+z_index = -4
+texture_filter = 1
+position = Vector2(-256, -256)
+tile_map_data = PackedByteArray("AAAAAAAAAAABAAAAAAA=")
+tile_set = ExtResource("8_4x4mr")
+metadata/source_ref = "/Game/TileMap/ForeGround_w0_1.ForeGround_w0_1"
+metadata/original_layer_index = 1
+metadata/original_name = "PaperTileLayer_0"
+metadata/map_size = Vector2i(1, 1)
+
+[node name="Terrain" type="Node2D" parent="."]
+
+[node name="TileMap_w0l6" type="Node2D" parent="Terrain"]
+texture_filter = 1
+scale = Vector2(0.5, 0.5)
+metadata/source_ref = "/Game/TileMap/TM_world0/w0l6.w0l6"
+metadata/original_bounds = Rect2(-16, -16, 960, 544)
+metadata/map_size = Vector2i(30, 17)
+metadata/tile_size = Vector2i(32, 32)
+metadata/ppu = 1.0
+metadata/tileset_path = "res://resources/tilesets/w0l6_83e24e3339612bcc.tres"
+metadata/source_ids = Dictionary[String, int]({
+"/Game/TileMap/resource/TS_world1.TS_world1": 0,
+"/Game/TileMap/resource/TS_worldBlock.TS_worldBlock": 1
+})
+metadata/atlas_sources = Array[Dictionary]([{
+"columns": 5,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(5, 4),
+"has_collision": true,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 0,
+"source_ref": "/Game/TileMap/resource/TS_world1.TS_world1",
+"texture": "res://assets/TileMap/resource/tile1.png",
+"tile_size": Vector2i(32, 32)
+}, {
+"columns": 10,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(10, 16),
+"has_collision": true,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 1,
+"source_ref": "/Game/TileMap/resource/TS_worldBlock.TS_worldBlock",
+"texture": "res://assets/TileMap/resource/tile_6.png",
+"tile_size": Vector2i(32, 32)
+}])
+metadata/terrain_textures = PackedStringArray("res://assets/TileMap/resource/tile1.png", "res://assets/TileMap/resource/tile_6.png")
+
+[node name="PaperTileLayer_2" type="TileMapLayer" parent="Terrain/TileMap_w0l6"]
+texture_filter = 1
+position = Vector2(-16, -16)
+tile_map_data = PackedByteArray("AAACAAMAAAAAAAEAAAADAAMAAAABAAEAAAAGAAMAAAABAAEAAAAHAAMAAAACAAEAAAAIAAMAAAADAAEAAAAJAAMAAAAEAAEAAAATAAUAAAADAAEAAAAVAAYAAAAEAAEAAAAYAAcAAAADAAEAAAAcAAgAAAACAAEAAAAdAAgAAAAEAAEAAAAGAA4AAAAAAAEAAAAHAA4AAAABAAEAAAAKAA4AAAAAAAEAAAATAA4AAAAAAAEAAAAUAA4AAAABAAEAAAAWAA4AAAADAAEAAAA=")
+tile_set = ExtResource("9_q6hit")
+metadata/source_ref = "/Game/TileMap/TM_world0/w0l6.w0l6"
+metadata/original_layer_index = 0
+metadata/original_name = "PaperTileLayer_2"
+metadata/map_size = Vector2i(30, 17)
+
+[node name="PaperTileLayer_1" type="TileMapLayer" parent="Terrain/TileMap_w0l6"]
+z_index = -4
+texture_filter = 1
+position = Vector2(-16, -16)
+tile_map_data = PackedByteArray("AAAAAAMAAAAAAAIAAAABAAMAAAABAAIAAAACAAMAAAACAAIAAAADAAMAAAADAAIAAAAEAAMAAAAAAAIAAAAFAAMAAAABAAIAAAAGAAMAAAACAAIAAAAHAAMAAAADAAIAAAAIAAMAAAAEAAIAAAAJAAMAAAACAAIAAAAKAAMAAAADAAIAAAALAAMAAAAEAAIAAAATAAUAAAACAAIAAAAUAAUAAAADAAIAAAAVAAYAAAABAAIAAAAWAAYAAAACAAIAAAAXAAcAAAACAAIAAAAYAAcAAAADAAIAAAAZAAcAAAADAAIAAAAaAAgAAAABAAIAAAAbAAgAAAACAAIAAAAcAAgAAAADAAIAAAAdAAgAAAAEAAIAAAALAA0AAAAEAAIAAAAMAA0AAAAAAAIAAAANAA0AAAADAAIAAAAFAA4AAAABAAIAAAAGAA4AAAACAAIAAAAHAA4AAAADAAIAAAAIAA4AAAAEAAIAAAAJAA4AAAAAAAIAAAAKAA4AAAABAAIAAAAOAA4AAQAAAA0AAAAPAA4AAQABAA0AAAAQAA4AAQACAA0AAAARAA4AAAABAAIAAAASAA4AAAACAAIAAAATAA4AAAADAAIAAAAUAA4AAAACAAIAAAAVAA4AAAADAAIAAAAWAA4AAAAEAAIAAAAOAA8AAQAEAAwAAAAPAA8AAQAEAAwAAAAQAA8AAQAEAAwAAAAOABAAAQAFAAwAAAAPABAAAQAFAAwAAAAQABAAAQAFAAwAAAA=")
+tile_set = ExtResource("9_q6hit")
+metadata/source_ref = "/Game/TileMap/TM_world0/w0l6.w0l6"
+metadata/original_layer_index = 1
+metadata/original_name = "PaperTileLayer_1"
+metadata/map_size = Vector2i(30, 17)
+
+[node name="PaperTileLayer_0" type="TileMapLayer" parent="Terrain/TileMap_w0l6"]
+z_index = -8
+texture_filter = 1
+position = Vector2(-16, -16)
+tile_map_data = PackedByteArray("AAAAAAMAAAAEAAMAAAABAAMAAAAEAAMAAAACAAMAAAAEAAMAAAADAAMAAAAEAAMAAAAEAAMAAAAEAAMAAAAFAAMAAAAEAAMAAAAGAAMAAAAEAAMAAAAHAAMAAAAEAAMAAAAIAAMAAAAEAAMAAAAJAAMAAAAEAAMAAAAKAAMAAAAEAAMAAAALAAMAAAAEAAMAAAAAAAQAAAADAAAAAAABAAQAAAAAAAAAAAACAAQAAAADAAAAAAADAAQAAAADAAAAAAAEAAQAAAADAAAAAAAFAAQAAAADAAAAAAAGAAQAAAADAAAAAAAHAAQAAAADAAAAAAAIAAQAAAADAAAAAAAJAAQAAAADAAAAAAAKAAQAAAADAAAAAAALAAQAAAADAAAAAAAAAAUAAAADAAAAAAABAAUAAAAAAAAAAAACAAUAAAAAAAAAAAADAAUAAAADAAAAAAAEAAUAAAADAAAAAAAFAAUAAAADAAAAAAAGAAUAAAACAAAAAAAHAAUAAAADAAAAAAAIAAUAAAADAAAAAAAJAAUAAAADAAAAAAAKAAUAAAADAAAAAAALAAUAAAADAAAAAAATAAUAAAAAAAMAAAAUAAUAAAAAAAMAAAAAAAYAAAAAAAAAAAABAAYAAAAAAAAAAAACAAYAAAADAAAAAAADAAYAAAADAAAAAAAEAAYAAAADAAAAAAAFAAYAAAADAAAAAAAGAAYAAAADAAAAAAAHAAYAAAADAAAAAAAIAAYAAAADAAAAAAAJAAYAAAADAAAAAAAKAAYAAAADAAAAAAATAAYAAAADAAAAAAAUAAYAAAADAAAAAAAVAAYAAAAAAAMAAAAWAAYAAAAAAAMAAAAAAAcAAAADAAAAAAABAAcAAAAAAAAAAAACAAcAAAACAAAAAAADAAcAAAADAAAAAAAEAAcAAAADAAAAAAAFAAcAAAADAAAAAAAGAAcAAAADAAAAAAAHAAcAAAACAAAAAAAIAAcAAAADAAAAAAAJAAcAAAADAAAAAAAKAAcAAAADAAAAAAATAAcAAAADAAAAAAAUAAcAAAADAAAAAAAVAAcAAAADAAAAAAAWAAcAAAADAAAAAAAXAAcAAAACAAMAAAAYAAcAAAAAAAMAAAAZAAcAAAAAAAMAAAAAAAgAAAADAAAAAAABAAgAAAAAAAAAAAACAAgAAAADAAAAAAADAAgAAAADAAAAAAAEAAgAAAADAAAAAAAFAAgAAAADAAAAAAAGAAgAAAADAAAAAAAHAAgAAAADAAAAAAAIAAgAAAADAAAAAAAJAAgAAAADAAAAAAAKAAgAAAADAAAAAAATAAgAAAADAAAAAAAUAAgAAAADAAAAAAAVAAgAAAADAAAAAAAWAAgAAAADAAAAAAAXAAgAAAADAAAAAAAYAAgAAAADAAAAAAAZAAgAAAADAAAAAAAaAAgAAAAAAAMAAAAbAAgAAAAAAAMAAAAcAAgAAAAAAAMAAAAdAAgAAAADAAMAAAAAAAkAAAADAAAAAAABAAkAAAADAAAAAAACAAkAAAADAAAAAAADAAkAAAADAAAAAAAEAAkAAAADAAAAAAAFAAkAAAADAAAAAAAGAAkAAAADAAAAAAAHAAkAAAADAAAAAAAIAAkAAAADAAAAAAAJAAkAAAADAAAAAAAKAAkAAAADAAAAAAAWAAkAAAADAAAAAAAXAAkAAAADAAAAAAAYAAkAAAADAAAAAAAZAAkAAAADAAAAAAAaAAkAAAADAAAAAAAbAAkAAAADAAAAAAAcAAkAAAADAAAAAAAdAAkAAAADAAAAAAAAAAoAAAADAAAAAAABAAoAAAADAAAAAAACAAoAAAACAAAAAAADAAoAAAADAAAAAAAEAAoAAAADAAAAAAAYAAoAAAADAAAAAAAZAAoAAAADAAAAAAAaAAoAAAADAAAAAAAbAAoAAAADAAAAAAAcAAoAAAADAAAAAAAdAAoAAAADAAAAAAAAAAsAAAADAAAAAAABAAsAAAADAAAAAAACAAsAAAADAAAAAAADAAsAAAADAAAAAAAEAAsAAAADAAAAAAAaAAsAAAADAAAAAAAbAAsAAAADAAAAAAAcAAsAAAADAAAAAAAdAAsAAAADAAAAAAAAAAwAAAADAAAAAAABAAwAAAADAAAAAAACAAwAAAADAAAAAAADAAwAAAADAAAAAAAEAAwAAAADAAAAAAAaAAwAAAADAAAAAAAbAAwAAAADAAAAAAAcAAwAAAADAAAAAAAdAAwAAAADAAAAAAAAAA0AAAADAAAAAAABAA0AAAADAAAAAAACAA0AAAADAAAAAAADAA0AAAADAAAAAAAEAA0AAAADAAAAAAALAA0AAAADAAMAAAAMAA0AAAADAAMAAAANAA0AAAADAAMAAAAaAA0AAAADAAAAAAAbAA0AAAADAAAAAAAcAA0AAAADAAAAAAAdAA0AAAADAAAAAAAAAA4AAAADAAAAAAABAA4AAAADAAAAAAACAA4AAAACAAAAAAADAA4AAAADAAAAAAAEAA4AAAADAAAAAAAFAA4AAAACAAMAAAAGAA4AAAACAAMAAAAHAA4AAAACAAMAAAAIAA4AAAACAAMAAAAJAA4AAAACAAMAAAAKAA4AAAACAAMAAAALAA4AAAADAAAAAAAMAA4AAAADAAAAAAANAA4AAAADAAAAAAARAA4AAAACAAMAAAASAA4AAAACAAMAAAATAA4AAAACAAMAAAAUAA4AAAACAAMAAAAVAA4AAAACAAMAAAAWAA4AAAAEAAMAAAAaAA4AAAADAAAAAAAbAA4AAAADAAAAAAAcAA4AAAADAAAAAAAdAA4AAAADAAAAAAAAAA8AAAADAAAAAAABAA8AAAADAAAAAAACAA8AAAADAAAAAAADAA8AAAADAAAAAAAEAA8AAAAAAAAAAAAFAA8AAAAAAAAAAAAGAA8AAAADAAAAAAAHAA8AAAADAAAAAAAIAA8AAAADAAAAAAAJAA8AAAADAAAAAAAKAA8AAAADAAAAAAALAA8AAAADAAAAAAAMAA8AAAADAAAAAAANAA8AAAADAAAAAAARAA8AAAADAAAAAAASAA8AAAADAAAAAAATAA8AAAADAAAAAAAUAA8AAAADAAAAAAAVAA8AAAADAAAAAAAWAA8AAAADAAAAAAAaAA8AAAADAAAAAAAbAA8AAAADAAAAAAAcAA8AAAADAAAAAAAdAA8AAAADAAAAAAAAABAAAAADAAAAAAABABAAAAADAAAAAAACABAAAAAAAAAAAAADABAAAAADAAAAAAAEABAAAAAAAAAAAAAFABAAAAADAAAAAAAGABAAAAADAAAAAAAHABAAAAADAAAAAAAIABAAAAAAAAAAAAAJABAAAAADAAAAAAAKABAAAAADAAAAAAALABAAAAADAAAAAAAMABAAAAADAAAAAAANABAAAAADAAAAAAARABAAAAADAAAAAAASABAAAAADAAAAAAATABAAAAADAAAAAAAUABAAAAADAAAAAAAVABAAAAADAAAAAAAWABAAAAADAAAAAAAaABAAAAADAAAAAAAbABAAAAADAAAAAAAcABAAAAADAAAAAAAdABAAAAADAAAAAAA=")
+tile_set = ExtResource("9_q6hit")
+metadata/source_ref = "/Game/TileMap/TM_world0/w0l6.w0l6"
+metadata/original_layer_index = 2
+metadata/original_name = "PaperTileLayer_0"
+metadata/map_size = Vector2i(30, 17)
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="BG_w0l6" type="Node2D" parent="Background"]
+z_index = -12
+texture_filter = 1
+position = Vector2(232, 56)
+scale = Vector2(0.94, 0.94)
+metadata/source_ref = "/Game/TileMap/BackGround_w0.BackGround_w0"
+metadata/original_bounds = Rect2(-256, -256, 512, 512)
+metadata/map_size = Vector2i(1, 1)
+metadata/tile_size = Vector2i(512, 512)
+metadata/ppu = 1.0
+metadata/tileset_path = "res://resources/tilesets/BackGround_w0_9b9c90e76f81def2.tres"
+metadata/source_ids = Dictionary[String, int]({
+"/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet": 0,
+"/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet": 1,
+"/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet": 2,
+"/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet": 3,
+"/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet": 4,
+"/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet": 5,
+"/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet": 6,
+"/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet": 7
+})
+metadata/atlas_sources = Array[Dictionary]([{
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 0,
+"source_ref": "/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet",
+"texture": "res://assets/TileMap/resource/L4-图层_16.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 1,
+"source_ref": "/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet",
+"texture": "res://assets/TileMap/resource/L5-图层_17.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 2,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙1.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 3,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙2.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 4,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙3.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 5,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙1.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 6,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙2.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 7,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙3.png",
+"tile_size": Vector2i(512, 512)
+}])
+metadata/terrain_textures = PackedStringArray()
+
+[node name="PaperTileLayer_0" type="TileMapLayer" parent="Background/BG_w0l6"]
+texture_filter = 1
+position = Vector2(-256, -256)
+tile_map_data = PackedByteArray("AAAAAAAABQAAAAAAAAA=")
+tile_set = ExtResource("10_mnavk")
+metadata/source_ref = "/Game/TileMap/BackGround_w0.BackGround_w0"
+metadata/original_layer_index = 0
+metadata/original_name = "PaperTileLayer_0"
+metadata/map_size = Vector2i(1, 1)
+
+[node name="PlayerStart" type="Marker2D" parent="."]
+position = Vector2(329, 199)

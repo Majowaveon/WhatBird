@@ -1,0 +1,38 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Player/Heron/HeronSprites.png" id="1_i5yt7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_br7hr"]
+atlas = ExtResource("1_i5yt7")
+region = Rect2(0, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_udeih"]
+atlas = ExtResource("1_i5yt7")
+region = Rect2(64, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sum77"]
+atlas = ExtResource("1_i5yt7")
+region = Rect2(128, 256, 64, 64)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_br7hr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_udeih")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sum77")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Player/Heron/HeronSprites_Sprite_52.HeronSprites_Sprite_52", "/Game/Resources/Player/Heron/HeronSprites_Sprite_53.HeronSprites_Sprite_53", "/Game/Resources/Player/Heron/HeronSprites_Sprite_54.HeronSprites_Sprite_54"])
+}

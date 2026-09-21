@@ -1,0 +1,118 @@
+{
+	"checks": [
+		"Jump trial starts grounded",
+		"A single held press does not secretly enable glide",
+		"Jump lands normally after hold window expires",
+		"Jump trial starts grounded",
+		"A single held press does not secretly enable glide",
+		"Jump lands normally after hold window expires",
+		"Jump trial starts grounded",
+		"A single held press does not secretly enable glide",
+		"Jump lands normally after hold window expires",
+		"Jump trial starts grounded",
+		"A single held press does not secretly enable glide",
+		"Jump lands normally after hold window expires",
+		"Jump height increases with time held",
+		"Held jump has clearance for the 28.3-unit tutorial pillar",
+		"Holding beyond the bounded window cannot add infinite height",
+		"Jump trial starts grounded",
+		"A single held press does not secretly enable glide",
+		"Jump lands normally after hold window expires",
+		"Jump trial starts grounded",
+		"A single held press does not secretly enable glide",
+		"Jump lands normally after hold window expires",
+		"Held jump stays consistent at 30 and 120 physics ticks",
+		"Jump trial starts grounded",
+		"A separate midair press still starts heron glide",
+		"Jump hold is not stacked with glide",
+		"Releasing the second press ends glide",
+		"Jump trial starts grounded",
+		"Jump release does not cut a spring launch",
+		"Jump trial starts grounded",
+		"Changing form cancels the old jump hold",
+		"Reset clears remaining jump force",
+		"Death cancels the jump hold",
+		"Jump trial starts grounded",
+		"Ceiling contact cancels upward hold immediately",
+		"Holding jump does not repeat automatically on landing",
+		"A tap stays low at the original pillar",
+		"One held jump clears the original first pillar without a second press or glide",
+		"Tutorial pillar test uses normal heron and zero transformation charges"
+	],
+	"failures": [],
+	"measurements": [
+		{
+			"glided": false,
+			"height": 7.16977071762085,
+			"hold_seconds": 0.0166666666666667,
+			"physics_hz": 60,
+			"trial": "vertical_jump"
+		},
+		{
+			"glided": false,
+			"height": 19.5156021118164,
+			"hold_seconds": 0.1,
+			"physics_hz": 60,
+			"trial": "vertical_jump"
+		},
+		{
+			"glided": false,
+			"height": 38.2672624588013,
+			"hold_seconds": 0.6,
+			"physics_hz": 60,
+			"trial": "vertical_jump"
+		},
+		{
+			"glided": false,
+			"height": 38.2672624588013,
+			"hold_seconds": 1.2,
+			"physics_hz": 60,
+			"trial": "vertical_jump"
+		},
+		{
+			"glided": false,
+			"height": 36.5672760009766,
+			"hold_seconds": 0.6,
+			"physics_hz": 30,
+			"trial": "vertical_jump"
+		},
+		{
+			"glided": false,
+			"height": 39.0968742370605,
+			"hold_seconds": 0.6,
+			"physics_hz": 120,
+			"trial": "vertical_jump"
+		},
+		{
+			"crossed": false,
+			"glided": false,
+			"height": 7.16849517822266,
+			"hold_seconds": 0.0166666666666667,
+			"max_x": 287.125305175781,
+			"start": [
+				260.0,
+				-123.20304107666
+			],
+			"trial": "original_first_wood_pillar"
+		},
+		{
+			"crossed": true,
+			"glided": false,
+			"height": 38.265983581543,
+			"hold_seconds": 0.6,
+			"max_x": 500.216369628906,
+			"start": [
+				260.0,
+				-123.20304107666
+			],
+			"trial": "original_first_wood_pillar"
+		}
+	],
+	"passed": true,
+	"tuning": {
+		"hold_gravity_scale": 0.5,
+		"hold_time": 0.32,
+		"jump_speed": 200,
+		"release_multiplier": 0.5
+	}
+}

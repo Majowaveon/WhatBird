@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Interactable/Spring/弹簧冰雪.png" id="1_cs23u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qb6kn"]
+atlas = ExtResource("1_cs23u")
+region = Rect2(224, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6lyx"]
+atlas = ExtResource("1_cs23u")
+region = Rect2(256, 0, 32, 32)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb6kn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6lyx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Interactable/Spring/弹簧冰雪_Sprite_7.弹簧冰雪_Sprite_7", "/Game/Resources/Interactable/Spring/弹簧冰雪_Sprite_8.弹簧冰雪_Sprite_8"])
+}

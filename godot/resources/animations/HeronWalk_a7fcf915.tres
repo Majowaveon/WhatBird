@@ -1,0 +1,62 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/SpritesStub/Heron/Heron.png" id="1_2kokf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xirj3"]
+atlas = ExtResource("1_2kokf")
+region = Rect2(1024, 0, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fjqm"]
+atlas = ExtResource("1_2kokf")
+region = Rect2(1280, 0, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wsyu"]
+atlas = ExtResource("1_2kokf")
+region = Rect2(1536, 0, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmedi"]
+atlas = ExtResource("1_2kokf")
+region = Rect2(1792, 0, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q7rsi"]
+atlas = ExtResource("1_2kokf")
+region = Rect2(0, 256, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afe27"]
+atlas = ExtResource("1_2kokf")
+region = Rect2(256, 256, 256, 256)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xirj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fjqm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6wsyu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmedi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q7rsi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afe27")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/SpritesStub/Heron/Heron_Sprite_4.Heron_Sprite_4", "/Game/Resources/SpritesStub/Heron/Heron_Sprite_5.Heron_Sprite_5", "/Game/Resources/SpritesStub/Heron/Heron_Sprite_6.Heron_Sprite_6", "/Game/Resources/SpritesStub/Heron/Heron_Sprite_7.Heron_Sprite_7", "/Game/Resources/SpritesStub/Heron/Heron_Sprite_8.Heron_Sprite_8", "/Game/Resources/SpritesStub/Heron/Heron_Sprite_9.Heron_Sprite_9"])
+}

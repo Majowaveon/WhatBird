@@ -1,0 +1,308 @@
+[gd_scene load_steps=15 format=4]
+
+[ext_resource type="Script" path="res://scripts/editable_room.gd" id="1_ayhs2"]
+[ext_resource type="TileSet" path="res://resources/tilesets/w0l1_27c503a4b04bb5c6.tres" id="2_e3fah"]
+[ext_resource type="Script" path="res://scripts/world_object.gd" id="3_h3rp3"]
+[ext_resource type="FontFile" path="res://assets/Fonts/fusion-pixel-10px-monospaced-zh_hans.otf" id="4_iquag"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/Penguin_Idle_e53585e1.tres" id="5_u2yhl"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/Penguin_Walk_192cf121.tres" id="6_eyj7g"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/Penguin_Jump_35eda4b6.tres" id="7_sppy8"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/Penguin_Fall_74122f97.tres" id="8_rtib2"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/Penguin_Slide_b91e7b16.tres" id="9_x6dhh"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/NPC_PenguinIdle_f892a188.tres" id="10_oig1f"]
+[ext_resource type="Script" path="res://scenes/tests/test_scene_hud.gd" id="11_ob3ss"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pb3y5"]
+size = Vector2(416, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nk57g"]
+size = Vector2(16, 680)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ouot5"]
+size = Vector2(16, 680)
+
+[node name="penguin_ice" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_ayhs2")
+room_tag = "SubLevel_penguin_ice"
+camera_bounds = Rect2(0, 0, 896, 504)
+preview_form = 2
+
+[node name="Background" type="Node2D" parent="."]
+z_index = -20
+
+[node name="Sky" type="Polygon2D" parent="Background"]
+color = Color(0.8039216, 0.8745098, 0.9098039, 1)
+polygon = PackedVector2Array(0, 0, 896, 0, 896, 504, 0, 504)
+
+[node name="DistantSnow" type="Polygon2D" parent="Background"]
+color = Color(0.8980392, 0.9372549, 0.95686275, 1)
+polygon = PackedVector2Array(0, 304, 0, 280, 96, 280, 96, 256, 176, 256, 176, 232, 288, 232, 288, 256, 384, 256, 384, 280, 512, 280, 512, 248, 624, 248, 624, 216, 736, 216, 736, 248, 848, 248, 848, 272, 896, 272, 896, 504, 0, 504)
+
+[node name="NearSnow" type="Polygon2D" parent="Background"]
+color = Color(0.9529412, 0.9647059, 0.96862745, 1)
+polygon = PackedVector2Array(0, 352, 96, 352, 96, 328, 224, 328, 224, 344, 416, 344, 416, 312, 560, 312, 560, 336, 720, 336, 720, 320, 896, 320, 896, 504, 0, 504)
+
+[node name="Terrain" type="Node2D" parent="."]
+
+[node name="SnowGround" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+tile_map_data = PackedByteArray("AAAAABgAAQABAAoAAAAAABkAAQACAAsAAAAAABoAAQADAAsAAAAAABsAAQABAAsAAAAAABwAAQACAAsAAAAAAB0AAQADAAsAAAAAAB4AAQABAAsAAAAAAB8AAQACAAsAAAABABgAAQACAAoAAAABABkAAQADAAsAAAABABoAAQABAAsAAAABABsAAQACAAsAAAABABwAAQADAAsAAAABAB0AAQABAAsAAAABAB4AAQACAAsAAAABAB8AAQADAAsAAAACABgAAQADAAoAAAACABkAAQABAAsAAAACABoAAQACAAsAAAACABsAAQADAAsAAAACABwAAQABAAsAAAACAB0AAQACAAsAAAACAB4AAQADAAsAAAACAB8AAQABAAsAAAADABgAAQABAAoAAAADABkAAQACAAsAAAADABoAAQADAAsAAAADABsAAQABAAsAAAADABwAAQACAAsAAAADAB0AAQADAAsAAAADAB4AAQABAAsAAAADAB8AAQACAAsAAAAEABgAAQACAAoAAAAEABkAAQADAAsAAAAEABoAAQABAAsAAAAEABsAAQACAAsAAAAEABwAAQADAAsAAAAEAB0AAQABAAsAAAAEAB4AAQACAAsAAAAEAB8AAQADAAsAAAAFABgAAQADAAoAAAAFABkAAQABAAsAAAAFABoAAQACAAsAAAAFABsAAQADAAsAAAAFABwAAQABAAsAAAAFAB0AAQACAAsAAAAFAB4AAQADAAsAAAAFAB8AAQABAAsAAAAGABgAAQABAAoAAAAGABkAAQACAAsAAAAGABoAAQADAAsAAAAGABsAAQABAAsAAAAGABwAAQACAAsAAAAGAB0AAQADAAsAAAAGAB4AAQABAAsAAAAGAB8AAQACAAsAAAAHABgAAQACAAoAAAAHABkAAQADAAsAAAAHABoAAQABAAsAAAAHABsAAQACAAsAAAAHABwAAQADAAsAAAAHAB0AAQABAAsAAAAHAB4AAQACAAsAAAAHAB8AAQADAAsAAAAIABgAAQADAAoAAAAIABkAAQABAAsAAAAIABoAAQACAAsAAAAIABsAAQADAAsAAAAIABwAAQABAAsAAAAIAB0AAQACAAsAAAAIAB4AAQADAAsAAAAIAB8AAQABAAsAAAAJABgAAQABAAoAAAAJABkAAQACAAsAAAAJABoAAQADAAsAAAAJABsAAQABAAsAAAAJABwAAQACAAsAAAAJAB0AAQADAAsAAAAJAB4AAQABAAsAAAAJAB8AAQACAAsAAAAKABgAAQACAAoAAAAKABkAAQADAAsAAAAKABoAAQABAAsAAAAKABsAAQACAAsAAAAKABwAAQADAAsAAAAKAB0AAQABAAsAAAAKAB4AAQACAAsAAAAKAB8AAQADAAsAAAALABgAAQADAAoAAAALABkAAQABAAsAAAALABoAAQACAAsAAAALABsAAQADAAsAAAALABwAAQABAAsAAAALAB0AAQACAAsAAAALAB4AAQADAAsAAAALAB8AAQABAAsAAAAMABgAAQABAAoAAAAMABkAAQACAAsAAAAMABoAAQADAAsAAAAMABsAAQABAAsAAAAMABwAAQACAAsAAAAMAB0AAQADAAsAAAAMAB4AAQABAAsAAAAMAB8AAQACAAsAAAANABgAAQACAAoAAAANABkAAQADAAsAAAANABoAAQABAAsAAAANABsAAQACAAsAAAANABwAAQADAAsAAAANAB0AAQABAAsAAAANAB4AAQACAAsAAAANAB8AAQADAAsAAAAoABgAAQACAAoAAAAoABkAAQADAAsAAAAoABoAAQABAAsAAAAoABsAAQACAAsAAAAoABwAAQADAAsAAAAoAB0AAQABAAsAAAAoAB4AAQACAAsAAAAoAB8AAQADAAsAAAApABgAAQADAAoAAAApABkAAQABAAsAAAApABoAAQACAAsAAAApABsAAQADAAsAAAApABwAAQABAAsAAAApAB0AAQACAAsAAAApAB4AAQADAAsAAAApAB8AAQABAAsAAAAqABgAAQABAAoAAAAqABkAAQACAAsAAAAqABoAAQADAAsAAAAqABsAAQABAAsAAAAqABwAAQACAAsAAAAqAB0AAQADAAsAAAAqAB4AAQABAAsAAAAqAB8AAQACAAsAAAArABgAAQACAAoAAAArABkAAQADAAsAAAArABoAAQABAAsAAAArABsAAQACAAsAAAArABwAAQADAAsAAAArAB0AAQABAAsAAAArAB4AAQACAAsAAAArAB8AAQADAAsAAAAsABgAAQADAAoAAAAsABkAAQABAAsAAAAsABoAAQACAAsAAAAsABsAAQADAAsAAAAsABwAAQABAAsAAAAsAB0AAQACAAsAAAAsAB4AAQADAAsAAAAsAB8AAQABAAsAAAAtABgAAQABAAoAAAAtABkAAQACAAsAAAAtABoAAQADAAsAAAAtABsAAQABAAsAAAAtABwAAQACAAsAAAAtAB0AAQADAAsAAAAtAB4AAQABAAsAAAAtAB8AAQACAAsAAAAuABgAAQACAAsAAAAuABkAAQADAAsAAAAuABoAAQABAAsAAAAuABsAAQACAAsAAAAuABwAAQADAAsAAAAuAB0AAQABAAsAAAAuAB4AAQACAAsAAAAuAB8AAQADAAsAAAAvABgAAQADAAsAAAAvABkAAQABAAsAAAAvABoAAQACAAsAAAAvABsAAQADAAsAAAAvABwAAQABAAsAAAAvAB0AAQACAAsAAAAvAB4AAQADAAsAAAAvAB8AAQABAAsAAAAwABgAAQABAAsAAAAwABkAAQACAAsAAAAwABoAAQADAAsAAAAwABsAAQABAAsAAAAwABwAAQACAAsAAAAwAB0AAQADAAsAAAAwAB4AAQABAAsAAAAwAB8AAQACAAsAAAAxABgAAQACAAoAAAAxABkAAQADAAsAAAAxABoAAQABAAsAAAAxABsAAQACAAsAAAAxABwAAQADAAsAAAAxAB0AAQABAAsAAAAxAB4AAQACAAsAAAAxAB8AAQADAAsAAAAyABgAAQADAAoAAAAyABkAAQABAAsAAAAyABoAAQACAAsAAAAyABsAAQADAAsAAAAyABwAAQABAAsAAAAyAB0AAQACAAsAAAAyAB4AAQADAAsAAAAyAB8AAQABAAsAAAAzABgAAQABAAsAAAAzABkAAQACAAsAAAAzABoAAQADAAsAAAAzABsAAQABAAsAAAAzABwAAQACAAsAAAAzAB0AAQADAAsAAAAzAB4AAQABAAsAAAAzAB8AAQACAAsAAAA0ABgAAQACAAsAAAA0ABkAAQADAAsAAAA0ABoAAQABAAsAAAA0ABsAAQACAAsAAAA0ABwAAQADAAsAAAA0AB0AAQABAAsAAAA0AB4AAQACAAsAAAA0AB8AAQADAAsAAAA1ABgAAQADAAsAAAA1ABkAAQABAAsAAAA1ABoAAQACAAsAAAA1ABsAAQADAAsAAAA1ABwAAQABAAsAAAA1AB0AAQACAAsAAAA1AB4AAQADAAsAAAA1AB8AAQABAAsAAAA2ABgAAQABAAsAAAA2ABkAAQACAAsAAAA2ABoAAQADAAsAAAA2ABsAAQABAAsAAAA2ABwAAQACAAsAAAA2AB0AAQADAAsAAAA2AB4AAQABAAsAAAA2AB8AAQACAAsAAAA3ABgAAQACAAoAAAA3ABkAAQADAAsAAAA3ABoAAQABAAsAAAA3ABsAAQACAAsAAAA3ABwAAQADAAsAAAA3AB0AAQABAAsAAAA3AB4AAQACAAsAAAA3AB8AAQADAAsAAAAuABYAAQACAAoAAAAuABcAAQABAAsAAAAvABYAAQADAAoAAAAvABcAAQACAAsAAAAwABYAAQABAAoAAAAwABcAAQADAAsAAAAzABQAAQABAAoAAAAzABUAAQABAAsAAAAzABYAAQACAAsAAAAzABcAAQADAAsAAAA0ABQAAQACAAoAAAA0ABUAAQACAAsAAAA0ABYAAQADAAsAAAA0ABcAAQABAAsAAAA1ABQAAQADAAoAAAA1ABUAAQADAAsAAAA1ABYAAQABAAsAAAA1ABcAAQACAAsAAAA2ABQAAQABAAoAAAA2ABUAAQABAAsAAAA2ABYAAQACAAsAAAA2ABcAAQADAAsAAAA=")
+tile_set = ExtResource("2_e3fah")
+
+[node name="SnowCover" type="TileMapLayer" parent="Terrain"]
+z_index = 1
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+tile_map_data = PackedByteArray("AAAAABgAAQABAAkAAAABABgAAQACAAkAAAACABgAAQADAAkAAAADABgAAQAEAAkAAAAEABgAAQAFAAkAAAAFABgAAQAGAAkAAAAGABgAAQAHAAkAAAAHABgAAQABAAkAAAAIABgAAQACAAkAAAAJABgAAQADAAkAAAAKABgAAQAEAAkAAAALABgAAQAFAAkAAAAMABgAAQAGAAkAAAANABgAAQAHAAkAAAAoABgAAQAGAAkAAAApABgAAQAHAAkAAAAqABgAAQABAAkAAAArABgAAQACAAkAAAAsABgAAQADAAkAAAAtABgAAQAEAAkAAAAuABgAAQAFAAkAAAAvABgAAQAGAAkAAAAwABgAAQAHAAkAAAAxABgAAQABAAkAAAAyABgAAQACAAkAAAAzABgAAQADAAkAAAA0ABgAAQAEAAkAAAA1ABgAAQAFAAkAAAA2ABgAAQAGAAkAAAA3ABgAAQAHAAkAAAAuABYAAQAFAAkAAAAvABYAAQAGAAkAAAAwABYAAQAHAAkAAAAzABQAAQADAAkAAAA0ABQAAQAEAAkAAAA1ABQAAQAFAAkAAAA2ABQAAQAGAAkAAAA=")
+tile_set = ExtResource("2_e3fah")
+collision_enabled = false
+
+[node name="IceGround" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8.5)
+scale = Vector2(0.5, 0.5)
+tile_map_data = PackedByteArray("AAAOABgAAQABAA4AAAAOABkAAQACAA8AAAAOABoAAQABAA8AAAAOABsAAQACAA8AAAAOABwAAQABAA8AAAAOAB0AAQACAA8AAAAOAB4AAQABAA8AAAAOAB8AAQACAA8AAAAPABgAAQACAA4AAAAPABkAAQABAA8AAAAPABoAAQACAA8AAAAPABsAAQABAA8AAAAPABwAAQACAA8AAAAPAB0AAQABAA8AAAAPAB4AAQACAA8AAAAPAB8AAQABAA8AAAAQABgAAQABAA4AAAAQABkAAQACAA8AAAAQABoAAQABAA8AAAAQABsAAQACAA8AAAAQABwAAQABAA8AAAAQAB0AAQACAA8AAAAQAB4AAQABAA8AAAAQAB8AAQACAA8AAAARABgAAQACAA4AAAARABkAAQABAA8AAAARABoAAQACAA8AAAARABsAAQABAA8AAAARABwAAQACAA8AAAARAB0AAQABAA8AAAARAB4AAQACAA8AAAARAB8AAQABAA8AAAASABgAAQABAA4AAAASABkAAQACAA8AAAASABoAAQABAA8AAAASABsAAQACAA8AAAASABwAAQABAA8AAAASAB0AAQACAA8AAAASAB4AAQABAA8AAAASAB8AAQACAA8AAAATABgAAQACAA4AAAATABkAAQABAA8AAAATABoAAQACAA8AAAATABsAAQABAA8AAAATABwAAQACAA8AAAATAB0AAQABAA8AAAATAB4AAQACAA8AAAATAB8AAQABAA8AAAAUABgAAQABAA4AAAAUABkAAQACAA8AAAAUABoAAQABAA8AAAAUABsAAQACAA8AAAAUABwAAQABAA8AAAAUAB0AAQACAA8AAAAUAB4AAQABAA8AAAAUAB8AAQACAA8AAAAVABgAAQACAA4AAAAVABkAAQABAA8AAAAVABoAAQACAA8AAAAVABsAAQABAA8AAAAVABwAAQACAA8AAAAVAB0AAQABAA8AAAAVAB4AAQACAA8AAAAVAB8AAQABAA8AAAAWABgAAQABAA4AAAAWABkAAQACAA8AAAAWABoAAQABAA8AAAAWABsAAQACAA8AAAAWABwAAQABAA8AAAAWAB0AAQACAA8AAAAWAB4AAQABAA8AAAAWAB8AAQACAA8AAAAXABgAAQACAA4AAAAXABkAAQABAA8AAAAXABoAAQACAA8AAAAXABsAAQABAA8AAAAXABwAAQACAA8AAAAXAB0AAQABAA8AAAAXAB4AAQACAA8AAAAXAB8AAQABAA8AAAAYABgAAQABAA4AAAAYABkAAQACAA8AAAAYABoAAQABAA8AAAAYABsAAQACAA8AAAAYABwAAQABAA8AAAAYAB0AAQACAA8AAAAYAB4AAQABAA8AAAAYAB8AAQACAA8AAAAZABgAAQACAA4AAAAZABkAAQABAA8AAAAZABoAAQACAA8AAAAZABsAAQABAA8AAAAZABwAAQACAA8AAAAZAB0AAQABAA8AAAAZAB4AAQACAA8AAAAZAB8AAQABAA8AAAAaABgAAQABAA4AAAAaABkAAQACAA8AAAAaABoAAQABAA8AAAAaABsAAQACAA8AAAAaABwAAQABAA8AAAAaAB0AAQACAA8AAAAaAB4AAQABAA8AAAAaAB8AAQACAA8AAAAbABgAAQACAA4AAAAbABkAAQABAA8AAAAbABoAAQACAA8AAAAbABsAAQABAA8AAAAbABwAAQACAA8AAAAbAB0AAQABAA8AAAAbAB4AAQACAA8AAAAbAB8AAQABAA8AAAAcABgAAQABAA4AAAAcABkAAQACAA8AAAAcABoAAQABAA8AAAAcABsAAQACAA8AAAAcABwAAQABAA8AAAAcAB0AAQACAA8AAAAcAB4AAQABAA8AAAAcAB8AAQACAA8AAAAdABgAAQACAA4AAAAdABkAAQABAA8AAAAdABoAAQACAA8AAAAdABsAAQABAA8AAAAdABwAAQACAA8AAAAdAB0AAQABAA8AAAAdAB4AAQACAA8AAAAdAB8AAQABAA8AAAAeABgAAQABAA4AAAAeABkAAQACAA8AAAAeABoAAQABAA8AAAAeABsAAQACAA8AAAAeABwAAQABAA8AAAAeAB0AAQACAA8AAAAeAB4AAQABAA8AAAAeAB8AAQACAA8AAAAfABgAAQACAA4AAAAfABkAAQABAA8AAAAfABoAAQACAA8AAAAfABsAAQABAA8AAAAfABwAAQACAA8AAAAfAB0AAQABAA8AAAAfAB4AAQACAA8AAAAfAB8AAQABAA8AAAAgABgAAQABAA4AAAAgABkAAQACAA8AAAAgABoAAQABAA8AAAAgABsAAQACAA8AAAAgABwAAQABAA8AAAAgAB0AAQACAA8AAAAgAB4AAQABAA8AAAAgAB8AAQACAA8AAAAhABgAAQACAA4AAAAhABkAAQABAA8AAAAhABoAAQACAA8AAAAhABsAAQABAA8AAAAhABwAAQACAA8AAAAhAB0AAQABAA8AAAAhAB4AAQACAA8AAAAhAB8AAQABAA8AAAAiABgAAQABAA4AAAAiABkAAQACAA8AAAAiABoAAQABAA8AAAAiABsAAQACAA8AAAAiABwAAQABAA8AAAAiAB0AAQACAA8AAAAiAB4AAQABAA8AAAAiAB8AAQACAA8AAAAjABgAAQACAA4AAAAjABkAAQABAA8AAAAjABoAAQACAA8AAAAjABsAAQABAA8AAAAjABwAAQACAA8AAAAjAB0AAQABAA8AAAAjAB4AAQACAA8AAAAjAB8AAQABAA8AAAAkABgAAQABAA4AAAAkABkAAQACAA8AAAAkABoAAQABAA8AAAAkABsAAQACAA8AAAAkABwAAQABAA8AAAAkAB0AAQACAA8AAAAkAB4AAQABAA8AAAAkAB8AAQACAA8AAAAlABgAAQACAA4AAAAlABkAAQABAA8AAAAlABoAAQACAA8AAAAlABsAAQABAA8AAAAlABwAAQACAA8AAAAlAB0AAQABAA8AAAAlAB4AAQACAA8AAAAlAB8AAQABAA8AAAAmABgAAQABAA4AAAAmABkAAQACAA8AAAAmABoAAQABAA8AAAAmABsAAQACAA8AAAAmABwAAQABAA8AAAAmAB0AAQACAA8AAAAmAB4AAQABAA8AAAAmAB8AAQACAA8AAAAnABgAAQACAA4AAAAnABkAAQABAA8AAAAnABoAAQACAA8AAAAnABsAAQABAA8AAAAnABwAAQACAA8AAAAnAB0AAQABAA8AAAAnAB4AAQACAA8AAAAnAB8AAQABAA8AAAA=")
+tile_set = ExtResource("2_e3fah")
+
+[node name="Actors" type="Node2D" parent="."]
+
+[node name="IceZone" type="Node2D" parent="Actors"]
+z_index = 3
+position = Vector2(432, 392)
+script = ExtResource("3_h3rp3")
+object_id = "penguin_ice/IceZone"
+display_name = "IceZone"
+kind = "BP_IceTriggerVolume"
+
+[node name="Trigger" type="Area2D" parent="Actors/IceZone"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/IceZone/Trigger"]
+shape = SubResource("RectangleShape2D_pb3y5")
+
+[node name="Decoration" type="Node2D" parent="."]
+
+[node name="GalleryTitle" type="Label" parent="Decoration"]
+offset_left = 168.0
+offset_top = 98.0
+offset_right = 168.0
+offset_bottom = 98.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.14901961, 0.24313726, 0.34901962, 1)
+text = "企鹅动画预览"
+
+[node name="Idle" type="AnimatedSprite2D" parent="Decoration"]
+position = Vector2(192, 192)
+sprite_frames = ExtResource("5_u2yhl")
+autoplay = "default"
+metadata/heron_geometry_ppu = 1.0
+
+[node name="IdleLabel" type="Label" parent="Decoration"]
+offset_left = 178.0
+offset_top = 232.0
+offset_right = 178.0
+offset_bottom = 232.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.14901961, 0.24313726, 0.34901962, 1)
+text = "站立"
+
+[node name="Walk" type="AnimatedSprite2D" parent="Decoration"]
+position = Vector2(304, 192)
+sprite_frames = ExtResource("6_eyj7g")
+autoplay = "default"
+metadata/heron_geometry_ppu = 1.0
+
+[node name="WalkLabel" type="Label" parent="Decoration"]
+offset_left = 290.0
+offset_top = 232.0
+offset_right = 290.0
+offset_bottom = 232.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.14901961, 0.24313726, 0.34901962, 1)
+text = "行走"
+
+[node name="Jump" type="AnimatedSprite2D" parent="Decoration"]
+position = Vector2(416, 192)
+sprite_frames = ExtResource("7_sppy8")
+autoplay = "default"
+metadata/heron_geometry_ppu = 1.0
+
+[node name="JumpLabel" type="Label" parent="Decoration"]
+offset_left = 402.0
+offset_top = 232.0
+offset_right = 402.0
+offset_bottom = 232.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.14901961, 0.24313726, 0.34901962, 1)
+text = "跳跃"
+
+[node name="Fall" type="AnimatedSprite2D" parent="Decoration"]
+position = Vector2(528, 192)
+sprite_frames = ExtResource("8_rtib2")
+autoplay = "default"
+metadata/heron_geometry_ppu = 1.0
+
+[node name="FallLabel" type="Label" parent="Decoration"]
+offset_left = 514.0
+offset_top = 232.0
+offset_right = 514.0
+offset_bottom = 232.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.14901961, 0.24313726, 0.34901962, 1)
+text = "下落"
+
+[node name="Slide" type="AnimatedSprite2D" parent="Decoration"]
+position = Vector2(640, 192)
+sprite_frames = ExtResource("9_x6dhh")
+autoplay = "default"
+metadata/heron_geometry_ppu = 1.0
+
+[node name="SlideLabel" type="Label" parent="Decoration"]
+offset_left = 626.0
+offset_top = 232.0
+offset_right = 626.0
+offset_bottom = 232.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.14901961, 0.24313726, 0.34901962, 1)
+text = "滑行"
+
+[node name="PenguinNPC" type="AnimatedSprite2D" parent="Decoration"]
+position = Vector2(768, 224)
+sprite_frames = ExtResource("10_oig1f")
+autoplay = "default"
+offset = Vector2(0, -32)
+metadata/heron_geometry_ppu = 1.0
+
+[node name="NPCLabel" type="Label" parent="Decoration"]
+offset_left = 754.0
+offset_top = 232.0
+offset_right = 754.0
+offset_bottom = 232.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.14901961, 0.24313726, 0.34901962, 1)
+text = "NPC"
+
+[node name="DryLabel" type="Label" parent="Decoration"]
+offset_left = 56.0
+offset_top = 300.0
+offset_right = 56.0
+offset_bottom = 300.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.14901961, 0.24313726, 0.34901962, 1)
+text = "普通地面
+速度 200"
+
+[node name="IceLabel" type="Label" parent="Decoration"]
+offset_left = 276.0
+offset_top = 300.0
+offset_right = 276.0
+offset_bottom = 300.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.14901961, 0.24313726, 0.34901962, 1)
+text = "蓝色冰面 · 企鹅自动滑行
+速度 300 · 可测试松键与反向"
+
+[node name="LandingLabel" type="Label" parent="Decoration"]
+offset_left = 670.0
+offset_top = 264.0
+offset_right = 670.0
+offset_bottom = 264.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.14901961, 0.24313726, 0.34901962, 1)
+text = "落到普通地面
+恢复行走"
+
+[node name="CompareHint" type="Label" parent="Decoration"]
+offset_left = 42.0
+offset_top = 442.0
+offset_right = 42.0
+offset_bottom = 442.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.95686275, 0.96862745, 0.9882353, 1)
+text = "松键后惯性滑行，反向先减速；滑行中按空格，腾空时保持姿势与速度。"
+
+[node name="PlayerStart" type="Marker2D" parent="."]
+position = Vector2(72, 376)
+
+[node name="Boundaries" type="Node2D" parent="."]
+
+[node name="LeftWall" type="StaticBody2D" parent="Boundaries"]
+position = Vector2(-8, 220)
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/LeftWall"]
+shape = SubResource("RectangleShape2D_nk57g")
+
+[node name="RightWall" type="StaticBody2D" parent="Boundaries"]
+position = Vector2(904, 220)
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/RightWall"]
+shape = SubResource("RectangleShape2D_ouot5")
+
+[node name="TestHUD" type="CanvasLayer" parent="."]
+layer = 5
+script = ExtResource("11_ob3ss")
+
+[node name="HeaderBand" type="ColorRect" parent="TestHUD"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 102.0
+mouse_filter = 2
+color = Color(0.1254902, 0.21176471, 0.3019608, 0.92156863)
+
+[node name="Title" type="Label" parent="TestHUD"]
+offset_left = 180.0
+offset_top = 16.0
+offset_right = 180.0
+offset_bottom = 16.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 26
+theme_override_colors/font_color = Color(0.95686275, 0.96862745, 0.9882353, 1)
+text = "01  企鹅冰面测试"
+
+[node name="Controls" type="Label" parent="TestHUD"]
+offset_left = 180.0
+offset_top = 56.0
+offset_right = 180.0
+offset_bottom = 56.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.7411765, 0.87058824, 0.93333334, 1)
+text = "A / D 或方向键移动  ·  空格跳跃  ·  1–4 切换形态  ·  Esc 暂停"
+
+[node name="FooterBand" type="ColorRect" parent="TestHUD"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -46.0
+mouse_filter = 2
+color = Color(0.1254902, 0.21176471, 0.3019608, 0.9372549)
+
+[node name="Status" type="Label" parent="TestHUD"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -36.0
+offset_right = -24.0
+offset_bottom = -6.0
+theme_override_fonts/font = ExtResource("4_iquag")
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.95686275, 0.96862745, 0.9882353, 1)
+text = "运行后显示地面状态与速度"

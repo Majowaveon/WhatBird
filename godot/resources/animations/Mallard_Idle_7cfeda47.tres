@@ -1,0 +1,38 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Player/Mallard/Mallard.png" id="1_66wl4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7rs6g"]
+atlas = ExtResource("1_66wl4")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kip3t"]
+atlas = ExtResource("1_66wl4")
+region = Rect2(64, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vuyep"]
+atlas = ExtResource("1_66wl4")
+region = Rect2(128, 0, 64, 64)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7rs6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kip3t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuyep")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Player/Mallard/Mallard_Sprite_0.Mallard_Sprite_0", "/Game/Resources/Player/Mallard/Mallard_Sprite_1.Mallard_Sprite_1", "/Game/Resources/Player/Mallard/Mallard_Sprite_2.Mallard_Sprite_2"])
+}

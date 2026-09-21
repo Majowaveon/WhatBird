@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" load_steps=13 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Idle/Warrior_Idle_1.png" id="1_5xu0e"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Idle/Warrior_Idle_2.png" id="2_oxs2t"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Idle/Warrior_Idle_3.png" id="3_7ygqe"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Idle/Warrior_Idle_4.png" id="4_5j1lw"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Idle/Warrior_Idle_5.png" id="5_2ogwu"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Idle/Warrior_Idle_6.png" id="6_yccie"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vv0o"]
+atlas = ExtResource("1_5xu0e")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfd8r"]
+atlas = ExtResource("2_oxs2t")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8awu4"]
+atlas = ExtResource("3_7ygqe")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ej1dd"]
+atlas = ExtResource("4_5j1lw")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tfryt"]
+atlas = ExtResource("5_2ogwu")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fx7a5"]
+atlas = ExtResource("6_yccie")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1vv0o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dfd8r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8awu4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ej1dd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tfryt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fx7a5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Warriror/Idle/Warrior_Idle_1_Sprite.Warrior_Idle_1_Sprite", "/Game/Resources/Warriror/Idle/Warrior_Idle_2_Sprite.Warrior_Idle_2_Sprite", "/Game/Resources/Warriror/Idle/Warrior_Idle_3_Sprite.Warrior_Idle_3_Sprite", "/Game/Resources/Warriror/Idle/Warrior_Idle_4_Sprite.Warrior_Idle_4_Sprite", "/Game/Resources/Warriror/Idle/Warrior_Idle_5_Sprite.Warrior_Idle_5_Sprite", "/Game/Resources/Warriror/Idle/Warrior_Idle_6_Sprite.Warrior_Idle_6_Sprite"])
+}

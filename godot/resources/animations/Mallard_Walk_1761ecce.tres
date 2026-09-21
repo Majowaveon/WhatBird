@@ -1,0 +1,62 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Player/Mallard/Mallard.png" id="1_uietn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkhmn"]
+atlas = ExtResource("1_uietn")
+region = Rect2(0, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlwki"]
+atlas = ExtResource("1_uietn")
+region = Rect2(64, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3yya"]
+atlas = ExtResource("1_uietn")
+region = Rect2(128, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xhhg8"]
+atlas = ExtResource("1_uietn")
+region = Rect2(192, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2ni0"]
+atlas = ExtResource("1_uietn")
+region = Rect2(256, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3qsf"]
+atlas = ExtResource("1_uietn")
+region = Rect2(320, 64, 64, 64)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkhmn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dlwki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o3yya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xhhg8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2ni0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n3qsf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Player/Mallard/Mallard_Sprite_6.Mallard_Sprite_6", "/Game/Resources/Player/Mallard/Mallard_Sprite_7.Mallard_Sprite_7", "/Game/Resources/Player/Mallard/Mallard_Sprite_8.Mallard_Sprite_8", "/Game/Resources/Player/Mallard/Mallard_Sprite_9.Mallard_Sprite_9", "/Game/Resources/Player/Mallard/Mallard_Sprite_10.Mallard_Sprite_10", "/Game/Resources/Player/Mallard/Mallard_Sprite_11.Mallard_Sprite_11"])
+}

@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/SpritesStub/Heron/Heron.png" id="1_s3b4f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ydru"]
+atlas = ExtResource("1_s3b4f")
+region = Rect2(0, 0, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ui8i"]
+atlas = ExtResource("1_s3b4f")
+region = Rect2(256, 0, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jlp6t"]
+atlas = ExtResource("1_s3b4f")
+region = Rect2(512, 0, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mmvk"]
+atlas = ExtResource("1_s3b4f")
+region = Rect2(768, 0, 256, 256)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ydru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ui8i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jlp6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mmvk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/SpritesStub/Heron/Heron_Sprite_0.Heron_Sprite_0", "/Game/Resources/SpritesStub/Heron/Heron_Sprite_1.Heron_Sprite_1", "/Game/Resources/SpritesStub/Heron/Heron_Sprite_2.Heron_Sprite_2", "/Game/Resources/SpritesStub/Heron/Heron_Sprite_3.Heron_Sprite_3"])
+}

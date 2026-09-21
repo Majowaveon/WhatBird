@@ -1,0 +1,7407 @@
+{
+	"attempts": [
+		{
+			"after": {
+				"bird": 0,
+				"checkpoint": [
+					130.0,
+					-103.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							263.81,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							264.69,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							266.22,
+							-110.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					266.22,
+					-123.27
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 84,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					200.0,
+					0.0
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 0,
+				"checkpoint": [
+					130.0,
+					-103.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							146.0,
+							-78.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					146.0,
+					-91.22
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 45,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			},
+			"frames": 39,
+			"goal": {
+				"mode": "auto",
+				"room": "",
+				"x": 270.0,
+				"y_range": []
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "original_spawn"
+		},
+		{
+			"after": {
+				"bird": 0,
+				"checkpoint": [
+					130.0,
+					-103.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": true,
+				"grounded": false,
+				"position": [
+					344.22,
+					-156.44
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 113,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					200.0,
+					71.13
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 0,
+				"checkpoint": [
+					130.0,
+					-103.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							263.81,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							264.69,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							266.22,
+							-110.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					266.22,
+					-123.27
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 84,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					200.0,
+					0.0
+				],
+				"water": 0
+			},
+			"frames": 29,
+			"goal": {
+				"mode": "auto",
+				"room": "",
+				"x": 350.0,
+				"y_range": []
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "original_spawn"
+		},
+		{
+			"after": {
+				"bird": 0,
+				"checkpoint": [
+					502.0,
+					-132.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							501.82,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							502.61,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							504.22,
+							-110.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					504.22,
+					-123.27
+				],
+				"resetting": false,
+				"room": "sublevel_w0l2",
+				"scenario": "original_spawn",
+				"tick": 161,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					200.0,
+					0.0
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 0,
+				"checkpoint": [
+					130.0,
+					-103.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": true,
+				"grounded": false,
+				"position": [
+					344.22,
+					-156.44
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 113,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					200.0,
+					71.13
+				],
+				"water": 0
+			},
+			"frames": 48,
+			"goal": {
+				"mode": "auto",
+				"room": "sublevel_w0l2",
+				"x": 510.0,
+				"y_range": []
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "original_spawn"
+		},
+		{
+			"after": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1017.21,
+							642.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1016.42,
+							642.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1014.8,
+							642.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1014.8,
+					628.73
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 207,
+				"transforms": 3,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-200.0,
+					0.0
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1060.0,
+							642.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1060.0,
+					628.8
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 191,
+				"transforms": 3,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			},
+			"frames": 16,
+			"goal": {
+				"mode": "walk",
+				"room": "",
+				"x": 1010.0,
+				"y_range": []
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "isolated_duck_unlock_and_water"
+		},
+		{
+			"after": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					1115.21,
+					643.77
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 244,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					200.0,
+					163.33
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1011.58,
+							642.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1011.51,
+							642.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1011.35,
+							642.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1011.35,
+					628.73
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 210,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-19.38,
+					0.0
+				],
+				"water": 0
+			},
+			"frames": 34,
+			"goal": {
+				"mode": "walk",
+				"room": "",
+				"x": 1120.0,
+				"y_range": []
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "isolated_duck_unlock_and_water"
+		},
+		{
+			"after": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					1168.54,
+					724.35
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 260,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					200.0,
+					424.67
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					1115.21,
+					643.77
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 244,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					200.0,
+					163.33
+				],
+				"water": 0
+			},
+			"frames": 16,
+			"goal": {
+				"mode": "walk",
+				"room": "",
+				"x": 1168.0,
+				"y_range": [
+					720,
+					780
+				]
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "isolated_duck_unlock_and_water"
+		},
+		{
+			"after": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1311.08,
+							753.95
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1311.87,
+							753.95
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1313.49,
+							753.95
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1313.49,
+					740.69
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 342,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					200.0,
+					0.0
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					1182.72,
+					716.48
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 298,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					0.0,
+					-157.53
+				],
+				"water": 0
+			},
+			"frames": 44,
+			"goal": {
+				"mode": "walk",
+				"room": "",
+				"x": 1319.0,
+				"y_range": []
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "isolated_duck_unlock_and_water"
+		},
+		{
+			"after": {
+				"bird": 1,
+				"checkpoint": [
+					1048.0,
+					732.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					995.87,
+					745.61
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 499,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-200.0,
+					81.67
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1316.94,
+							753.95
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1316.94,
+					740.69
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 387,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			},
+			"frames": 112,
+			"goal": {
+				"mode": "walk",
+				"room": "",
+				"x": 991.0,
+				"y_range": []
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "isolated_duck_unlock_and_water"
+		},
+		{
+			"after": {
+				"bird": 1,
+				"checkpoint": [
+					1048.0,
+					732.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					999.18,
+					913.03
+				],
+				"resetting": false,
+				"room": "sublevel_w1l2",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 529,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-145.39,
+					571.67
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 1,
+				"checkpoint": [
+					1048.0,
+					732.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					995.87,
+					745.61
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 499,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-200.0,
+					81.67
+				],
+				"water": 0
+			},
+			"frames": 30,
+			"goal": {
+				"mode": "walk",
+				"room": "sublevel_w1l2",
+				"x": 994.0,
+				"y_range": [
+					815,
+					920
+				]
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "isolated_duck_unlock_and_water"
+		},
+		{
+			"after": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-666.54,
+							610.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-665.75,
+							610.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-664.13,
+							610.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-664.13,
+					596.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 571,
+				"transforms": 1,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					200.0,
+					0.0
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-696.0,
+							610.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-696.0,
+					596.8
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 559,
+				"transforms": 1,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			},
+			"frames": 12,
+			"goal": {
+				"mode": "walk",
+				"room": "",
+				"x": -661.0,
+				"y_range": []
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "isolated_wood_unlock_attack_button"
+		},
+		{
+			"after": {
+				"bird": 3,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+						"normal": [
+							1.0,
+							0.0
+						],
+						"position": [
+							-742.71,
+							598.22
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+						"normal": [
+							1.0,
+							0.0
+						],
+						"position": [
+							-742.71,
+							598.64
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					-734.22,
+					603.34
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 660,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					0.0,
+					98.0
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 3,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-660.67,
+							610.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-660.67,
+					596.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 577,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			},
+			"broken_wood": [
+				"BP_DestructibleWood_w2l2_5",
+				"BP_DestructibleWood_w2l2_4",
+				"BP_DestructibleWood_w2l2_3"
+			],
+			"frames": 83,
+			"goal": "Move left and press action through wood to original button",
+			"passed": true,
+			"scenario": "isolated_wood_unlock_attack_button"
+		},
+		{
+			"after": {
+				"bird": 3,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					-843.25,
+					579.59
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 713,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					-200.0,
+					-151.0
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 3,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+						"normal": [
+							1.0,
+							0.0
+						],
+						"position": [
+							-742.71,
+							605.17
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					-734.22,
+					609.87
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 663,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					0.0,
+					147.0
+				],
+				"water": 0
+			},
+			"frames": 50,
+			"goal": {
+				"mode": "attack",
+				"room": "",
+				"x": -848.0,
+				"y_range": []
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "isolated_wood_unlock_attack_button"
+		},
+		{
+			"after": {
+				"bird": 3,
+				"checkpoint": [
+					-986.0,
+					721.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-976.91,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-977.7,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-979.32,
+							738.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-979.32,
+					724.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l3",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 810,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					-200.0,
+					0.0
+				],
+				"water": 0
+			},
+			"before": {
+				"bird": 3,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-840.78,
+							738.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-840.78,
+					724.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 766,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			},
+			"frames": 44,
+			"goal": {
+				"mode": "walk",
+				"room": "sublevel_w2l3",
+				"x": -985.0,
+				"y_range": [
+					680,
+					755
+				]
+			},
+			"passed": true,
+			"reason": "position_and_room_reached",
+			"scenario": "isolated_wood_unlock_attack_button"
+		}
+	],
+	"background_collision_audit": [
+		{
+			"name": "BG_w2l5",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w0l5",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w0l4",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w2l2",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w0l1",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w1l1",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w0l2",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w0l6",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w1l5",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w2l4",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w2l1",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w1l7",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w0l3",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w2l2",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w1l3",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w2l3",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w0l1",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w1l4",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w2l3",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w1l7",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w1l6",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w1l2",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w2l4",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w1l2",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w0l3",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w1l5",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w0l6",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w2l7",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w1l1",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w2l6",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w1l3",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w1l6",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w2l6",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w2l5",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w0l2",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w2l1",
+			"static_bodies": 0
+		},
+		{
+			"name": "BG_w0l5",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w2l7",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w1l4",
+			"static_bodies": 0
+		},
+		{
+			"name": "FG_w0l4",
+			"static_bodies": 0
+		}
+	],
+	"checks": [
+		{
+			"goal": "Original PlayerStart settles on real terrain",
+			"passed": true,
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					130.0,
+					-103.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							146.0,
+							-78.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					146.0,
+					-91.22
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 45,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "All 40 original decorative maps instantiate without collision bodies",
+			"passed": true,
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					130.0,
+					-103.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							146.0,
+							-78.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					146.0,
+					-91.22
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 45,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Original-spawn route reaches w0l2 with input and natural room trigger only",
+			"passed": true,
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					502.0,
+					-132.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							501.82,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							502.61,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							504.22,
+							-110.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					504.22,
+					-123.27
+				],
+				"resetting": false,
+				"room": "sublevel_w0l2",
+				"scenario": "original_spawn",
+				"tick": 161,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					200.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Duck pickup unlocks by physical overlap",
+			"passed": true,
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1017.21,
+							642.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1016.42,
+							642.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1014.8,
+							642.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1014.8,
+					628.73
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 207,
+				"transforms": 3,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-200.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Mallard input consumes exactly one original room charge",
+			"passed": true,
+			"state": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1011.58,
+							642.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1011.51,
+							642.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1011.35,
+							642.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1011.35,
+					628.73
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 210,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-19.38,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Duck physically enters original water and survives",
+			"passed": true,
+			"state": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_3/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1182.72,
+							754.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1182.72,
+					740.75
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 290,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 1
+			}
+		},
+		{
+			"goal": "Physical water overlap applies source duck speed and gravity",
+			"passed": true,
+			"state": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_3/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1182.72,
+							754.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1182.72,
+					740.75
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 290,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 1
+			}
+		},
+		{
+			"goal": "Duck jumps upward out of physical water without dying",
+			"passed": true,
+			"state": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					1182.72,
+					716.48
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 298,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					0.0,
+					-157.53
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Duck reaches w1l1 button through actual movement",
+			"passed": true,
+			"state": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1316.94,
+							753.95
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1316.94,
+					740.69
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 387,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Natural button contact opens all w1l1 exit doors",
+			"passed": true,
+			"state": {
+				"bird": 1,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1316.94,
+							753.95
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1316.94,
+					740.69
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 387,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Duck route changes to w1l2 through original falling connector",
+			"passed": true,
+			"state": {
+				"bird": 1,
+				"checkpoint": [
+					1048.0,
+					732.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					999.18,
+					913.03
+				],
+				"resetting": false,
+				"room": "sublevel_w1l2",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 529,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-145.39,
+					571.67
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Woodpecker pickup unlocks by physical overlap",
+			"passed": true,
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-660.91,
+							610.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-660.84,
+							610.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-660.67,
+							610.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-660.67,
+					596.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 574,
+				"transforms": 1,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					19.38,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Woodpecker input uses sole original room charge",
+			"passed": true,
+			"state": {
+				"bird": 3,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-660.67,
+							610.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-660.67,
+					596.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 577,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					0.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Woodpecker E input breaks original solid wood during real traversal",
+			"passed": true,
+			"state": {
+				"bird": 3,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+						"normal": [
+							1.0,
+							0.0
+						],
+						"position": [
+							-742.71,
+							598.22
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+						"normal": [
+							1.0,
+							0.0
+						],
+						"position": [
+							-742.71,
+							598.64
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					-734.22,
+					603.34
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 660,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					0.0,
+					98.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Woodpecker physically reaches button behind destructible wood",
+			"passed": true,
+			"state": {
+				"bird": 3,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+						"normal": [
+							1.0,
+							0.0
+						],
+						"position": [
+							-742.71,
+							598.22
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+						"normal": [
+							1.0,
+							0.0
+						],
+						"position": [
+							-742.71,
+							598.64
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					-734.22,
+					603.34
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 660,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					0.0,
+					98.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Wood room button physically opens both exit doors",
+			"passed": true,
+			"state": {
+				"bird": 3,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+						"normal": [
+							1.0,
+							0.0
+						],
+						"position": [
+							-742.71,
+							605.17
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					-734.22,
+					609.87
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 663,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					0.0,
+					147.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"goal": "Woodpecker route reaches w2l3 through original room trigger",
+			"passed": true,
+			"state": {
+				"bird": 3,
+				"checkpoint": [
+					-986.0,
+					721.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-976.91,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-977.7,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-979.32,
+							738.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-979.32,
+					724.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l3",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 810,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					-200.0,
+					0.0
+				],
+				"water": 0
+			}
+		}
+	],
+	"confirmed_runtime_defects": [],
+	"coverage": "Original PlayerStart input-only route through w0l2, plus two explicitly teleported isolated starts followed by input-only duck and woodpecker traversal. Later campaign rooms and victory are unverified.",
+	"engine": {
+		"build": "official",
+		"hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+		"hex": 263425,
+		"major": 4,
+		"minor": 5,
+		"patch": 1,
+		"status": "stable",
+		"string": "4.5.1-stable (official)",
+		"timestamp": 0
+	},
+	"events": [
+		{
+			"event": "room_transition",
+			"from": "",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					146.0,
+					-166.2
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 1,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					130.67
+				],
+				"water": 0
+			},
+			"to": "sublevel_w0l1"
+		},
+		{
+			"event": "checkpoint",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					146.0,
+					-166.2
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 1,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					130.67
+				],
+				"water": 0
+			}
+		},
+		{
+			"event": "unlock",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					146.0,
+					-166.2
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 1,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					130.67
+				],
+				"water": 0
+			}
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_CheckPoint",
+			"label": "BP_CheckPoint_w0l1_1",
+			"position": [
+				146.0,
+				-113.12
+			],
+			"scenario": "original_spawn",
+			"tick": 14
+		},
+		{
+			"event": "checkpoint",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					130.0,
+					-103.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					146.0,
+					-107.13
+				],
+				"resetting": false,
+				"room": "sublevel_w0l1",
+				"scenario": "original_spawn",
+				"tick": 15,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					359.33
+				],
+				"water": 0
+			}
+		},
+		{
+			"actions": [
+				"move_right",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 45
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 69
+		},
+		{
+			"actions": [
+				"move_right",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 70
+		},
+		{
+			"event": "ability",
+			"kind": "glide",
+			"position": [
+				219.55,
+				-127.67
+			],
+			"scenario": "original_spawn",
+			"tick": 70
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 74
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 84
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 84
+		},
+		{
+			"actions": [
+				"move_right",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 85
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 109
+		},
+		{
+			"actions": [
+				"move_right",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 110
+		},
+		{
+			"event": "ability",
+			"kind": "glide",
+			"position": [
+				334.22,
+				-159.67
+			],
+			"scenario": "original_spawn",
+			"tick": 110
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 113
+		},
+		{
+			"actions": [
+				"move_right",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 113
+		},
+		{
+			"event": "ability",
+			"kind": "glide",
+			"position": [
+				344.22,
+				-156.44
+			],
+			"scenario": "original_spawn",
+			"tick": 113
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 134
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_ChangeSubLevelVolume",
+			"label": "BP_ChangeSubLevelVolumeRight_w0l1",
+			"position": [
+				424.22,
+				-123.27
+			],
+			"scenario": "original_spawn",
+			"tick": 137
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_ChangeSubLevelVolume",
+			"label": "BP_ChangeSubLevelVolumeLeft_w0l2",
+			"position": [
+				487.56,
+				-123.27
+			],
+			"scenario": "original_spawn",
+			"tick": 156
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_CheckPoint",
+			"label": "BP_CheckPoint_w0l2_1",
+			"position": [
+				487.56,
+				-123.27
+			],
+			"scenario": "original_spawn",
+			"tick": 156
+		},
+		{
+			"event": "room_transition",
+			"from": "sublevel_w0l1",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					502.0,
+					-132.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							488.48,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							489.34,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							490.89,
+							-110.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					490.89,
+					-123.27
+				],
+				"resetting": false,
+				"room": "sublevel_w0l2",
+				"scenario": "original_spawn",
+				"tick": 157,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					200.0,
+					0.0
+				],
+				"water": 0
+			},
+			"to": "sublevel_w0l2"
+		},
+		{
+			"event": "checkpoint",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					502.0,
+					-132.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							488.48,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							489.34,
+							-110.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							490.89,
+							-110.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					490.89,
+					-123.27
+				],
+				"resetting": false,
+				"room": "sublevel_w0l2",
+				"scenario": "original_spawn",
+				"tick": 157,
+				"transforms": 0,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					200.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "original_spawn",
+			"tick": 161
+		},
+		{
+			"event": "room_transition",
+			"from": "",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					1060.0,
+					621.08
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 162,
+				"transforms": 3,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					81.67
+				],
+				"water": 0
+			},
+			"to": "sublevel_w1l1"
+		},
+		{
+			"event": "checkpoint",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					1060.0,
+					621.08
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 162,
+				"transforms": 3,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					81.67
+				],
+				"water": 0
+			}
+		},
+		{
+			"event": "unlock",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					1060.0,
+					621.08
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 162,
+				"transforms": 3,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					81.67
+				],
+				"water": 0
+			}
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 191
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_ItemUnlockBird",
+			"label": "BP_ItemUnlockBird_Duck",
+			"position": [
+				1024.8,
+				628.73
+			],
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 204
+		},
+		{
+			"event": "unlock",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1023.87,
+							642.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1023.08,
+							642.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1021.46,
+							642.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1021.46,
+					628.73
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 205,
+				"transforms": 3,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-200.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 207
+		},
+		{
+			"actions": [
+				"mallard"
+			],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 207
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 208
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 210
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 244
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 244
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 259
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_WaterTriggerVolume",
+			"label": "BP_WaterTriggerVolume_w1l1",
+			"position": [
+				1178.43,
+				740.69
+			],
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 263
+		},
+		{
+			"actions": [
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 290
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 298
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_WaterTriggerVolume",
+			"label": "BP_WaterTriggerVolume_w1l1",
+			"position": [
+				1236.26,
+				740.73
+			],
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 317
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_Button",
+			"label": "BP_Button_w1l1",
+			"position": [
+				1306.82,
+				740.69
+			],
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 340
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 342
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 387
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_WaterTriggerVolume",
+			"label": "BP_WaterTriggerVolume_w1l1",
+			"position": [
+				1251.74,
+				740.73
+			],
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 409
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_CheckPoint",
+			"label": "BP_CheckPoint_w1l1_2",
+			"position": [
+				1062.56,
+				740.73
+			],
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 479
+		},
+		{
+			"event": "checkpoint",
+			"state": {
+				"bird": 1,
+				"checkpoint": [
+					1048.0,
+					732.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1061.62,
+							754.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1060.82,
+							754.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							1059.22,
+							754.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					1059.22,
+					740.73
+				],
+				"resetting": false,
+				"room": "sublevel_w1l1",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 480,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-200.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_ChangeSubLevelVolume",
+			"label": "BP_ChangeSubLevelVolumeRight_w1l1",
+			"position": [
+				1052.56,
+				740.73
+			],
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 482
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 499
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 501
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 515
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 517
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_ChangeSubLevelVolume",
+			"label": "BP_ChangeSubLevelVolumeLeft_w1l2",
+			"position": [
+				1002.36,
+				830.0
+			],
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 519
+		},
+		{
+			"event": "room_transition",
+			"from": "sublevel_w1l1",
+			"state": {
+				"bird": 1,
+				"checkpoint": [
+					1048.0,
+					732.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					1004.15,
+					837.08
+				],
+				"resetting": false,
+				"room": "sublevel_w1l2",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 520,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					107.2,
+					424.67
+				],
+				"water": 0
+			},
+			"to": "sublevel_w1l2"
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 529
+		},
+		{
+			"event": "room_transition",
+			"from": "",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					-696.0,
+					591.72
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 530,
+				"transforms": 1,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					65.33
+				],
+				"water": 0
+			},
+			"to": "sublevel_w2l2"
+		},
+		{
+			"event": "checkpoint",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					-696.0,
+					591.72
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 530,
+				"transforms": 1,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					65.33
+				],
+				"water": 0
+			}
+		},
+		{
+			"event": "unlock",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					-696.0,
+					591.72
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 530,
+				"transforms": 1,
+				"unlocked": [
+					0
+				],
+				"velocity": [
+					0.0,
+					65.33
+				],
+				"water": 0
+			}
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 559
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_ItemUnlockBird",
+			"label": "BP_ItemUnlockBird_WoodPecker",
+			"position": [
+				-674.13,
+				596.73
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 568
+		},
+		{
+			"event": "unlock",
+			"state": {
+				"bird": 0,
+				"checkpoint": [
+					146.0,
+					-176.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-673.2,
+							610.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-672.41,
+							610.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-670.79,
+							610.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-670.79,
+					596.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 569,
+				"transforms": 1,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					200.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 571
+		},
+		{
+			"actions": [
+				"woodpecker"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 574
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 575
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 577
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 578
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 580
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 581
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 583
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 584
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 586
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 587
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 589
+		},
+		{
+			"event": "ability",
+			"kind": "drum",
+			"position": [
+				-692.54,
+				596.73
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 589
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 590
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 592
+		},
+		{
+			"event": "ability",
+			"kind": "drum",
+			"position": [
+				-702.54,
+				596.73
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 592
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 593
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 595
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 596
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 598
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 599
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 601
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 602
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 604
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 605
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 607
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 608
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 610
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 611
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 613
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 614
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 616
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 617
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 619
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 620
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 622
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 623
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 625
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 626
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 628
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 629
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 631
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 632
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 634
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 635
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 637
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 638
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 640
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 641
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 643
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 644
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 646
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 647
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 649
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 650
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 652
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_DestructibleWood",
+			"label": "BP_DestructibleWood_w2l2_5",
+			"position": [
+				-711.65,
+				596.73
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 652
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 653
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 655
+		},
+		{
+			"event": "ability",
+			"kind": "drum",
+			"position": [
+				-718.51,
+				597.89
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 655
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 656
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_DestructibleWood",
+			"label": "BP_DestructibleWood_w2l2_4",
+			"position": [
+				-725.14,
+				599.25
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 657
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 658
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 659
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_Button",
+			"label": "BP_Button_w2l2",
+			"position": [
+				-731.81,
+				601.7
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 659
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 660
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 663
+		},
+		{
+			"event": "ability",
+			"kind": "drum",
+			"position": [
+				-734.22,
+				609.87
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 663
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 664
+		},
+		{
+			"actions": [
+				"move_left",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 665
+		},
+		{
+			"actions": [
+				"move_left",
+				"action",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 666
+		},
+		{
+			"actions": [
+				"move_left",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 667
+		},
+		{
+			"actions": [
+				"move_left",
+				"action",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 669
+		},
+		{
+			"actions": [
+				"move_left",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 670
+		},
+		{
+			"actions": [
+				"move_left",
+				"action",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 672
+		},
+		{
+			"actions": [
+				"move_left",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 673
+		},
+		{
+			"actions": [
+				"move_left",
+				"action",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 675
+		},
+		{
+			"actions": [
+				"move_left",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 676
+		},
+		{
+			"actions": [
+				"move_left",
+				"action",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 678
+		},
+		{
+			"actions": [
+				"move_left",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 679
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 681
+		},
+		{
+			"event": "ability",
+			"kind": "drum",
+			"position": [
+				-738.4,
+				578.71
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 681
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 682
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 684
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 685
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 687
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 688
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 690
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 691
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 693
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 694
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 696
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 697
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 699
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 700
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 702
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 703
+		},
+		{
+			"actions": [
+				"move_left",
+				"action"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 705
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 706
+		},
+		{
+			"actions": [
+				"move_left",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 707
+		},
+		{
+			"actions": [
+				"move_left",
+				"action",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 708
+		},
+		{
+			"actions": [
+				"move_left",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 709
+		},
+		{
+			"actions": [
+				"move_left",
+				"action",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 711
+		},
+		{
+			"actions": [
+				"move_left",
+				"jump"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 712
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 713
+		},
+		{
+			"actions": [
+				"move_right"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 713
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 721
+		},
+		{
+			"actions": [
+				"move_left"
+			],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 766
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_CheckPoint",
+			"label": "BP_CheckPoint_w2l1_3",
+			"position": [
+				-939.32,
+				724.73
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 798
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_ChangeSubLevelVolume",
+			"label": "BP_ChangeSubLevelVolumeLeft_w2l2",
+			"position": [
+				-939.32,
+				724.73
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 798
+		},
+		{
+			"event": "checkpoint",
+			"state": {
+				"bird": 3,
+				"checkpoint": [
+					-953.0,
+					722.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-940.24,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-941.03,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-942.65,
+							738.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-942.65,
+					724.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l2",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 799,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					-200.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_CheckPoint",
+			"label": "BP_CheckPoint_w2l1_5",
+			"position": [
+				-972.65,
+				724.73
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 808
+		},
+		{
+			"event": "physical_trigger",
+			"kind": "BP_ChangeSubLevelVolume",
+			"label": "BP_ChangeSubLevelVolumeLeft_w2l3",
+			"position": [
+				-972.65,
+				724.73
+			],
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 808
+		},
+		{
+			"event": "room_transition",
+			"from": "sublevel_w2l2",
+			"state": {
+				"bird": 3,
+				"checkpoint": [
+					-986.0,
+					721.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-973.57,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-974.36,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-975.98,
+							738.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-975.98,
+					724.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l3",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 809,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					-200.0,
+					0.0
+				],
+				"water": 0
+			},
+			"to": "sublevel_w2l3"
+		},
+		{
+			"event": "checkpoint",
+			"state": {
+				"bird": 3,
+				"checkpoint": [
+					-986.0,
+					721.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-973.57,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-974.36,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-975.98,
+							738.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-975.98,
+					724.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l3",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 809,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					-200.0,
+					0.0
+				],
+				"water": 0
+			}
+		},
+		{
+			"actions": [],
+			"event": "input",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 810
+		}
+	],
+	"full_campaign_completed": false,
+	"goal_summary": {
+		"failed_goals": [],
+		"satisfied": 17,
+		"total": 17,
+		"unsatisfied_route_attempts": 0
+	},
+	"interventions": [
+		{
+			"methods": [
+				"main.start_game",
+				"world.change_room",
+				"player.reset_at"
+			],
+			"position": [
+				1060.0,
+				617.0
+			],
+			"reason": "Isolated diagnostic start only; no direct unlock, interaction, attack, or object-state mutation",
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 161
+		},
+		{
+			"methods": [
+				"main.start_game",
+				"world.change_room",
+				"player.reset_at"
+			],
+			"position": [
+				-696.0,
+				589.0
+			],
+			"reason": "Isolated diagnostic start only; no direct unlock, interaction, attack, or object-state mutation",
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 529
+		}
+	],
+	"isolated_results": [
+		{
+			"checks": [
+				{
+					"goal": "Duck pickup unlocks by physical overlap",
+					"passed": true
+				},
+				{
+					"goal": "Mallard input consumes exactly one original room charge",
+					"passed": true
+				},
+				{
+					"goal": "Duck physically enters original water and survives",
+					"passed": true
+				},
+				{
+					"goal": "Physical water overlap applies source duck speed and gravity",
+					"passed": true
+				},
+				{
+					"goal": "Duck jumps upward out of physical water without dying",
+					"passed": true
+				},
+				{
+					"goal": "Duck reaches w1l1 button through actual movement",
+					"passed": true
+				},
+				{
+					"goal": "Natural button contact opens all w1l1 exit doors",
+					"passed": true
+				},
+				{
+					"goal": "Duck route changes to w1l2 through original falling connector",
+					"passed": true
+				}
+			],
+			"end": {
+				"bird": 1,
+				"checkpoint": [
+					1048.0,
+					732.0
+				],
+				"contacts": [],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": false,
+				"position": [
+					999.18,
+					913.03
+				],
+				"resetting": false,
+				"room": "sublevel_w1l2",
+				"scenario": "isolated_duck_unlock_and_water",
+				"tick": 529,
+				"transforms": 2,
+				"unlocked": [
+					0,
+					1
+				],
+				"velocity": [
+					-145.39,
+					571.67
+				],
+				"water": 0
+			},
+			"frames": 368,
+			"input_only_after_setup": true,
+			"scenario": "isolated_duck_unlock_and_water",
+			"teleported_start": true
+		},
+		{
+			"checks": [
+				{
+					"goal": "Woodpecker pickup unlocks by physical overlap",
+					"passed": true
+				},
+				{
+					"goal": "Woodpecker input uses sole original room charge",
+					"passed": true
+				},
+				{
+					"goal": "Woodpecker E input breaks original solid wood during real traversal",
+					"passed": true
+				},
+				{
+					"goal": "Woodpecker physically reaches button behind destructible wood",
+					"passed": true
+				},
+				{
+					"goal": "Wood room button physically opens both exit doors",
+					"passed": true
+				},
+				{
+					"goal": "Woodpecker route reaches w2l3 through original room trigger",
+					"passed": true
+				}
+			],
+			"end": {
+				"bird": 3,
+				"checkpoint": [
+					-986.0,
+					721.0
+				],
+				"contacts": [
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-976.91,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-977.7,
+							738.0
+						]
+					},
+					{
+						"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+						"normal": [
+							0.0,
+							-1.0
+						],
+						"position": [
+							-979.32,
+							738.0
+						]
+					}
+				],
+				"dead": false,
+				"deaths": 0,
+				"gliding": false,
+				"grounded": true,
+				"position": [
+					-979.32,
+					724.73
+				],
+				"resetting": false,
+				"room": "sublevel_w2l3",
+				"scenario": "isolated_wood_unlock_attack_button",
+				"tick": 810,
+				"transforms": 0,
+				"unlocked": [
+					0,
+					3
+				],
+				"velocity": [
+					-200.0,
+					0.0
+				],
+				"water": 0
+			},
+			"frames": 281,
+			"input_only_after_setup": true,
+			"scenario": "isolated_wood_unlock_attack_button",
+			"teleported_start": true
+		}
+	],
+	"not_covered": [
+		"Entire 20-room campaign from PlayerStart",
+		"Final victory trigger via gameplay",
+		"Penguin gameplay",
+		"Isolated-room arrival and unlock approach from earlier campaign rooms",
+		"Visual/rendered correctness; headless physics test only"
+	],
+	"original_spawn_run": {
+		"end": {
+			"bird": 0,
+			"checkpoint": [
+				502.0,
+				-132.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						501.82,
+						-110.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						502.61,
+						-110.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						504.22,
+						-110.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				504.22,
+				-123.27
+			],
+			"resetting": false,
+			"room": "sublevel_w0l2",
+			"scenario": "original_spawn",
+			"tick": 161,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				200.0,
+				0.0
+			],
+			"water": 0
+		},
+		"finished": false,
+		"input_only": true,
+		"rooms_visited": [
+			"sublevel_w0l1",
+			"sublevel_w0l2"
+		],
+		"stopped_reason": "Bounded QA scope: original spawn through first room transition; remainder not attempted"
+	},
+	"passed": false,
+	"physics_ticks_per_second": 60,
+	"route_timeouts_are_not_engine_defects": true,
+	"samples": [
+		{
+			"bird": 0,
+			"checkpoint": [
+				130.0,
+				-103.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				146.0,
+				-107.13
+			],
+			"resetting": false,
+			"room": "sublevel_w0l1",
+			"scenario": "original_spawn",
+			"tick": 15,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				0.0,
+				359.33
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				130.0,
+				-103.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						146.0,
+						-78.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				146.0,
+				-91.22
+			],
+			"resetting": false,
+			"room": "sublevel_w0l1",
+			"scenario": "original_spawn",
+			"tick": 30,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				130.0,
+				-103.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						146.0,
+						-78.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				146.0,
+				-91.22
+			],
+			"resetting": false,
+			"room": "sublevel_w0l1",
+			"scenario": "original_spawn",
+			"tick": 45,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				130.0,
+				-103.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				186.21,
+				-124.93
+			],
+			"resetting": false,
+			"room": "sublevel_w0l1",
+			"scenario": "original_spawn",
+			"tick": 60,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				200.0,
+				-77.5
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				130.0,
+				-103.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						233.73,
+						-110.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						234.44,
+						-110.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						236.22,
+						-110.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				236.22,
+				-123.27
+			],
+			"resetting": false,
+			"room": "sublevel_w0l1",
+			"scenario": "original_spawn",
+			"tick": 75,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				130.0,
+				-103.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				286.22,
+				-137.9
+			],
+			"resetting": false,
+			"room": "sublevel_w0l1",
+			"scenario": "original_spawn",
+			"tick": 90,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				200.0,
+				-159.17
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				130.0,
+				-103.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				317.56,
+				-161.25
+			],
+			"resetting": false,
+			"room": "sublevel_w0l1",
+			"scenario": "original_spawn",
+			"tick": 105,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				200.0,
+				-30.13
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				130.0,
+				-103.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": true,
+			"grounded": false,
+			"position": [
+				367.56,
+				-145.61
+			],
+			"resetting": false,
+			"room": "sublevel_w0l1",
+			"scenario": "original_spawn",
+			"tick": 120,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				200.0,
+				100.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				130.0,
+				-103.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						415.15,
+						-110.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						415.94,
+						-110.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						417.56,
+						-110.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				417.56,
+				-123.27
+			],
+			"resetting": false,
+			"room": "sublevel_w0l1",
+			"scenario": "original_spawn",
+			"tick": 135,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				130.0,
+				-103.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						465.15,
+						-110.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						465.94,
+						-110.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@34/TileMap_w0l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						467.56,
+						-110.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				467.56,
+				-123.27
+			],
+			"resetting": false,
+			"room": "sublevel_w0l1",
+			"scenario": "original_spawn",
+			"tick": 150,
+			"transforms": 0,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1060.0,
+						642.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1060.0,
+				628.8
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 165,
+			"transforms": 3,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1060.0,
+						642.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1060.0,
+				628.8
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 180,
+			"transforms": 3,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1055.96,
+						642.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1055.42,
+						642.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1054.31,
+						642.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1054.31,
+				628.73
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 195,
+			"transforms": 3,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				-136.53,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1011.58,
+						642.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1011.51,
+						642.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1011.35,
+						642.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1011.35,
+				628.73
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 210,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				-19.38,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1049.46,
+						642.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1050.25,
+						642.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1051.87,
+						642.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1051.87,
+				628.73
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 225,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				1101.88,
+				634.52
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 240,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				200.0,
+				98.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				1151.88,
+				691.68
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 255,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				200.0,
+				343.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_3/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1182.72,
+						754.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1182.72,
+				740.75
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 270,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 1
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_3/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1182.72,
+						754.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1182.72,
+				740.75
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 285,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 1
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				1184.32,
+				714.67
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 300,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				61.44,
+				-46.1
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				1229.6,
+				735.82
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 315,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				200.0,
+				198.9
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1271.08,
+						753.95
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1271.89,
+						753.95
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1273.49,
+						753.95
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1273.49,
+				740.68
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 330,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1316.71,
+						753.95
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1316.78,
+						753.95
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1316.94,
+						753.95
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1316.94,
+				740.69
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 345,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				19.38,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1316.94,
+						753.95
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1316.94,
+				740.69
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 360,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1316.94,
+						753.95
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1316.94,
+				740.69
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 375,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1314.76,
+						753.95
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1314.36,
+						753.95
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1313.53,
+						753.95
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1313.53,
+				740.69
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 390,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				-102.4,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1267.48,
+						753.95
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1266.69,
+						753.95
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1265.07,
+						753.95
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1265.07,
+				740.69
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 405,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				-200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1221.74,
+				740.83
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 420,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				-160.0,
+				0.0
+			],
+			"water": 1
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_3/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1182.01,
+						754.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_3/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1181.75,
+						754.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1181.75,
+				740.74
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 435,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				-160.0,
+				0.0
+			],
+			"water": 1
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1141.77,
+				740.83
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 450,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				-160.0,
+				0.0
+			],
+			"water": 1
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_3/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1102.04,
+						754.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_3/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1101.78,
+						754.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1101.78,
+				740.74
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 465,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				-160.0,
+				0.0
+			],
+			"water": 1
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				1048.0,
+				732.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1061.62,
+						754.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1060.82,
+						754.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@1433/TileMap_w1l1/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						1059.22,
+						754.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				1059.22,
+				740.73
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 480,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				-200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				1048.0,
+				732.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				1009.2,
+				741.8
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 495,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				-200.0,
+				16.33
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				1048.0,
+				732.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				979.91,
+				778.55
+			],
+			"resetting": false,
+			"room": "sublevel_w1l1",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 510,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				52.59,
+				261.33
+			],
+			"water": 0
+		},
+		{
+			"bird": 1,
+			"checkpoint": [
+				1048.0,
+				732.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				1006.14,
+				876.55
+			],
+			"resetting": false,
+			"room": "sublevel_w1l2",
+			"scenario": "isolated_duck_unlock_and_water",
+			"tick": 525,
+			"transforms": 2,
+			"unlocked": [
+				0,
+				1
+			],
+			"velocity": [
+				-36.16,
+				506.33
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-696.0,
+						610.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-696.0,
+				596.8
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 540,
+			"transforms": 1,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-696.0,
+						610.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-696.0,
+				596.8
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 555,
+			"transforms": 1,
+			"unlocked": [
+				0
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 0,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-669.87,
+						610.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-669.08,
+						610.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-667.46,
+						610.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-667.46,
+				596.73
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 570,
+			"transforms": 1,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-676.8,
+						610.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-677.59,
+						610.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-679.21,
+						610.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-679.21,
+				596.73
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 585,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				-200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1239711060/Box/@StaticBody2D@3476",
+					"normal": [
+						0.92,
+						-0.39
+					],
+					"position": [
+						-717.72,
+						604.76
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-709.94,
+				596.79
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 600,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1239711060/Box/@StaticBody2D@3476",
+					"normal": [
+						0.92,
+						-0.39
+					],
+					"position": [
+						-717.72,
+						604.76
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-709.94,
+				596.79
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 615,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1239711060/Box/@StaticBody2D@3476",
+					"normal": [
+						0.92,
+						-0.39
+					],
+					"position": [
+						-717.72,
+						604.76
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-709.94,
+				596.79
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 630,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1239711060/Box/@StaticBody2D@3476",
+					"normal": [
+						0.92,
+						-0.39
+					],
+					"position": [
+						-717.72,
+						604.76
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-709.94,
+				596.79
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 645,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+					"normal": [
+						1.0,
+						0.0
+					],
+					"position": [
+						-742.71,
+						598.22
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+					"normal": [
+						1.0,
+						0.0
+					],
+					"position": [
+						-742.71,
+						598.64
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				-734.22,
+				603.34
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 660,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				0.0,
+				98.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+					"normal": [
+						1.0,
+						0.0
+					],
+					"position": [
+						-742.71,
+						590.79
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1223570058/Box/@StaticBody2D@3682",
+					"normal": [
+						1.0,
+						0.0
+					],
+					"position": [
+						-742.71,
+						590.79
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				-734.22,
+				587.24
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 675,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				0.0,
+				-118.33
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1096665056/Box/@StaticBody2D@3382",
+					"normal": [
+						0.25,
+						-0.97
+					],
+					"position": [
+						-765.77,
+						590.71
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/BP_DestructibleWood_C_UAID_E8B0C58C1256E4BA02_1096665056/Box/@StaticBody2D@3382",
+					"normal": [
+						0.23,
+						-0.97
+					],
+					"position": [
+						-765.77,
+						590.71
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-766.56,
+				577.12
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 690,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				-200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				-816.58,
+				593.11
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 705,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				-200.0,
+				163.33
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				-853.84,
+				578.4
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 720,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				-8.85,
+				38.83
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				-847.52,
+				620.78
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 735,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				25.28,
+				283.83
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": false,
+			"position": [
+				-841.2,
+				724.4
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 750,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				25.28,
+				528.83
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-840.78,
+						738.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-840.78,
+				724.73
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 765,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				0.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-876.9,
+						738.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-877.69,
+						738.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-879.31,
+						738.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-879.31,
+				724.73
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 780,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				-200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				146.0,
+				-176.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-926.91,
+						738.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-927.7,
+						738.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l2/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-929.31,
+						738.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-929.31,
+				724.73
+			],
+			"resetting": false,
+			"room": "sublevel_w2l2",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 795,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				-200.0,
+				0.0
+			],
+			"water": 0
+		},
+		{
+			"bird": 3,
+			"checkpoint": [
+				-986.0,
+				721.0
+			],
+			"contacts": [
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-976.91,
+						738.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-977.7,
+						738.0
+					]
+				},
+				{
+					"collider": "/root/WhatB/@Node2D@2863/TileMap_w2l3/PaperPixels/PaperTileLayer_0/TerrainCollision",
+					"normal": [
+						0.0,
+						-1.0
+					],
+					"position": [
+						-979.32,
+						738.0
+					]
+				}
+			],
+			"dead": false,
+			"deaths": 0,
+			"gliding": false,
+			"grounded": true,
+			"position": [
+				-979.32,
+				724.73
+			],
+			"resetting": false,
+			"room": "sublevel_w2l3",
+			"scenario": "isolated_wood_unlock_attack_button",
+			"tick": 810,
+			"transforms": 0,
+			"unlocked": [
+				0,
+				3
+			],
+			"velocity": [
+				-200.0,
+				0.0
+			],
+			"water": 0
+		}
+	]
+}

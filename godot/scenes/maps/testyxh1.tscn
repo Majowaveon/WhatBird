@@ -1,0 +1,90 @@
+[gd_scene load_steps=22 format=3]
+
+[ext_resource type="Script" path="res://scripts/editable_map.gd" id="1_map"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w0l1.tscn" id="room_w0l1"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w0l2.tscn" id="room_w0l2"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w0l3.tscn" id="room_w0l3"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w0l4.tscn" id="room_w0l4"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w0l5.tscn" id="room_w0l5"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w0l6.tscn" id="room_w0l6"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w1l1.tscn" id="room_w1l1"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w1l2.tscn" id="room_w1l2"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w1l3.tscn" id="room_w1l3"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w1l4.tscn" id="room_w1l4"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w1l5.tscn" id="room_w1l5"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w1l6.tscn" id="room_w1l6"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w1l7.tscn" id="room_w1l7"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w2l1.tscn" id="room_w2l1"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w2l2.tscn" id="room_w2l2"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w2l3.tscn" id="room_w2l3"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w2l4.tscn" id="room_w2l4"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w2l5.tscn" id="room_w2l5"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w2l6.tscn" id="room_w2l6"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w2l7.tscn" id="room_w2l7"]
+
+[node name="TestYxh1" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_map")
+
+[node name="PlayerStart" type="Marker2D" parent="."]
+position = Vector2(146.0, -176.0)
+
+[node name="w0l1" parent="." instance=ExtResource("room_w0l1")]
+position = Vector2(0.0, -270.0)
+
+[node name="w0l2" parent="." instance=ExtResource("room_w0l2")]
+position = Vector2(480.0, -270.0)
+
+[node name="w0l3" parent="." instance=ExtResource("room_w0l3")]
+position = Vector2(960.0, -270.0)
+
+[node name="w0l4" parent="." instance=ExtResource("room_w0l4")]
+position = Vector2(1440.0, -270.0)
+
+[node name="w0l5" parent="." instance=ExtResource("room_w0l5")]
+position = Vector2(1440.0, 130.0)
+
+[node name="w0l6" parent="." instance=ExtResource("room_w0l6")]
+position = Vector2(960.0, 130.0)
+
+[node name="w1l1" parent="." instance=ExtResource("room_w1l1")]
+position = Vector2(960.0, 530.0)
+
+[node name="w1l2" parent="." instance=ExtResource("room_w1l2")]
+position = Vector2(960.0, 930.0)
+
+[node name="w1l3" parent="." instance=ExtResource("room_w1l3")]
+position = Vector2(480.0, 930.0)
+
+[node name="w1l4" parent="." instance=ExtResource("room_w1l4")]
+position = Vector2(0.0, 930.0)
+
+[node name="w1l5" parent="." instance=ExtResource("room_w1l5")]
+position = Vector2(0.0, 1330.0)
+
+[node name="w1l6" parent="." instance=ExtResource("room_w1l6")]
+position = Vector2(-480.0, 1330.0)
+
+[node name="w1l7" parent="." instance=ExtResource("room_w1l7")]
+position = Vector2(-960.0, 1330.0)
+
+[node name="w2l1" parent="." instance=ExtResource("room_w2l1")]
+position = Vector2(-960.0, 930.0)
+
+[node name="w2l2" parent="." instance=ExtResource("room_w2l2")]
+position = Vector2(-960.0, 530.0)
+
+[node name="w2l3" parent="." instance=ExtResource("room_w2l3")]
+position = Vector2(-1440.0, 530.0)
+
+[node name="w2l4" parent="." instance=ExtResource("room_w2l4")]
+position = Vector2(-1440.0, 130.0)
+
+[node name="w2l5" parent="." instance=ExtResource("room_w2l5")]
+position = Vector2(-960.0, 130.0)
+
+[node name="w2l6" parent="." instance=ExtResource("room_w2l6")]
+position = Vector2(-480.0, 130.0)
+
+[node name="w2l7" parent="." instance=ExtResource("room_w2l7")]
+position = Vector2(-480.0, -270.0)

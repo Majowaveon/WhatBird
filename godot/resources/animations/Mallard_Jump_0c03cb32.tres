@@ -1,0 +1,62 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Player/Mallard/Mallard.png" id="1_0ymhi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbexj"]
+atlas = ExtResource("1_0ymhi")
+region = Rect2(0, 128, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cckt2"]
+atlas = ExtResource("1_0ymhi")
+region = Rect2(64, 128, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ho76b"]
+atlas = ExtResource("1_0ymhi")
+region = Rect2(128, 128, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cn7ba"]
+atlas = ExtResource("1_0ymhi")
+region = Rect2(192, 128, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvgdk"]
+atlas = ExtResource("1_0ymhi")
+region = Rect2(256, 128, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1mfg"]
+atlas = ExtResource("1_0ymhi")
+region = Rect2(320, 128, 64, 64)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbexj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cckt2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ho76b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cn7ba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvgdk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1mfg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Player/Mallard/Mallard_Sprite_12.Mallard_Sprite_12", "/Game/Resources/Player/Mallard/Mallard_Sprite_13.Mallard_Sprite_13", "/Game/Resources/Player/Mallard/Mallard_Sprite_14.Mallard_Sprite_14", "/Game/Resources/Player/Mallard/Mallard_Sprite_15.Mallard_Sprite_15", "/Game/Resources/Player/Mallard/Mallard_Sprite_16.Mallard_Sprite_16", "/Game/Resources/Player/Mallard/Mallard_Sprite_17.Mallard_Sprite_17"])
+}

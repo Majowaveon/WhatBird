@@ -1,0 +1,2155 @@
+[gd_scene load_steps=91 format=4]
+
+[ext_resource type="Script" path="res://scripts/editable_room.gd" id="1_bdrsp"]
+[ext_resource type="Script" path="res://scripts/world_object.gd" id="2_2oxyn"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_Wood0_e0baf6b0.tres" id="3_lnres"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_Wood1_3315897a.tres" id="4_el0kr"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_Wood4_d9003cbb.tres" id="5_fg7xb"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_Wood5_c9c5c17f.tres" id="6_5m0ad"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_弹簧针叶_Pop_cd12ed31.tres" id="7_2wl3r"]
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_弹簧针叶_Idle_d686c938.tres" id="8_pmac2"]
+[ext_resource type="TileSet" path="res://resources/tilesets/BackGround_w3_8aa2baf564a806f0.tres" id="9_1m3pr"]
+[ext_resource type="TileSet" path="res://resources/tilesets/ForeGround_w3_c8f37a8cf1ee8629.tres" id="10_ihy0a"]
+[ext_resource type="TileSet" path="res://resources/tilesets/w2l3_9af6c017f7c9e35c.tres" id="11_1w0my"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pj4w1"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rxtk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_myosq"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qqso"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o1nw6"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0yoih"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3rdrt"]
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1yqoo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f4fqf"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7a6pd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_krwyy"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hguyq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vxh4"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_prh8v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wpb4q"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x7mbg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2kimr"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h572v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yl5ia"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qc88b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7wfd"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lhptl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d5jbl"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u8e5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4u0f"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmomp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_31eba"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vlyk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6aur7"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2s55f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ndxie"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uo1hy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yum2g"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_egf1e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_82ddo"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_38njw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fx0kx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dn6sf"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7hqp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s0yn6"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wxm1i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l2v1p"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_60vib"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uqex4"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4npkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wwwea"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1usci"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_im8xy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hu58c"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aobum"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y26ho"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oc6kk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mf885"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eomhd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wy2vt"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gg1b0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_21ghp"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7h28n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jud1c"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yu3gt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gdo77"]
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bp34u"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_clm65"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2q6q5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hiwq0"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g00vt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ekivf"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i2u02"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2lydx"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hdajk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xr2f0"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ospsk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onhho"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gveu8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8m64w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_en6u7"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h6ac3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_61u6q"]
+size = Vector2(20.6, 20.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_djvxe"]
+
+[node name="w2l3" type="Node2D"]
+script = ExtResource("1_bdrsp")
+room_tag = "SubLevel_w2l3"
+transform_limit = 0
+preview_form = 3
+
+[node name="Actors" type="Node2D" parent="."]
+
+[node name="BP_DestructibleWood_w2l3_32" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(200, 63)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147107598"
+display_name = "BP_DestructibleWood_w2l3_32"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_32"]
+
+[node name="@StaticBody2D@27" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_32/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@28" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_32/Box/@StaticBody2D@27"]
+shape = SubResource("RectangleShape2D_pj4w1")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_32"]
+
+[node name="@Area2D@29" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_32/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@30" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_32/TriggerBoxComponent/@Area2D@29"]
+shape = SubResource("RectangleShape2D_4rxtk")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_32"]
+
+[node name="@AnimatedSprite2D@31" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_32/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_32"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_32"]
+
+[node name="BP_DestructibleWood_w2l3_11" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(276, 192)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1118312577"
+display_name = "BP_DestructibleWood_w2l3_11"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_11"]
+
+[node name="@StaticBody2D@44" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_11/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@45" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_11/Box/@StaticBody2D@44"]
+shape = SubResource("RectangleShape2D_myosq")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_11"]
+
+[node name="@Area2D@46" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_11/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@47" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_11/TriggerBoxComponent/@Area2D@46"]
+shape = SubResource("RectangleShape2D_0qqso")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_11"]
+
+[node name="@AnimatedSprite2D@48" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_11/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("5_fg7xb")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_11"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_11"]
+
+[node name="BP_DestructibleWood_w2l3_22" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(345, 63)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147094588"
+display_name = "BP_DestructibleWood_w2l3_22"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_22"]
+
+[node name="@StaticBody2D@53" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_22/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@54" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_22/Box/@StaticBody2D@53"]
+shape = SubResource("RectangleShape2D_o1nw6")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_22"]
+
+[node name="@Area2D@55" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_22/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@56" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_22/TriggerBoxComponent/@Area2D@55"]
+shape = SubResource("RectangleShape2D_0yoih")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_22"]
+
+[node name="@AnimatedSprite2D@57" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_22/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_22"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_22"]
+
+[node name="BP_UpVolume3" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(398, -36)
+script = ExtResource("2_2oxyn")
+object_id = "BP_UpVolume_C_UAID_E8B0C58C1256EDBA02_1641460626"
+display_name = "BP_UpVolume3"
+kind = "BP_UpVolume"
+launch_speed = 700.0
+
+[node name="Box" type="Node2D" parent="Actors/BP_UpVolume3"]
+
+[node name="@Area2D@59" type="Area2D" parent="Actors/BP_UpVolume3/Box"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@60" type="CollisionShape2D" parent="Actors/BP_UpVolume3/Box/@Area2D@59"]
+shape = SubResource("RectangleShape2D_3rdrt")
+
+[node name="BP_CheckPoint_w2l1_6" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(398, 46)
+script = ExtResource("2_2oxyn")
+object_id = "BP_CheckPoint_C_UAID_B025AA764F67DFBA02_1285004186"
+display_name = "BP_CheckPoint_w2l1_6"
+kind = "BP_CheckPoint"
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_CheckPoint_w2l1_6"]
+
+[node name="@Area2D@81" type="Area2D" parent="Actors/BP_CheckPoint_w2l1_6/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@82" type="CollisionShape2D" parent="Actors/BP_CheckPoint_w2l1_6/TriggerBoxComponent/@Area2D@81"]
+shape = SubResource("RectangleShape2D_1yqoo")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_CheckPoint_w2l1_6"]
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_CheckPoint_w2l1_6"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_CheckPoint_w2l1_6"]
+position = Vector2(-20, 0)
+
+[node name="BP_DestructibleWood_w2l3_16" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(325, 168)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1123578582"
+display_name = "BP_DestructibleWood_w2l3_16"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_16"]
+
+[node name="@StaticBody2D@90" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_16/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@91" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_16/Box/@StaticBody2D@90"]
+shape = SubResource("RectangleShape2D_f4fqf")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_16"]
+
+[node name="@Area2D@92" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_16/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@93" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_16/TriggerBoxComponent/@Area2D@92"]
+shape = SubResource("RectangleShape2D_7a6pd")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_16"]
+
+[node name="@AnimatedSprite2D@94" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_16/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_16"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_16"]
+
+[node name="BP_DestructibleWood_w2l3_14" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(301, 168)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1123574580"
+display_name = "BP_DestructibleWood_w2l3_14"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_14"]
+
+[node name="@StaticBody2D@137" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_14/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@138" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_14/Box/@StaticBody2D@137"]
+shape = SubResource("RectangleShape2D_krwyy")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_14"]
+
+[node name="@Area2D@139" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_14/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@140" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_14/TriggerBoxComponent/@Area2D@139"]
+shape = SubResource("RectangleShape2D_hguyq")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_14"]
+
+[node name="@AnimatedSprite2D@141" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_14/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_14"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_14"]
+
+[node name="BP_DestructibleWood_w2l3_31" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(200, 87)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147106597"
+display_name = "BP_DestructibleWood_w2l3_31"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_31"]
+
+[node name="@StaticBody2D@149" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_31/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@150" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_31/Box/@StaticBody2D@149"]
+shape = SubResource("RectangleShape2D_1vxh4")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_31"]
+
+[node name="@Area2D@151" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_31/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@152" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_31/TriggerBoxComponent/@Area2D@151"]
+shape = SubResource("RectangleShape2D_prh8v")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_31"]
+
+[node name="@AnimatedSprite2D@153" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_31/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("3_lnres")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_31"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_31"]
+
+[node name="BP_DestructibleWood_w2l3_50" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(255, 111)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1261184617"
+display_name = "BP_DestructibleWood_w2l3_50"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_50"]
+
+[node name="@StaticBody2D@179" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_50/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@180" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_50/Box/@StaticBody2D@179"]
+shape = SubResource("RectangleShape2D_wpb4q")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_50"]
+
+[node name="@Area2D@181" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_50/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@182" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_50/TriggerBoxComponent/@Area2D@181"]
+shape = SubResource("RectangleShape2D_x7mbg")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_50"]
+
+[node name="@AnimatedSprite2D@183" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_50/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("5_fg7xb")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_50"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_50"]
+
+[node name="BP_DestructibleWood_w2l3_34" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(248, 63)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147110600"
+display_name = "BP_DestructibleWood_w2l3_34"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_34"]
+
+[node name="@StaticBody2D@201" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_34/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@202" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_34/Box/@StaticBody2D@201"]
+shape = SubResource("RectangleShape2D_2kimr")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_34"]
+
+[node name="@Area2D@203" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_34/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@204" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_34/TriggerBoxComponent/@Area2D@203"]
+shape = SubResource("RectangleShape2D_h572v")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_34"]
+
+[node name="@AnimatedSprite2D@205" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_34/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("5_fg7xb")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_34"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_34"]
+
+[node name="BP_DestructibleWood_w2l3_38" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(297, 87)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147116604"
+display_name = "BP_DestructibleWood_w2l3_38"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_38"]
+
+[node name="@StaticBody2D@220" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_38/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@221" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_38/Box/@StaticBody2D@220"]
+shape = SubResource("RectangleShape2D_yl5ia")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_38"]
+
+[node name="@Area2D@222" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_38/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@223" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_38/TriggerBoxComponent/@Area2D@222"]
+shape = SubResource("RectangleShape2D_qc88b")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_38"]
+
+[node name="@AnimatedSprite2D@224" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_38/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_38"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_38"]
+
+[node name="BP_DestructibleWood_w2l3_46" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(339, 143)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1184966613"
+display_name = "BP_DestructibleWood_w2l3_46"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_46"]
+
+[node name="@StaticBody2D@237" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_46/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@238" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_46/Box/@StaticBody2D@237"]
+shape = SubResource("RectangleShape2D_b7wfd")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_46"]
+
+[node name="@Area2D@239" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_46/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@240" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_46/TriggerBoxComponent/@Area2D@239"]
+shape = SubResource("RectangleShape2D_lhptl")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_46"]
+
+[node name="@AnimatedSprite2D@241" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_46/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_46"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_46"]
+
+[node name="BP_DestructibleWood_w2l3_19" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(373, 192)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1130959585"
+display_name = "BP_DestructibleWood_w2l3_19"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_19"]
+
+[node name="@StaticBody2D@276" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_19/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@277" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_19/Box/@StaticBody2D@276"]
+shape = SubResource("RectangleShape2D_d5jbl")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_19"]
+
+[node name="@Area2D@278" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_19/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@279" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_19/TriggerBoxComponent/@Area2D@278"]
+shape = SubResource("RectangleShape2D_6u8e5")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_19"]
+
+[node name="@AnimatedSprite2D@280" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_19/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("3_lnres")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_19"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_19"]
+
+[node name="BP_DestructibleWood_w2l3_49" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(207, 111)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1261183616"
+display_name = "BP_DestructibleWood_w2l3_49"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_49"]
+
+[node name="@StaticBody2D@288" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_49/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@289" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_49/Box/@StaticBody2D@288"]
+shape = SubResource("RectangleShape2D_g4u0f")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_49"]
+
+[node name="@Area2D@290" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_49/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@291" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_49/TriggerBoxComponent/@Area2D@290"]
+shape = SubResource("RectangleShape2D_gmomp")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_49"]
+
+[node name="@AnimatedSprite2D@292" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_49/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_49"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_49"]
+
+[node name="BP_DestructibleWood_w2l3_26" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(152, 63)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147100592"
+display_name = "BP_DestructibleWood_w2l3_26"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_26"]
+
+[node name="@StaticBody2D@294" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_26/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@295" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_26/Box/@StaticBody2D@294"]
+shape = SubResource("RectangleShape2D_31eba")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_26"]
+
+[node name="@Area2D@296" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_26/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@297" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_26/TriggerBoxComponent/@Area2D@296"]
+shape = SubResource("RectangleShape2D_3vlyk")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_26"]
+
+[node name="@AnimatedSprite2D@298" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_26/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("3_lnres")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_26"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_26"]
+
+[node name="BP_DestructibleWood_w2l3_15" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(325, 192)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1123575581"
+display_name = "BP_DestructibleWood_w2l3_15"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_15"]
+
+[node name="@StaticBody2D@338" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_15/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@339" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_15/Box/@StaticBody2D@338"]
+shape = SubResource("RectangleShape2D_6aur7")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_15"]
+
+[node name="@Area2D@340" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_15/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@341" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_15/TriggerBoxComponent/@Area2D@340"]
+shape = SubResource("RectangleShape2D_2s55f")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_15"]
+
+[node name="@AnimatedSprite2D@342" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_15/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_15"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_15"]
+
+[node name="BP_DestructibleWood_w2l3_8" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(204, 168)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E6BA02_2118358398"
+display_name = "BP_DestructibleWood_w2l3_8"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_8"]
+
+[node name="@StaticBody2D@362" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_8/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@363" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_8/Box/@StaticBody2D@362"]
+shape = SubResource("RectangleShape2D_ndxie")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_8"]
+
+[node name="@Area2D@364" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_8/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@365" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_8/TriggerBoxComponent/@Area2D@364"]
+shape = SubResource("RectangleShape2D_uo1hy")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_8"]
+
+[node name="@AnimatedSprite2D@366" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_8/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_8"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_8"]
+
+[node name="BP_DestructibleWood_w2l3_6" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(228, 168)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E6BA02_2118355396"
+display_name = "BP_DestructibleWood_w2l3_6"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_6"]
+
+[node name="@StaticBody2D@416" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_6/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@417" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_6/Box/@StaticBody2D@416"]
+shape = SubResource("RectangleShape2D_yum2g")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_6"]
+
+[node name="@Area2D@418" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_6/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@419" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_6/TriggerBoxComponent/@Area2D@418"]
+shape = SubResource("RectangleShape2D_egf1e")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_6"]
+
+[node name="@AnimatedSprite2D@420" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_6/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_6"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_6"]
+
+[node name="BP_DestructibleWood_w2l3_36" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(272, 63)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147113602"
+display_name = "BP_DestructibleWood_w2l3_36"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_36"]
+
+[node name="@StaticBody2D@489" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_36/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@490" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_36/Box/@StaticBody2D@489"]
+shape = SubResource("RectangleShape2D_82ddo")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_36"]
+
+[node name="@Area2D@491" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_36/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@492" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_36/TriggerBoxComponent/@Area2D@491"]
+shape = SubResource("RectangleShape2D_38njw")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_36"]
+
+[node name="@AnimatedSprite2D@493" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_36/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_36"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_36"]
+
+[node name="BP_Spring针叶_w2l3_1" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(286, 115)
+script = ExtResource("2_2oxyn")
+object_id = "BP_Spring针叶_C_UAID_C87F54CCC1F7EFBA02_1650153975"
+display_name = "BP_Spring针叶_w2l3_1"
+kind = "BP_Spring针叶"
+spring_animation = ExtResource("7_2wl3r")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_Spring针叶_w2l3_1"]
+scale = Vector2(0.75, 0.75)
+
+[node name="@Area2D@505" type="Area2D" parent="Actors/BP_Spring针叶_w2l3_1/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@506" type="CollisionShape2D" parent="Actors/BP_Spring针叶_w2l3_1/TriggerBoxComponent/@Area2D@505"]
+shape = SubResource("RectangleShape2D_fx0kx")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_Spring针叶_w2l3_1"]
+position = Vector2(-2, -5)
+scale = Vector2(0.5, 0.5)
+
+[node name="@AnimatedSprite2D@507" type="AnimatedSprite2D" parent="Actors/BP_Spring针叶_w2l3_1/RenderComponent"]
+texture_filter = 1
+sprite_frames = ExtResource("8_pmac2")
+metadata/heron_geometry_ppu = 1.0
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_Spring针叶_w2l3_1"]
+
+[node name="BP_DestructibleWood_w2l3_2" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(156, 168)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E6BA02_2089209392"
+display_name = "BP_DestructibleWood_w2l3_2"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_2"]
+
+[node name="@StaticBody2D@524" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_2/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@525" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_2/Box/@StaticBody2D@524"]
+shape = SubResource("RectangleShape2D_dn6sf")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_2"]
+
+[node name="@Area2D@526" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_2/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@527" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_2/TriggerBoxComponent/@Area2D@526"]
+shape = SubResource("RectangleShape2D_b7hqp")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_2"]
+
+[node name="@AnimatedSprite2D@528" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_2/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_2"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_2"]
+
+[node name="BP_DestructibleWood_w2l3_13" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(301, 192)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1123572579"
+display_name = "BP_DestructibleWood_w2l3_13"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_13"]
+
+[node name="@StaticBody2D@568" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_13/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@569" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_13/Box/@StaticBody2D@568"]
+shape = SubResource("RectangleShape2D_s0yn6")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_13"]
+
+[node name="@Area2D@570" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_13/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@571" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_13/TriggerBoxComponent/@Area2D@570"]
+shape = SubResource("RectangleShape2D_wxm1i")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_13"]
+
+[node name="@AnimatedSprite2D@572" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_13/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_13"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_13"]
+
+[node name="BP_DestructibleWood_w2l3_48" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(231, 111)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1261181615"
+display_name = "BP_DestructibleWood_w2l3_48"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_48"]
+
+[node name="@StaticBody2D@604" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_48/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@605" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_48/Box/@StaticBody2D@604"]
+shape = SubResource("RectangleShape2D_l2v1p")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_48"]
+
+[node name="@Area2D@606" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_48/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@607" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_48/TriggerBoxComponent/@Area2D@606"]
+shape = SubResource("RectangleShape2D_60vib")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_48"]
+
+[node name="@AnimatedSprite2D@608" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_48/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("5_fg7xb")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_48"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_48"]
+
+[node name="BP_DestructibleWood_w2l3_3" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(180, 192)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E6BA02_2113839393"
+display_name = "BP_DestructibleWood_w2l3_3"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_3"]
+
+[node name="@StaticBody2D@617" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_3/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@618" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_3/Box/@StaticBody2D@617"]
+shape = SubResource("RectangleShape2D_uqex4")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_3"]
+
+[node name="@Area2D@619" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_3/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@620" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_3/TriggerBoxComponent/@Area2D@619"]
+shape = SubResource("RectangleShape2D_4npkg")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_3"]
+
+[node name="@AnimatedSprite2D@621" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_3/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_3"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_3"]
+
+[node name="BP_DestructibleWood_w2l3_30" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(224, 63)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147105596"
+display_name = "BP_DestructibleWood_w2l3_30"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_30"]
+
+[node name="@StaticBody2D@623" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_30/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@624" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_30/Box/@StaticBody2D@623"]
+shape = SubResource("RectangleShape2D_wwwea")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_30"]
+
+[node name="@Area2D@625" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_30/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@626" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_30/TriggerBoxComponent/@Area2D@625"]
+shape = SubResource("RectangleShape2D_1usci")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_30"]
+
+[node name="@AnimatedSprite2D@627" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_30/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_30"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_30"]
+
+[node name="BP_Spring针叶_w2l3" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(396, 55)
+script = ExtResource("2_2oxyn")
+object_id = "BP_Spring针叶_C_UAID_E8B0C58C1256E9BA02_1207629943"
+display_name = "BP_Spring针叶_w2l3"
+kind = "BP_Spring针叶"
+spring_animation = ExtResource("7_2wl3r")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_Spring针叶_w2l3"]
+scale = Vector2(0.75, 0.75)
+
+[node name="@Area2D@633" type="Area2D" parent="Actors/BP_Spring针叶_w2l3/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@634" type="CollisionShape2D" parent="Actors/BP_Spring针叶_w2l3/TriggerBoxComponent/@Area2D@633"]
+shape = SubResource("RectangleShape2D_im8xy")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_Spring针叶_w2l3"]
+position = Vector2(-2, -5)
+scale = Vector2(0.5, 0.5)
+
+[node name="@AnimatedSprite2D@635" type="AnimatedSprite2D" parent="Actors/BP_Spring针叶_w2l3/RenderComponent"]
+texture_filter = 1
+sprite_frames = ExtResource("8_pmac2")
+metadata/heron_geometry_ppu = 1.0
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_Spring针叶_w2l3"]
+
+[node name="BP_DestructibleWood_w2l3_45" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(315, 143)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1184965612"
+display_name = "BP_DestructibleWood_w2l3_45"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_45"]
+
+[node name="@StaticBody2D@643" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_45/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@644" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_45/Box/@StaticBody2D@643"]
+shape = SubResource("RectangleShape2D_hu58c")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_45"]
+
+[node name="@Area2D@645" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_45/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@646" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_45/TriggerBoxComponent/@Area2D@645"]
+shape = SubResource("RectangleShape2D_aobum")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_45"]
+
+[node name="@AnimatedSprite2D@647" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_45/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("3_lnres")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_45"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_45"]
+
+[node name="BP_DestructibleWood_w2l3_5" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(228, 192)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E6BA02_2118352395"
+display_name = "BP_DestructibleWood_w2l3_5"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_5"]
+
+[node name="@StaticBody2D@669" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_5/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@670" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_5/Box/@StaticBody2D@669"]
+shape = SubResource("RectangleShape2D_y26ho")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_5"]
+
+[node name="@Area2D@671" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_5/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@672" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_5/TriggerBoxComponent/@Area2D@671"]
+shape = SubResource("RectangleShape2D_oc6kk")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_5"]
+
+[node name="@AnimatedSprite2D@673" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_5/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_5"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_5"]
+
+[node name="BP_DestructibleWood_w2l3_17" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(349, 192)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1130954583"
+display_name = "BP_DestructibleWood_w2l3_17"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_17"]
+
+[node name="@StaticBody2D@697" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_17/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@698" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_17/Box/@StaticBody2D@697"]
+shape = SubResource("RectangleShape2D_mf885")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_17"]
+
+[node name="@Area2D@699" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_17/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@700" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_17/TriggerBoxComponent/@Area2D@699"]
+shape = SubResource("RectangleShape2D_eomhd")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_17"]
+
+[node name="@AnimatedSprite2D@701" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_17/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("3_lnres")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_17"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_17"]
+
+[node name="BP_DestructibleWood_w2l3_43" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(388, 119)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1177045610"
+display_name = "BP_DestructibleWood_w2l3_43"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_43"]
+
+[node name="@StaticBody2D@710" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_43/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@711" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_43/Box/@StaticBody2D@710"]
+shape = SubResource("RectangleShape2D_wy2vt")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_43"]
+
+[node name="@Area2D@712" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_43/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@713" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_43/TriggerBoxComponent/@Area2D@712"]
+shape = SubResource("RectangleShape2D_gg1b0")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_43"]
+
+[node name="@AnimatedSprite2D@714" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_43/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_43"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_43"]
+
+[node name="BP_DestructibleWood_w2l3_23" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(369, 87)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147096589"
+display_name = "BP_DestructibleWood_w2l3_23"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_23"]
+
+[node name="@StaticBody2D@769" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_23/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@770" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_23/Box/@StaticBody2D@769"]
+shape = SubResource("RectangleShape2D_21ghp")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_23"]
+
+[node name="@Area2D@771" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_23/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@772" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_23/TriggerBoxComponent/@Area2D@771"]
+shape = SubResource("RectangleShape2D_7h28n")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_23"]
+
+[node name="@AnimatedSprite2D@773" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_23/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_23"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_23"]
+
+[node name="BP_DestructibleWood_w2l3_29" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(224, 87)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147104595"
+display_name = "BP_DestructibleWood_w2l3_29"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_29"]
+
+[node name="@StaticBody2D@820" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_29/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@821" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_29/Box/@StaticBody2D@820"]
+shape = SubResource("RectangleShape2D_jud1c")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_29"]
+
+[node name="@Area2D@822" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_29/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@823" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_29/TriggerBoxComponent/@Area2D@822"]
+shape = SubResource("RectangleShape2D_yu3gt")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_29"]
+
+[node name="@AnimatedSprite2D@824" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_29/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_29"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_29"]
+
+[node name="BP_空气墙10" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(471, 318)
+scale = Vector2(10, 2)
+script = ExtResource("2_2oxyn")
+object_id = "BP_空气墙_C_UAID_E8B0C58C1256ECBA02_1628105448"
+display_name = "BP_空气墙10"
+kind = "BP_空气墙"
+
+[node name="Box" type="Node2D" parent="Actors/BP_空气墙10"]
+
+[node name="@StaticBody2D@879" type="StaticBody2D" parent="Actors/BP_空气墙10/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@880" type="CollisionShape2D" parent="Actors/BP_空气墙10/Box/@StaticBody2D@879"]
+shape = SubResource("RectangleShape2D_gdo77")
+
+[node name="BP_DestructibleWood_w2l3_9" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(252, 192)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1118308575"
+display_name = "BP_DestructibleWood_w2l3_9"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_9"]
+
+[node name="@StaticBody2D@885" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_9/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@886" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_9/Box/@StaticBody2D@885"]
+shape = SubResource("RectangleShape2D_bp34u")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_9"]
+
+[node name="@Area2D@887" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_9/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@888" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_9/TriggerBoxComponent/@Area2D@887"]
+shape = SubResource("RectangleShape2D_clm65")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_9"]
+
+[node name="@AnimatedSprite2D@889" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_9/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_9"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_9"]
+
+[node name="BP_CheckPoint_w2l1_5" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(454, 191)
+script = ExtResource("2_2oxyn")
+object_id = "BP_CheckPoint_C_UAID_B025AA764F67DFBA02_1285003185"
+display_name = "BP_CheckPoint_w2l1_5"
+kind = "BP_CheckPoint"
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_CheckPoint_w2l1_5"]
+
+[node name="@Area2D@906" type="Area2D" parent="Actors/BP_CheckPoint_w2l1_5/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@907" type="CollisionShape2D" parent="Actors/BP_CheckPoint_w2l1_5/TriggerBoxComponent/@Area2D@906"]
+shape = SubResource("RectangleShape2D_2q6q5")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_CheckPoint_w2l1_5"]
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_CheckPoint_w2l1_5"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_CheckPoint_w2l1_5"]
+position = Vector2(-20, 0)
+
+[node name="BP_DestructibleWood_w2l3_47" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(339, 119)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1184968614"
+display_name = "BP_DestructibleWood_w2l3_47"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_47"]
+
+[node name="@StaticBody2D@909" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_47/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@910" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_47/Box/@StaticBody2D@909"]
+shape = SubResource("RectangleShape2D_hiwq0")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_47"]
+
+[node name="@Area2D@911" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_47/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@912" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_47/TriggerBoxComponent/@Area2D@911"]
+shape = SubResource("RectangleShape2D_g00vt")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_47"]
+
+[node name="@AnimatedSprite2D@913" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_47/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_47"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_47"]
+
+[node name="BP_DestructibleWood_w2l3_39" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(321, 87)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147117605"
+display_name = "BP_DestructibleWood_w2l3_39"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_39"]
+
+[node name="@StaticBody2D@960" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_39/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@961" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_39/Box/@StaticBody2D@960"]
+shape = SubResource("RectangleShape2D_ekivf")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_39"]
+
+[node name="@Area2D@962" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_39/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@963" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_39/TriggerBoxComponent/@Area2D@962"]
+shape = SubResource("RectangleShape2D_i2u02")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_39"]
+
+[node name="@AnimatedSprite2D@964" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_39/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_39"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_39"]
+
+[node name="BP_DestructibleWood_w2l3_18" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(349, 168)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1130957584"
+display_name = "BP_DestructibleWood_w2l3_18"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_18"]
+
+[node name="@StaticBody2D@1006" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_18/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@1007" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_18/Box/@StaticBody2D@1006"]
+shape = SubResource("RectangleShape2D_2lydx")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_18"]
+
+[node name="@Area2D@1008" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_18/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@1009" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_18/TriggerBoxComponent/@Area2D@1008"]
+shape = SubResource("RectangleShape2D_hdajk")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_18"]
+
+[node name="@AnimatedSprite2D@1010" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_18/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("5_fg7xb")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_18"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_18"]
+
+[node name="BP_DestructibleWood_w2l3_21" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(345, 87)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147091587"
+display_name = "BP_DestructibleWood_w2l3_21"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_21"]
+
+[node name="@StaticBody2D@1030" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_21/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@1031" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_21/Box/@StaticBody2D@1030"]
+shape = SubResource("RectangleShape2D_xr2f0")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_21"]
+
+[node name="@Area2D@1032" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_21/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@1033" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_21/TriggerBoxComponent/@Area2D@1032"]
+shape = SubResource("RectangleShape2D_ospsk")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_21"]
+
+[node name="@AnimatedSprite2D@1034" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_21/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_21"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_21"]
+
+[node name="BP_DestructibleWood_w2l3_44" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(315, 119)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1184962611"
+display_name = "BP_DestructibleWood_w2l3_44"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_44"]
+
+[node name="@StaticBody2D@1052" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_44/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@1053" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_44/Box/@StaticBody2D@1052"]
+shape = SubResource("RectangleShape2D_onhho")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_44"]
+
+[node name="@Area2D@1054" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_44/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@1055" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_44/TriggerBoxComponent/@Area2D@1054"]
+shape = SubResource("RectangleShape2D_gveu8")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_44"]
+
+[node name="@AnimatedSprite2D@1056" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_44/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_44"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_44"]
+
+[node name="BP_ChangeSubLevelVolumeLeft_w2l3" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(454, 191)
+script = ExtResource("2_2oxyn")
+object_id = "BP_ChangeSubLevelVolume_C_UAID_B025AA764F67DFBA02_1285000183"
+display_name = "BP_ChangeSubLevelVolumeLeft_w2l3"
+kind = "BP_ChangeSubLevelVolume"
+target_room = "SubLevel_w2l3"
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w2l3"]
+
+[node name="@Area2D@1110" type="Area2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w2l3/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@1111" type="CollisionShape2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w2l3/TriggerBoxComponent/@Area2D@1110"]
+shape = SubResource("RectangleShape2D_8m64w")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w2l3"]
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w2l3"]
+
+[node name="BP_DestructibleWood_w2l3_35" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(272, 87)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E7BA02_1147111601"
+display_name = "BP_DestructibleWood_w2l3_35"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_35"]
+
+[node name="@StaticBody2D@1131" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_35/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@1132" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_35/Box/@StaticBody2D@1131"]
+shape = SubResource("RectangleShape2D_en6u7")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_35"]
+
+[node name="@Area2D@1133" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_35/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@1134" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_35/TriggerBoxComponent/@Area2D@1133"]
+shape = SubResource("RectangleShape2D_h6ac3")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_35"]
+
+[node name="@AnimatedSprite2D@1135" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_35/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("4_el0kr")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_35"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_35"]
+
+[node name="BP_DestructibleWood_w2l3_1" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(156, 192)
+script = ExtResource("2_2oxyn")
+object_id = "BP_DestructibleWood_C_UAID_E8B0C58C1256E6BA02_2055966391"
+display_name = "BP_DestructibleWood_w2l3_1"
+kind = "BP_DestructibleWood"
+randomize_wood = true
+wood_variants = Array[SpriteFrames]([ExtResource("3_lnres"), ExtResource("4_el0kr"), ExtResource("5_fg7xb"), ExtResource("6_5m0ad")])
+
+[node name="Box" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_1"]
+
+[node name="@StaticBody2D@1168" type="StaticBody2D" parent="Actors/BP_DestructibleWood_w2l3_1/Box"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="@CollisionShape2D@1169" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_1/Box/@StaticBody2D@1168"]
+shape = SubResource("RectangleShape2D_61u6q")
+
+[node name="TriggerBoxComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_1"]
+
+[node name="@Area2D@1170" type="Area2D" parent="Actors/BP_DestructibleWood_w2l3_1/TriggerBoxComponent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="@CollisionShape2D@1171" type="CollisionShape2D" parent="Actors/BP_DestructibleWood_w2l3_1/TriggerBoxComponent/@Area2D@1170"]
+shape = SubResource("RectangleShape2D_djvxe")
+
+[node name="RenderComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_1"]
+
+[node name="@AnimatedSprite2D@1172" type="AnimatedSprite2D" parent="Actors/BP_DestructibleWood_w2l3_1/RenderComponent"]
+texture_filter = 1
+scale = Vector2(0.625, 0.625)
+sprite_frames = ExtResource("6_5m0ad")
+metadata/heron_geometry_ppu = 1.6
+
+[node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_1"]
+
+[node name="TextRender" type="Node2D" parent="Actors/BP_DestructibleWood_w2l3_1"]
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="BG_w2l3" type="Node2D" parent="Background"]
+z_index = -10
+texture_filter = 1
+position = Vector2(232, 56)
+scale = Vector2(0.94, 0.94)
+metadata/source_ref = "/Game/TileMap/BackGround_w3.BackGround_w3"
+metadata/original_bounds = Rect2(-256, -256, 512, 512)
+metadata/map_size = Vector2i(1, 1)
+metadata/tile_size = Vector2i(512, 512)
+metadata/ppu = 1.0
+metadata/tileset_path = "res://resources/tilesets/BackGround_w3_8aa2baf564a806f0.tres"
+metadata/source_ids = Dictionary[String, int]({
+"/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet": 0,
+"/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet": 1,
+"/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet": 2,
+"/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet": 3,
+"/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet": 4,
+"/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet": 5,
+"/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet": 6,
+"/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet": 7
+})
+metadata/atlas_sources = Array[Dictionary]([{
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 0,
+"source_ref": "/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet",
+"texture": "res://assets/TileMap/resource/L4-图层_16.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 1,
+"source_ref": "/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet",
+"texture": "res://assets/TileMap/resource/L5-图层_17.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 2,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙1.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 3,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙2.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 4,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙3.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 5,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙1.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 6,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙2.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 7,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙3.png",
+"tile_size": Vector2i(512, 512)
+}])
+metadata/terrain_textures = PackedStringArray()
+
+[node name="PaperTileLayer_0" type="TileMapLayer" parent="Background/BG_w2l3"]
+texture_filter = 1
+position = Vector2(-256, -256)
+tile_map_data = PackedByteArray("AAAAAAAABwAAAAAAAAA=")
+tile_set = ExtResource("9_1m3pr")
+metadata/source_ref = "/Game/TileMap/BackGround_w3.BackGround_w3"
+metadata/original_layer_index = 0
+metadata/original_name = "PaperTileLayer_0"
+metadata/map_size = Vector2i(1, 1)
+
+[node name="Foreground" type="Node2D" parent="."]
+
+[node name="FG_w2l3" type="Node2D" parent="Foreground"]
+z_index = 10
+texture_filter = 1
+position = Vector2(232, 93)
+scale = Vector2(0.94, 0.94)
+metadata/source_ref = "/Game/TileMap/ForeGround_w3.ForeGround_w3"
+metadata/original_bounds = Rect2(-256, -256, 512, 512)
+metadata/map_size = Vector2i(1, 1)
+metadata/tile_size = Vector2i(512, 512)
+metadata/ppu = 1.0
+metadata/tileset_path = "res://resources/tilesets/ForeGround_w3_c8f37a8cf1ee8629.tres"
+metadata/source_ids = Dictionary[String, int]({
+"/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet": 0,
+"/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet": 1,
+"/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet": 2,
+"/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet": 3,
+"/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet": 4,
+"/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet": 5,
+"/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet": 6,
+"/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet": 7
+})
+metadata/atlas_sources = Array[Dictionary]([{
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 0,
+"source_ref": "/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet",
+"texture": "res://assets/TileMap/resource/L4-图层_16.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 1,
+"source_ref": "/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet",
+"texture": "res://assets/TileMap/resource/L5-图层_17.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 2,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙1.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 3,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙2.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 4,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙3.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 5,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙1.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 6,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙2.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 7,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙3.png",
+"tile_size": Vector2i(512, 512)
+}])
+metadata/terrain_textures = PackedStringArray()
+
+[node name="PaperTileLayer_0" type="TileMapLayer" parent="Foreground/FG_w2l3"]
+texture_filter = 1
+position = Vector2(-256, -256)
+tile_map_data = PackedByteArray("AAAAAAAABAAAAAAAAAA=")
+tile_set = ExtResource("10_ihy0a")
+metadata/source_ref = "/Game/TileMap/ForeGround_w3.ForeGround_w3"
+metadata/original_layer_index = 0
+metadata/original_name = "PaperTileLayer_0"
+metadata/map_size = Vector2i(1, 1)
+
+[node name="Terrain" type="Node2D" parent="."]
+
+[node name="TileMap_w2l3" type="Node2D" parent="Terrain"]
+texture_filter = 1
+scale = Vector2(0.5, 0.5)
+metadata/source_ref = "/Game/TileMap/TM_world2/w2l3.w2l3"
+metadata/original_bounds = Rect2(-16, -16, 960, 544)
+metadata/map_size = Vector2i(30, 17)
+metadata/tile_size = Vector2i(32, 32)
+metadata/ppu = 1.0
+metadata/tileset_path = "res://resources/tilesets/w2l3_9af6c017f7c9e35c.tres"
+metadata/source_ids = Dictionary[String, int]({
+"/Game/TileMap/resource/TS_world1.TS_world1": 0,
+"/Game/TileMap/resource/TS_worldBlock.TS_worldBlock": 1
+})
+metadata/atlas_sources = Array[Dictionary]([{
+"columns": 5,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(5, 4),
+"has_collision": true,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 0,
+"source_ref": "/Game/TileMap/resource/TS_world1.TS_world1",
+"texture": "res://assets/TileMap/resource/tile1.png",
+"tile_size": Vector2i(32, 32)
+}, {
+"columns": 10,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(10, 16),
+"has_collision": true,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 1,
+"source_ref": "/Game/TileMap/resource/TS_worldBlock.TS_worldBlock",
+"texture": "res://assets/TileMap/resource/tile_6.png",
+"tile_size": Vector2i(32, 32)
+}])
+metadata/terrain_textures = PackedStringArray("res://assets/TileMap/resource/tile1.png", "res://assets/TileMap/resource/tile_6.png")
+
+[node name="PaperTileLayer_3" type="TileMapLayer" parent="Terrain/TileMap_w2l3"]
+texture_filter = 1
+position = Vector2(-16, -16)
+tile_set = ExtResource("11_1w0my")
+metadata/source_ref = "/Game/TileMap/TM_world2/w2l3.w2l3"
+metadata/original_layer_index = 0
+metadata/original_name = "PaperTileLayer_3"
+metadata/map_size = Vector2i(30, 17)
+
+[node name="PaperTileLayer_2" type="TileMapLayer" parent="Terrain/TileMap_w2l3"]
+z_index = -4
+texture_filter = 1
+position = Vector2(-16, -16)
+tile_map_data = PackedByteArray("AAAXAAQAAQAAAAUAAAAYAAQAAQAAAAUAAAAZAAQAAQAAAAUAAAAaAAQAAQAAAAUAAAAJAAcAAQAAAAUAAAAKAAcAAQAAAAUAAAALAAcAAQAAAAUAAAAMAAgAAQAAAAUAAAANAAgAAQAAAAUAAAAOAAgAAQAAAAUAAAAPAAgAAQAAAAUAAAAQAAgAAQAAAAUAAAARAAgAAQAAAAUAAAASAAgAAQAAAAUAAAAJAA0AAQAAAAUAAAAKAA0AAQAAAAUAAAALAA0AAQAAAAUAAAAMAA0AAQAAAAUAAAANAA0AAQAAAAUAAAAOAA0AAQAAAAUAAAAPAA0AAQAAAAUAAAAQAA0AAQAAAAUAAAARAA0AAQAAAAUAAAASAA0AAQAAAAUAAAATAA0AAQAAAAUAAAAUAA0AAQAAAAUAAAAVAA0AAQAAAAUAAAAWAA0AAQAAAAUAAAAXAA0AAQAAAAUAAAAYAA0AAQAAAAUAAAAZAA0AAQAAAAUAAAAaAA0AAQAAAAUAAAAbAA0AAQAAAAUAAAAcAA0AAQAAAAUAAAAdAA0AAQAAAAUAAAA=")
+tile_set = ExtResource("11_1w0my")
+metadata/source_ref = "/Game/TileMap/TM_world2/w2l3.w2l3"
+metadata/original_layer_index = 1
+metadata/original_name = "PaperTileLayer_2"
+metadata/map_size = Vector2i(30, 17)
+
+[node name="PaperTileLayer_1" type="TileMapLayer" parent="Terrain/TileMap_w2l3"]
+z_index = -8
+texture_filter = 1
+position = Vector2(-16, -16)
+tile_set = ExtResource("11_1w0my")
+metadata/source_ref = "/Game/TileMap/TM_world2/w2l3.w2l3"
+metadata/original_layer_index = 2
+metadata/original_name = "PaperTileLayer_1"
+metadata/map_size = Vector2i(30, 17)
+
+[node name="PaperTileLayer_0" type="TileMapLayer" parent="Terrain/TileMap_w2l3"]
+z_index = -8
+texture_filter = 1
+position = Vector2(-16, -16)
+tile_map_data = PackedByteArray("AAAAAAAAAQACAAcAAAABAAAAAQACAAcAAAACAAAAAQACAAcAAAADAAAAAQACAAcAAAAEAAAAAQACAAcAAAAFAAAAAQACAAcAAAAGAAAAAQACAAcAAAAHAAAAAQACAAcAAAAIAAAAAQACAAcAAAAJAAAAAQACAAcAAAAKAAAAAQACAAcAAAALAAAAAQACAAcAAAAMAAAAAQACAAcAAAANAAAAAQACAAcAAAAOAAAAAQACAAcAAAAPAAAAAQACAAcAAAAQAAAAAQACAAcAAAARAAAAAQACAAcAAAASAAAAAQACAAcAAAATAAAAAQACAAcAAAAUAAAAAQACAAcAAAAbAAAAAQACAAcAAAAcAAAAAQACAAcAAAAdAAAAAQACAAcAAAAAAAEAAQACAAcAAAABAAEAAQACAAcAAAACAAEAAQACAAcAAAADAAEAAQACAAcAAAAEAAEAAQACAAcAAAAFAAEAAQACAAcAAAAGAAEAAQACAAcAAAAHAAEAAQACAAcAAAAIAAEAAQACAAcAAAAJAAEAAQACAAcAAAAKAAEAAQACAAcAAAALAAEAAQACAAcAAAAMAAEAAQACAAcAAAANAAEAAQACAAcAAAAOAAEAAQACAAcAAAAPAAEAAQACAAcAAAAQAAEAAQACAAcAAAARAAEAAQACAAcAAAASAAEAAQACAAcAAAATAAEAAQACAAcAAAAbAAEAAQACAAcAAAAcAAEAAQACAAcAAAAdAAEAAQACAAcAAAAAAAIAAQACAAcAAAABAAIAAQACAAcAAAACAAIAAQACAAcAAAADAAIAAQACAAcAAAAEAAIAAQACAAcAAAAFAAIAAQACAAcAAAAGAAIAAQACAAcAAAAHAAIAAQACAAcAAAAIAAIAAQACAAcAAAAJAAIAAQACAAcAAAAKAAIAAQACAAcAAAALAAIAAQACAAcAAAAMAAIAAQACAAcAAAANAAIAAQACAAcAAAAOAAIAAQACAAcAAAAPAAIAAQACAAcAAAAQAAIAAQACAAcAAAAbAAIAAQACAAcAAAAcAAIAAQACAAcAAAAdAAIAAQACAAcAAAAAAAMAAQACAAcAAAABAAMAAQACAAcAAAACAAMAAQACAAcAAAADAAMAAQACAAcAAAAEAAMAAQACAAcAAAAFAAMAAQACAAcAAAAGAAMAAQACAAcAAAAHAAMAAQACAAcAAAAIAAMAAQACAAcAAAAbAAMAAQACAAcAAAAcAAMAAQACAAcAAAAdAAMAAQACAAcAAAAAAAQAAQACAAcAAAABAAQAAQACAAcAAAACAAQAAQACAAcAAAADAAQAAQACAAcAAAAEAAQAAQACAAcAAAAFAAQAAQACAAcAAAAGAAQAAQACAAcAAAAHAAQAAQACAAcAAAAIAAQAAQACAAcAAAAXAAQAAQACAAYAAAAYAAQAAQACAAYAAAAZAAQAAQACAAYAAAAaAAQAAQACAAYAAAAbAAQAAQACAAcAAAAcAAQAAQACAAcAAAAdAAQAAQACAAcAAAAAAAUAAQACAAcAAAABAAUAAQACAAcAAAACAAUAAQACAAcAAAADAAUAAQACAAcAAAAEAAUAAQACAAcAAAAFAAUAAQACAAcAAAAGAAUAAQACAAcAAAAHAAUAAQACAAcAAAAIAAUAAQACAAcAAAAaAAUAAQACAAcAAAAbAAUAAQACAAcAAAAcAAUAAQACAAcAAAAdAAUAAQACAAcAAAAAAAYAAQACAAcAAAABAAYAAQACAAcAAAACAAYAAQACAAcAAAADAAYAAQACAAcAAAAEAAYAAQACAAcAAAAFAAYAAQACAAcAAAAGAAYAAQACAAcAAAAHAAYAAQACAAcAAAAIAAYAAQACAAcAAAAbAAYAAQACAAcAAAAcAAYAAQACAAcAAAAdAAYAAQACAAcAAAAAAAcAAQACAAcAAAABAAcAAQACAAcAAAACAAcAAQACAAcAAAADAAcAAQACAAcAAAAEAAcAAQACAAcAAAAFAAcAAQACAAcAAAAGAAcAAQACAAcAAAAHAAcAAQACAAcAAAAIAAcAAQACAAcAAAAJAAcAAQACAAYAAAAKAAcAAQACAAYAAAALAAcAAQACAAYAAAAbAAcAAQACAAcAAAAcAAcAAQACAAcAAAAdAAcAAQACAAcAAAAAAAgAAQACAAcAAAABAAgAAQACAAcAAAACAAgAAQACAAcAAAADAAgAAQACAAcAAAAEAAgAAQACAAcAAAAFAAgAAQACAAcAAAAGAAgAAQACAAcAAAAHAAgAAQACAAcAAAAIAAgAAQACAAcAAAAJAAgAAQACAAcAAAAKAAgAAQACAAcAAAALAAgAAQACAAcAAAAMAAgAAQACAAYAAAANAAgAAQACAAYAAAAOAAgAAQACAAYAAAAPAAgAAQACAAYAAAAQAAgAAQACAAYAAAARAAgAAQACAAYAAAASAAgAAQACAAYAAAAbAAgAAQACAAcAAAAcAAgAAQACAAcAAAAdAAgAAQACAAcAAAAAAAkAAQACAAcAAAABAAkAAQACAAcAAAACAAkAAQACAAcAAAADAAkAAQACAAcAAAAEAAkAAQACAAcAAAAFAAkAAQACAAcAAAAGAAkAAQACAAcAAAAHAAkAAQACAAcAAAAIAAkAAQACAAcAAAAJAAkAAQACAAcAAAAKAAkAAQACAAcAAAALAAkAAQACAAcAAAAMAAkAAQACAAcAAAANAAkAAQACAAcAAAAbAAkAAQACAAcAAAAcAAkAAQACAAcAAAAdAAkAAQACAAcAAAAAAAoAAQACAAcAAAABAAoAAQACAAcAAAACAAoAAQACAAcAAAADAAoAAQACAAcAAAAEAAoAAQACAAcAAAAFAAoAAQACAAcAAAAGAAoAAQACAAcAAAAHAAoAAQACAAcAAAAIAAoAAQACAAcAAAAcAAoAAQACAAcAAAAdAAoAAQACAAcAAAAAAAsAAQACAAcAAAABAAsAAQACAAcAAAACAAsAAQACAAcAAAADAAsAAQACAAcAAAAEAAsAAQACAAcAAAAFAAsAAQACAAcAAAAGAAsAAQACAAcAAAAHAAsAAQACAAcAAAAIAAsAAQACAAcAAAAAAAwAAQACAAcAAAABAAwAAQACAAcAAAACAAwAAQACAAcAAAADAAwAAQACAAcAAAAEAAwAAQACAAcAAAAFAAwAAQACAAcAAAAGAAwAAQACAAcAAAAHAAwAAQACAAcAAAAIAAwAAQACAAcAAAAAAA0AAQACAAcAAAABAA0AAQACAAcAAAACAA0AAQACAAcAAAADAA0AAQACAAcAAAAEAA0AAQACAAcAAAAFAA0AAQACAAcAAAAGAA0AAQACAAcAAAAHAA0AAQACAAcAAAAIAA0AAQACAAcAAAAJAA0AAQACAAYAAAAKAA0AAQACAAYAAAALAA0AAQACAAYAAAAMAA0AAQACAAYAAAANAA0AAQACAAYAAAAOAA0AAQACAAYAAAAPAA0AAQACAAYAAAAQAA0AAQACAAYAAAARAA0AAQACAAYAAAASAA0AAQACAAYAAAATAA0AAQACAAYAAAAUAA0AAQACAAYAAAAVAA0AAQACAAYAAAAWAA0AAQACAAYAAAAXAA0AAQACAAYAAAAYAA0AAQACAAYAAAAZAA0AAQACAAYAAAAaAA0AAQACAAYAAAAbAA0AAQACAAYAAAAcAA0AAQACAAYAAAAdAA0AAQACAAYAAAAAAA4AAQACAAcAAAABAA4AAQACAAcAAAACAA4AAQACAAcAAAADAA4AAQACAAcAAAAEAA4AAQACAAcAAAAFAA4AAQACAAcAAAAGAA4AAQACAAcAAAAHAA4AAQACAAcAAAAIAA4AAQACAAcAAAAJAA4AAQACAAcAAAAKAA4AAQACAAcAAAALAA4AAQACAAcAAAAMAA4AAQACAAcAAAANAA4AAQACAAcAAAAOAA4AAQACAAcAAAAPAA4AAQACAAcAAAAQAA4AAQACAAcAAAARAA4AAQACAAcAAAASAA4AAQACAAcAAAATAA4AAQACAAcAAAAUAA4AAQACAAcAAAAVAA4AAQACAAcAAAAWAA4AAQACAAcAAAAXAA4AAQACAAcAAAAYAA4AAQACAAcAAAAZAA4AAQACAAcAAAAaAA4AAQACAAcAAAAbAA4AAQACAAcAAAAcAA4AAQACAAcAAAAdAA4AAQACAAcAAAAAAA8AAQACAAcAAAABAA8AAQACAAcAAAACAA8AAQACAAcAAAADAA8AAQACAAcAAAAEAA8AAQACAAcAAAAFAA8AAQACAAcAAAAGAA8AAQACAAcAAAAHAA8AAQACAAcAAAAIAA8AAQACAAcAAAAJAA8AAQACAAcAAAAKAA8AAQACAAcAAAALAA8AAQACAAcAAAAMAA8AAQACAAcAAAANAA8AAQACAAcAAAAOAA8AAQACAAcAAAAPAA8AAQACAAcAAAAQAA8AAQACAAcAAAARAA8AAQACAAcAAAASAA8AAQACAAcAAAATAA8AAQACAAcAAAAUAA8AAQACAAcAAAAVAA8AAQACAAcAAAAWAA8AAQACAAcAAAAXAA8AAQACAAcAAAAYAA8AAQACAAcAAAAZAA8AAQACAAcAAAAaAA8AAQACAAcAAAAbAA8AAQACAAcAAAAcAA8AAQACAAcAAAAdAA8AAQACAAcAAAAAABAAAQACAAcAAAABABAAAQACAAcAAAACABAAAQACAAcAAAADABAAAQACAAcAAAAEABAAAQACAAcAAAAFABAAAQACAAcAAAAGABAAAQACAAcAAAAHABAAAQACAAcAAAAIABAAAQACAAcAAAAJABAAAQACAAcAAAAKABAAAQACAAcAAAALABAAAQACAAcAAAAMABAAAQACAAcAAAANABAAAQACAAcAAAAOABAAAQACAAcAAAAPABAAAQACAAcAAAAQABAAAQACAAcAAAARABAAAQACAAcAAAASABAAAQACAAcAAAATABAAAQACAAcAAAAUABAAAQACAAcAAAAVABAAAQACAAcAAAAWABAAAQACAAcAAAAXABAAAQACAAcAAAAYABAAAQACAAcAAAAZABAAAQACAAcAAAAaABAAAQACAAcAAAAbABAAAQACAAcAAAAcABAAAQACAAcAAAAdABAAAQACAAcAAAA=")
+tile_set = ExtResource("11_1w0my")
+metadata/source_ref = "/Game/TileMap/TM_world2/w2l3.w2l3"
+metadata/original_layer_index = 3
+metadata/original_name = "PaperTileLayer_0"
+metadata/map_size = Vector2i(30, 17)
+
+[node name="PlayerStart" type="Marker2D" parent="."]
+position = Vector2(398, 46)

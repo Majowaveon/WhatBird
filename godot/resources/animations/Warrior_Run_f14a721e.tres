@@ -1,0 +1,85 @@
+[gd_resource type="SpriteFrames" load_steps=17 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Run/Warrior_Run_1.png" id="1_e72fd"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Run/Warrior_Run_2.png" id="2_r1fwq"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Run/Warrior_Run_3.png" id="3_a0bvj"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Run/Warrior_Run_4.png" id="4_2ntvp"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Run/Warrior_Run_5.png" id="5_vii52"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Run/Warrior_Run_6.png" id="6_bf2f2"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Run/Warrior_Run_7.png" id="7_tvymd"]
+[ext_resource type="Texture2D" path="res://assets/Resources/Warriror/Run/Warrior_Run_8.png" id="8_ovqv4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bxwr8"]
+atlas = ExtResource("1_e72fd")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83bc6"]
+atlas = ExtResource("2_r1fwq")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05qer"]
+atlas = ExtResource("3_a0bvj")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vh6rl"]
+atlas = ExtResource("4_2ntvp")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fnbik"]
+atlas = ExtResource("5_vii52")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tku11"]
+atlas = ExtResource("6_bf2f2")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2q75d"]
+atlas = ExtResource("7_tvymd")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tif0m"]
+atlas = ExtResource("8_ovqv4")
+region = Rect2(0, 0, 64, 44)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bxwr8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83bc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05qer")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vh6rl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fnbik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tku11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2q75d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tif0m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Warriror/Run/Warrior_Run_1_Sprite.Warrior_Run_1_Sprite", "/Game/Resources/Warriror/Run/Warrior_Run_2_Sprite.Warrior_Run_2_Sprite", "/Game/Resources/Warriror/Run/Warrior_Run_3_Sprite.Warrior_Run_3_Sprite", "/Game/Resources/Warriror/Run/Warrior_Run_4_Sprite.Warrior_Run_4_Sprite", "/Game/Resources/Warriror/Run/Warrior_Run_5_Sprite.Warrior_Run_5_Sprite", "/Game/Resources/Warriror/Run/Warrior_Run_6_Sprite.Warrior_Run_6_Sprite", "/Game/Resources/Warriror/Run/Warrior_Run_7_Sprite.Warrior_Run_7_Sprite", "/Game/Resources/Warriror/Run/Warrior_Run_8_Sprite.Warrior_Run_8_Sprite"])
+}

@@ -1,0 +1,22 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Interactable/Door/L1-针叶.png" id="1_pgxck"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o0m5b"]
+atlas = ExtResource("1_pgxck")
+region = Rect2(32, 0, 32, 32)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o0m5b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Interactable/Door/L1-针叶_Sprite_1.L1-针叶_Sprite_1"])
+}

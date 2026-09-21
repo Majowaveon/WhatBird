@@ -1,0 +1,70 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Interactable/Spring/弹簧冰雪.png" id="1_i2blj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3w856"]
+atlas = ExtResource("1_i2blj")
+region = Rect2(0, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4urr1"]
+atlas = ExtResource("1_i2blj")
+region = Rect2(32, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ar3lk"]
+atlas = ExtResource("1_i2blj")
+region = Rect2(64, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbi3x"]
+atlas = ExtResource("1_i2blj")
+region = Rect2(96, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8q1m"]
+atlas = ExtResource("1_i2blj")
+region = Rect2(128, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_634e6"]
+atlas = ExtResource("1_i2blj")
+region = Rect2(160, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qnsg"]
+atlas = ExtResource("1_i2blj")
+region = Rect2(192, 0, 32, 32)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3w856")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4urr1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ar3lk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbi3x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8q1m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_634e6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qnsg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Interactable/Spring/弹簧冰雪_Sprite_0.弹簧冰雪_Sprite_0", "/Game/Resources/Interactable/Spring/弹簧冰雪_Sprite_1.弹簧冰雪_Sprite_1", "/Game/Resources/Interactable/Spring/弹簧冰雪_Sprite_2.弹簧冰雪_Sprite_2", "/Game/Resources/Interactable/Spring/弹簧冰雪_Sprite_3.弹簧冰雪_Sprite_3", "/Game/Resources/Interactable/Spring/弹簧冰雪_Sprite_4.弹簧冰雪_Sprite_4", "/Game/Resources/Interactable/Spring/弹簧冰雪_Sprite_5.弹簧冰雪_Sprite_5", "/Game/Resources/Interactable/Spring/弹簧冰雪_Sprite_6.弹簧冰雪_Sprite_6"])
+}

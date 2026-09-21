@@ -1,0 +1,78 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Player/Heron/HeronSprites.png" id="1_0otga"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1570j"]
+atlas = ExtResource("1_0otga")
+region = Rect2(0, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_desks"]
+atlas = ExtResource("1_0otga")
+region = Rect2(64, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dfdct"]
+atlas = ExtResource("1_0otga")
+region = Rect2(128, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8d32v"]
+atlas = ExtResource("1_0otga")
+region = Rect2(192, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gk0t0"]
+atlas = ExtResource("1_0otga")
+region = Rect2(256, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6cigo"]
+atlas = ExtResource("1_0otga")
+region = Rect2(320, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdptg"]
+atlas = ExtResource("1_0otga")
+region = Rect2(384, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_weaef"]
+atlas = ExtResource("1_0otga")
+region = Rect2(448, 64, 64, 64)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1570j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_desks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dfdct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8d32v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gk0t0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6cigo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdptg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_weaef")
+}],
+"loop": true,
+"name": &"default",
+"speed": 27.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Player/Heron/HeronSprites_Sprite_13.HeronSprites_Sprite_13", "/Game/Resources/Player/Heron/HeronSprites_Sprite_14.HeronSprites_Sprite_14", "/Game/Resources/Player/Heron/HeronSprites_Sprite_15.HeronSprites_Sprite_15", "/Game/Resources/Player/Heron/HeronSprites_Sprite_16.HeronSprites_Sprite_16", "/Game/Resources/Player/Heron/HeronSprites_Sprite_17.HeronSprites_Sprite_17", "/Game/Resources/Player/Heron/HeronSprites_Sprite_18.HeronSprites_Sprite_18", "/Game/Resources/Player/Heron/HeronSprites_Sprite_19.HeronSprites_Sprite_19", "/Game/Resources/Player/Heron/HeronSprites_Sprite_20.HeronSprites_Sprite_20"])
+}

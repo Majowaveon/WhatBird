@@ -1,0 +1,291 @@
+[gd_resource type="TileSet" load_steps=17 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/TileMap/resource/L4-图层_16.png" id="1_r3jxe"]
+[ext_resource type="Texture2D" path="res://assets/TileMap/resource/L5-图层_17.png" id="2_s24wh"]
+[ext_resource type="Texture2D" path="res://assets/TileMap/resource/鍓嶆櫙1.png" id="3_52m01"]
+[ext_resource type="Texture2D" path="res://assets/TileMap/resource/鍓嶆櫙2.png" id="4_2lspa"]
+[ext_resource type="Texture2D" path="res://assets/TileMap/resource/鍓嶆櫙3.png" id="5_i354t"]
+[ext_resource type="Texture2D" path="res://assets/TileMap/resource/鑳屾櫙1.png" id="6_npxv8"]
+[ext_resource type="Texture2D" path="res://assets/TileMap/resource/鑳屾櫙2.png" id="7_hs76f"]
+[ext_resource type="Texture2D" path="res://assets/TileMap/resource/鑳屾櫙3.png" id="8_50suu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6eyb7"]
+resource_name = "L4-图层_16_TileSet"
+texture = ExtResource("1_r3jxe")
+texture_region_size = Vector2i(512, 512)
+use_texture_padding = false
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+metadata/source_ref = "/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet"
+metadata/atlas_info = {
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 0,
+"source_ref": "/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet",
+"texture": "res://assets/TileMap/resource/L4-图层_16.png",
+"tile_size": Vector2i(512, 512)
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8b260"]
+resource_name = "L5-图层_17_TileSet"
+texture = ExtResource("2_s24wh")
+texture_region_size = Vector2i(512, 512)
+use_texture_padding = false
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+metadata/source_ref = "/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet"
+metadata/atlas_info = {
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 1,
+"source_ref": "/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet",
+"texture": "res://assets/TileMap/resource/L5-图层_17.png",
+"tile_size": Vector2i(512, 512)
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_22tjo"]
+resource_name = "鍓嶆櫙1_TileSet"
+texture = ExtResource("3_52m01")
+texture_region_size = Vector2i(512, 512)
+use_texture_padding = false
+0:0/0 = 0
+metadata/source_ref = "/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet"
+metadata/atlas_info = {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 2,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙1.png",
+"tile_size": Vector2i(512, 512)
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e3tqh"]
+resource_name = "鍓嶆櫙2_TileSet"
+texture = ExtResource("4_2lspa")
+texture_region_size = Vector2i(512, 512)
+use_texture_padding = false
+0:0/0 = 0
+metadata/source_ref = "/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet"
+metadata/atlas_info = {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 3,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙2.png",
+"tile_size": Vector2i(512, 512)
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jp6pj"]
+resource_name = "鍓嶆櫙3_TileSet"
+texture = ExtResource("5_i354t")
+texture_region_size = Vector2i(512, 512)
+use_texture_padding = false
+0:0/0 = 0
+metadata/source_ref = "/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet"
+metadata/atlas_info = {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 4,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙3.png",
+"tile_size": Vector2i(512, 512)
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s1ojx"]
+resource_name = "鑳屾櫙1_TileSet"
+texture = ExtResource("6_npxv8")
+texture_region_size = Vector2i(512, 512)
+use_texture_padding = false
+0:0/0 = 0
+metadata/source_ref = "/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet"
+metadata/atlas_info = {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 5,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙1.png",
+"tile_size": Vector2i(512, 512)
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aqiok"]
+resource_name = "鑳屾櫙2_TileSet"
+texture = ExtResource("7_hs76f")
+texture_region_size = Vector2i(512, 512)
+use_texture_padding = false
+0:0/0 = 0
+metadata/source_ref = "/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet"
+metadata/atlas_info = {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 6,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙2.png",
+"tile_size": Vector2i(512, 512)
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_77qsd"]
+resource_name = "鑳屾櫙3_TileSet"
+texture = ExtResource("8_50suu")
+texture_region_size = Vector2i(512, 512)
+use_texture_padding = false
+0:0/0 = 0
+metadata/source_ref = "/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet"
+metadata/atlas_info = {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 7,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙3.png",
+"tile_size": Vector2i(512, 512)
+}
+
+[resource]
+resource_name = "ForeGround_w0_1"
+tile_size = Vector2i(512, 512)
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 2
+sources/0 = SubResource("TileSetAtlasSource_6eyb7")
+sources/1 = SubResource("TileSetAtlasSource_8b260")
+sources/2 = SubResource("TileSetAtlasSource_22tjo")
+sources/3 = SubResource("TileSetAtlasSource_e3tqh")
+sources/4 = SubResource("TileSetAtlasSource_jp6pj")
+sources/5 = SubResource("TileSetAtlasSource_s1ojx")
+sources/6 = SubResource("TileSetAtlasSource_aqiok")
+sources/7 = SubResource("TileSetAtlasSource_77qsd")
+metadata/source_ref = "/Game/TileMap/ForeGround_w0_1.ForeGround_w0_1"
+metadata/source_ids = Dictionary[String, int]({
+"/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet": 0,
+"/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet": 1,
+"/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet": 2,
+"/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet": 3,
+"/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet": 4,
+"/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet": 5,
+"/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet": 6,
+"/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet": 7
+})
+metadata/atlas_sources = Array[Dictionary]([{
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 0,
+"source_ref": "/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet",
+"texture": "res://assets/TileMap/resource/L4-图层_16.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 4,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(4, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 1,
+"source_ref": "/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet",
+"texture": "res://assets/TileMap/resource/L5-图层_17.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 2,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙1_TileSet.鍓嶆櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙1.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 3,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙2_TileSet.鍓嶆櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙2.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 4,
+"source_ref": "/Game/TileMap/resource/鍓嶆櫙3_TileSet.鍓嶆櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鍓嶆櫙3.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 5,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙1_TileSet.鑳屾櫙1_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙1.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 6,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙2_TileSet.鑳屾櫙2_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙2.png",
+"tile_size": Vector2i(512, 512)
+}, {
+"columns": 1,
+"drawing_offset": Vector2(0, 0),
+"grid_size": Vector2i(1, 1),
+"has_collision": false,
+"margins": Vector2i(0, 0),
+"separation": Vector2i(0, 0),
+"source_id": 7,
+"source_ref": "/Game/TileMap/resource/鑳屾櫙3_TileSet.鑳屾櫙3_TileSet",
+"texture": "res://assets/TileMap/resource/鑳屾櫙3.png",
+"tile_size": Vector2i(512, 512)
+}])
+metadata/terrain_textures = PackedStringArray()

@@ -1,0 +1,110 @@
+[gd_resource type="SpriteFrames" load_steps=14 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Player/WoodPecker/WoodPecker.png" id="1_sewju"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8lou"]
+atlas = ExtResource("1_sewju")
+region = Rect2(0, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06eeg"]
+atlas = ExtResource("1_sewju")
+region = Rect2(64, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gynk"]
+atlas = ExtResource("1_sewju")
+region = Rect2(128, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oauce"]
+atlas = ExtResource("1_sewju")
+region = Rect2(192, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1b8m"]
+atlas = ExtResource("1_sewju")
+region = Rect2(256, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68j5q"]
+atlas = ExtResource("1_sewju")
+region = Rect2(320, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3quy0"]
+atlas = ExtResource("1_sewju")
+region = Rect2(384, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dgao"]
+atlas = ExtResource("1_sewju")
+region = Rect2(448, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u868u"]
+atlas = ExtResource("1_sewju")
+region = Rect2(512, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1k5b"]
+atlas = ExtResource("1_sewju")
+region = Rect2(576, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ln58x"]
+atlas = ExtResource("1_sewju")
+region = Rect2(640, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wesiy"]
+atlas = ExtResource("1_sewju")
+region = Rect2(704, 256, 64, 64)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8lou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06eeg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gynk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oauce")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1b8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68j5q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3quy0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dgao")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u868u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t1k5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ln58x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wesiy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_48.WoodPecker_Sprite_48", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_49.WoodPecker_Sprite_49", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_50.WoodPecker_Sprite_50", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_51.WoodPecker_Sprite_51", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_52.WoodPecker_Sprite_52", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_53.WoodPecker_Sprite_53", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_54.WoodPecker_Sprite_54", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_55.WoodPecker_Sprite_55", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_56.WoodPecker_Sprite_56", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_57.WoodPecker_Sprite_57", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_58.WoodPecker_Sprite_58", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_59.WoodPecker_Sprite_59"])
+}

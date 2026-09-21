@@ -1,0 +1,38 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Player/Penguin/Penguin.png" id="1_3in7h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vibu2"]
+atlas = ExtResource("1_3in7h")
+region = Rect2(0, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7nxov"]
+atlas = ExtResource("1_3in7h")
+region = Rect2(64, 256, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85nki"]
+atlas = ExtResource("1_3in7h")
+region = Rect2(128, 256, 64, 64)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vibu2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7nxov")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85nki")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Player/Penguin/Penguin_Sprite_44.Penguin_Sprite_44", "/Game/Resources/Player/Penguin/Penguin_Sprite_45.Penguin_Sprite_45", "/Game/Resources/Player/Penguin/Penguin_Sprite_46.Penguin_Sprite_46"])
+}

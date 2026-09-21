@@ -1,0 +1,62 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Player/WoodPecker/WoodPecker.png" id="1_3ax5u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vh0c2"]
+atlas = ExtResource("1_3ax5u")
+region = Rect2(0, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjo4u"]
+atlas = ExtResource("1_3ax5u")
+region = Rect2(64, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68qoh"]
+atlas = ExtResource("1_3ax5u")
+region = Rect2(128, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3yfw7"]
+atlas = ExtResource("1_3ax5u")
+region = Rect2(192, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32nsr"]
+atlas = ExtResource("1_3ax5u")
+region = Rect2(256, 64, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_271dk"]
+atlas = ExtResource("1_3ax5u")
+region = Rect2(320, 64, 64, 64)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vh0c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjo4u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68qoh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3yfw7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_32nsr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_271dk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_12.WoodPecker_Sprite_12", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_13.WoodPecker_Sprite_13", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_14.WoodPecker_Sprite_14", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_15.WoodPecker_Sprite_15", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_16.WoodPecker_Sprite_16", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_17.WoodPecker_Sprite_17"])
+}

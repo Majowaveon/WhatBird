@@ -1,0 +1,9 @@
+{
+	"failures": [],
+	"generated": true,
+	"objects": 275,
+	"rooms": 20,
+	"scene": "res://scenes/maps/testyxh1.tscn",
+	"tests_run": false,
+	"tilemap_actors": 60
+}

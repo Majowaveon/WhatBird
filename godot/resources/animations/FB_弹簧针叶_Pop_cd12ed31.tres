@@ -1,0 +1,70 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Interactable/Spring/弹簧针叶.png" id="1_64q31"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbj28"]
+atlas = ExtResource("1_64q31")
+region = Rect2(0, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4cw0m"]
+atlas = ExtResource("1_64q31")
+region = Rect2(32, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qnvp"]
+atlas = ExtResource("1_64q31")
+region = Rect2(64, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cr606"]
+atlas = ExtResource("1_64q31")
+region = Rect2(96, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilfj7"]
+atlas = ExtResource("1_64q31")
+region = Rect2(128, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nki6"]
+atlas = ExtResource("1_64q31")
+region = Rect2(160, 0, 32, 32)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3ct5"]
+atlas = ExtResource("1_64q31")
+region = Rect2(192, 0, 32, 32)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbj28")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4cw0m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qnvp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cr606")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilfj7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nki6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x3ct5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Interactable/Spring/弹簧针叶_Sprite_0.弹簧针叶_Sprite_0", "/Game/Resources/Interactable/Spring/弹簧针叶_Sprite_1.弹簧针叶_Sprite_1", "/Game/Resources/Interactable/Spring/弹簧针叶_Sprite_2.弹簧针叶_Sprite_2", "/Game/Resources/Interactable/Spring/弹簧针叶_Sprite_3.弹簧针叶_Sprite_3", "/Game/Resources/Interactable/Spring/弹簧针叶_Sprite_4.弹簧针叶_Sprite_4", "/Game/Resources/Interactable/Spring/弹簧针叶_Sprite_5.弹簧针叶_Sprite_5", "/Game/Resources/Interactable/Spring/弹簧针叶_Sprite_6.弹簧针叶_Sprite_6"])
+}

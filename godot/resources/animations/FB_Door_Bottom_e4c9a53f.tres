@@ -1,0 +1,22 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Interactable/Door/L2-normal.png" id="1_3p0cp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5iih"]
+atlas = ExtResource("1_3p0cp")
+region = Rect2(64, 0, 32, 32)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5iih")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Interactable/Door/L2-normal_Sprite_2.L2-normal_Sprite_2"])
+}

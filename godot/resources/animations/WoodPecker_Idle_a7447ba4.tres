@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/Resources/Player/WoodPecker/WoodPecker.png" id="1_la41q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_48qab"]
+atlas = ExtResource("1_la41q")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvi77"]
+atlas = ExtResource("1_la41q")
+region = Rect2(64, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ny814"]
+atlas = ExtResource("1_la41q")
+region = Rect2(128, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lk5i5"]
+atlas = ExtResource("1_la41q")
+region = Rect2(192, 0, 64, 64)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_48qab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nvi77")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ny814")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lk5i5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+metadata/heron_frame_refs = {
+"default": Array[String](["/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_0.WoodPecker_Sprite_0", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_1.WoodPecker_Sprite_1", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_2.WoodPecker_Sprite_2", "/Game/Resources/Player/WoodPecker/WoodPecker_Sprite_3.WoodPecker_Sprite_3"])
+}
