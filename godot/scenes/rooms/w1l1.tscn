@@ -219,7 +219,7 @@ metadata/heron_geometry_ppu = 1.0
 
 [node name="BP_CheckPoint_w1l1_2" type="Node2D" parent="Actors"]
 z_index = 5
-position = Vector2(88, 202)
+position = Vector2(88, 90)
 script = ExtResource("3_14osb")
 object_id = "BP_CheckPoint_C_UAID_B025AA764F67DBBA02_1108802520"
 display_name = "BP_CheckPoint_w1l1_2"
