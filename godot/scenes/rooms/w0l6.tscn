@@ -7,7 +7,7 @@
 [ext_resource type="SpriteFrames" path="res://resources/animations/FB_Door_Top_24bda1dd.tres" id="5_fvfx0"]
 [ext_resource type="SpriteFrames" path="res://resources/animations/FB_按钮_2_ef8f66ed.tres" id="6_5wlqg"]
 [ext_resource type="SpriteFrames" path="res://resources/animations/FB_按钮_1_1d91bb2f.tres" id="7_31k14"]
-[ext_resource type="TileSet" path="res://resources/tilesets/ForeGround_w0_1_4d4e861830f30480.tres" id="8_4x4mr"]
+[ext_resource type="TileSet" path="res://resources/tilesets/ForeGround_w0_44338ff35a77149f.tres" id="8_4x4mr"]
 [ext_resource type="TileSet" path="res://resources/tilesets/w0l6_83e24e3339612bcc.tres" id="9_q6hit"]
 [ext_resource type="TileSet" path="res://resources/tilesets/BackGround_w0_9b9c90e76f81def2.tres" id="10_mnavk"]
 
@@ -48,7 +48,7 @@ size = Vector2(64, 64)
 script = ExtResource("1_pcpwc")
 room_tag = "SubLevel_w0l6"
 foreground_water_enabled = true
-foreground_waterline = 0.82
+foreground_waterline = 0.78
 transform_limit = 0
 
 [node name="Actors" type="Node2D" parent="."]
@@ -351,14 +351,14 @@ shape = SubResource("RectangleShape2D_c3s2p")
 [node name="FG_w0l6" type="Node2D" parent="Foreground"]
 z_index = 10
 texture_filter = 1
-position = Vector2(122, 73)
-scale = Vector2(0.94, 0.94)
-metadata/source_ref = "/Game/TileMap/ForeGround_w0_1.ForeGround_w0_1"
+position = Vector2(232, 56)
+scale = Vector2(0.9375, 0.94)
+metadata/source_ref = "/Game/TileMap/ForeGround_w0.ForeGround_w0"
 metadata/original_bounds = Rect2(-256, -256, 512, 512)
 metadata/map_size = Vector2i(1, 1)
 metadata/tile_size = Vector2i(512, 512)
 metadata/ppu = 1.0
-metadata/tileset_path = "res://resources/tilesets/ForeGround_w0_1_4d4e861830f30480.tres"
+metadata/tileset_path = "res://resources/tilesets/ForeGround_w0_44338ff35a77149f.tres"
 metadata/source_ids = Dictionary[String, int]({
 "/Game/TileMap/resource/L4-图层_16_TileSet.L4-图层_16_TileSet": 0,
 "/Game/TileMap/resource/L5-图层_17_TileSet.L5-图层_17_TileSet": 1,
@@ -460,24 +460,13 @@ metadata/atlas_sources = Array[Dictionary]([{
 }])
 metadata/terrain_textures = PackedStringArray()
 
-[node name="PaperTileLayer_1" type="TileMapLayer" parent="Foreground/FG_w0l6"]
-texture_filter = 1
-position = Vector2(-256, -256)
-tile_map_data = PackedByteArray("AAAAAAAAAQABAAAAAAA=")
-tile_set = ExtResource("8_4x4mr")
-metadata/source_ref = "/Game/TileMap/ForeGround_w0_1.ForeGround_w0_1"
-metadata/original_layer_index = 0
-metadata/original_name = "PaperTileLayer_1"
-metadata/map_size = Vector2i(1, 1)
-
 [node name="PaperTileLayer_0" type="TileMapLayer" parent="Foreground/FG_w0l6"]
-z_index = -4
 texture_filter = 1
 position = Vector2(-256, -256)
-tile_map_data = PackedByteArray("AAAAAAAAAAABAAAAAAA=")
+tile_map_data = PackedByteArray("AAAAAAAAAgAAAAAAAAA=")
 tile_set = ExtResource("8_4x4mr")
-metadata/source_ref = "/Game/TileMap/ForeGround_w0_1.ForeGround_w0_1"
-metadata/original_layer_index = 1
+metadata/source_ref = "/Game/TileMap/ForeGround_w0.ForeGround_w0"
+metadata/original_layer_index = 0
 metadata/original_name = "PaperTileLayer_0"
 metadata/map_size = Vector2i(1, 1)
 
@@ -559,7 +548,7 @@ metadata/map_size = Vector2i(30, 17)
 z_index = -12
 texture_filter = 1
 position = Vector2(232, 56)
-scale = Vector2(0.94, 0.94)
+scale = Vector2(0.9375, 0.94)
 metadata/source_ref = "/Game/TileMap/BackGround_w0.BackGround_w0"
 metadata/original_bounds = Rect2(-256, -256, 512, 512)
 metadata/map_size = Vector2i(1, 1)

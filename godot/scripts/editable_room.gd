@@ -2,6 +2,8 @@
 class_name HeronEditableRoom
 extends Node2D
 
+const ROOM_CLIP_SHADER: Shader = preload("res://scripts/room_foreground.gdshader")
+
 @export var room_tag: String = "SubLevel_new_room"
 @export var transform_limit: int = -1
 @export var camera_bounds: Rect2 = Rect2(-8, -8, 480, 272):
@@ -22,6 +24,22 @@ func _ready() -> void:
 	if not Engine.is_editor_hint() and get_parent() == get_tree().root:
 		ProjectSettings.set_meta("heron_scene_preview", scene_file_path)
 		_launch_preview.call_deferred()
+	if not Engine.is_editor_hint():
+		_clip_scenery()
+
+func _clip_scenery() -> void:
+	var bounds: Rect2 = world_bounds()
+	var clip := ShaderMaterial.new()
+	clip.shader = ROOM_CLIP_SHADER
+	clip.set_shader_parameter("room_bounds", Vector4(bounds.position.x, bounds.position.y, bounds.end.x, bounds.end.y))
+	# Only decorative tile layers are clipped; gameplay and custom effects keep their materials.
+	for group: String in ["Background", "Foreground"]:
+		var scenery: Node2D = get_node_or_null(group) as Node2D
+		if not scenery:
+			continue
+		for layer: Node in scenery.find_children("*", "TileMapLayer", true, false):
+			if layer.material == null:
+				layer.material = clip
 
 func _launch_preview() -> void:
 	get_tree().change_scene_to_file("res://scenes/main.tscn")

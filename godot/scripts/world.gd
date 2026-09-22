@@ -33,8 +33,6 @@ var depth_layers: Array[Dictionary] = []
 var editable_scene: Node2D
 var foreground_water: HeronWaterSurface
 var scene_preview: bool = false
-var foreground_colors: Dictionary = {}
-var foreground_tweens: Dictionary = {}
 
 func load_map(data: Dictionary, map_name: String = "Map/TestYxh1") -> void:
 	source_data = data
@@ -109,9 +107,6 @@ func _load_editable_scene(path: String) -> void:
 			var room: HeronEditableRoom = node
 			var tag: String = room.room_tag.to_lower()
 			rooms[tag] = {"rect": room.world_bounds(), "node": room, "label": room.room_tag}
-			var foreground: Node2D = room.get_node_or_null("Foreground") as Node2D
-			if foreground:
-				foreground_colors[tag] = foreground.modulate
 			limits[tag] = room.transform_limit
 		if node is HeronWorldObject:
 			var object: HeronWorldObject = node
@@ -316,23 +311,6 @@ func _on_attack(origin: Vector2, facing: int) -> void:
 			player.confirm_attack(true)
 			return
 
-func _update_foregrounds(instant: bool) -> void:
-	# Oversized foreground art must not spill into the neighboring room at rest.
-	for tag: String in foreground_colors:
-		var foreground: Node2D = rooms[tag]["node"].get_node("Foreground") as Node2D
-		var target: Color = foreground_colors[tag]
-		if tag != room_tag:
-			target.a = 0.0
-		var previous: Tween = foreground_tweens.get(tag) as Tween
-		if previous and previous.is_valid():
-			previous.kill()
-		if instant:
-			foreground.modulate = target
-			continue
-		var tween: Tween = create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
-		tween.tween_property(foreground, "modulate", target, 0.3)
-		foreground_tweens[tag] = tween
-
 func change_room(tag: String, instant: bool = false) -> void:
 	var canonical: String = tag.to_lower()
 	if not rooms.has(canonical):
@@ -341,7 +319,6 @@ func change_room(tag: String, instant: bool = false) -> void:
 	if room_tag == canonical and not instant:
 		return
 	room_tag = canonical
-	_update_foregrounds(instant)
 	var room: HeronEditableRoom = rooms[room_tag]["node"] as HeronEditableRoom
 	foreground_water.set_room(room.foreground_water_enabled if room else false, room.foreground_waterline if room else 0.78, instant)
 	player.set_transform_limit(int(limits.get(room_tag, -1)))
