@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=4]
+
+[ext_resource type="Texture2D" path="res://assets/TileMap/resource/鑳屾櫙2.png" id="snowfield"]
+
+[node name="SnowBackdrop" type="Node2D"]
+z_index = -20
+texture_filter = 1
+
+[node name="Snowfield" type="Sprite2D" parent="."]
+texture = ExtResource("snowfield")
+centered = false
+scale = Vector2(1, 1)
+region_enabled = true
+region_rect = Rect2(0, 90, 480, 270)
+
+[node name="FarRidge" type="Polygon2D" parent="."]
+color = Color(0.55, 0.68, 0.79, 0.38)
+polygon = PackedVector2Array(0, 172, 0, 124, 48, 124, 48, 108, 96, 108, 96, 92, 128, 92, 128, 112, 176, 112, 176, 100, 208, 100, 208, 132, 272, 132, 272, 116, 320, 116, 320, 96, 368, 96, 368, 120, 416, 120, 416, 108, 480, 108, 480, 188, 0, 188)
+
+[node name="Snowfall" type="CPUParticles2D" parent="."]
+z_index = 22
+position = Vector2(240, -12)
+amount = 60
+lifetime = 9.0
+preprocess = 9.0
+visibility_rect = Rect2(-280, -20, 560, 360)
+emission_shape = 2
+emission_rect_extents = Vector2(264, 12)
+direction = Vector2(-0.25, 1)
+spread = 18.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 23.0
+initial_velocity_max = 39.0
+scale_amount_min = 0.65
+scale_amount_max = 1.25
+color = Color(0.97, 0.99, 1, 0.68)

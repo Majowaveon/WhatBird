@@ -1,0 +1,436 @@
+[gd_scene load_steps=22 format=4]
+
+[ext_resource type="Script" path="res://scripts/editable_room.gd" id="room"]
+
+[ext_resource type="TileSet" path="res://resources/tilesets/w0l1_27c503a4b04bb5c6.tres" id="tiles"]
+
+[ext_resource type="Script" path="res://scripts/world_object.gd" id="object"]
+
+[ext_resource type="FontFile" path="res://assets/Fonts/fusion-pixel-10px-monospaced-zh_hans.otf" id="font"]
+
+[ext_resource type="PackedScene" path="res://scenes/environment/frostpass_backdrop.tscn" id="backdrop"]
+
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_按钮_2_ef8f66ed.tres" id="anim0"]
+
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_按钮_1_1d91bb2f.tres" id="anim1"]
+
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_Door雪地_Bottom_42a778cc.tres" id="anim2"]
+
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_Door雪地_Middle_7f33eca4.tres" id="anim3"]
+
+[ext_resource type="SpriteFrames" path="res://resources/animations/FB_Door雪地_Top_9e33d634.tres" id="anim4"]
+
+[sub_resource type="RectangleShape2D" id="IceRunwayShape"]
+size = Vector2(288, 16)
+
+[sub_resource type="RectangleShape2D" id="CheckpointShape"]
+size = Vector2(24, 40)
+
+[sub_resource type="RectangleShape2D" id="SpeedButterflyShape"]
+size = Vector2(20, 20)
+
+[sub_resource type="RectangleShape2D" id="LandingButterflyShape"]
+size = Vector2(20, 20)
+
+[sub_resource type="RectangleShape2D" id="SnowGate1Shape"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="SnowGate2Shape"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="SnowGate3Shape"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="SnowGate4Shape"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="CampaignExitShape"]
+size = Vector2(20, 36)
+
+[sub_resource type="RectangleShape2D" id="ReturnToPenguinShape"]
+size = Vector2(20, 300)
+
+[sub_resource type="RectangleShape2D" id="EastBoundaryShape"]
+size = Vector2(16, 440)
+
+[node name="w3l2" type="Node2D"]
+texture_filter = 1
+script = ExtResource("room")
+room_tag = "SubLevel_w3l2"
+camera_bounds = Rect2(0, 0, 480, 270)
+preview_form = 2
+
+[node name="Background" parent="." instance=ExtResource("backdrop")]
+position = Vector2(480, 0)
+scale = Vector2(-1, 1)
+
+
+[node name="Terrain" type="Node2D" parent="."]
+
+
+[node name="Actors" type="Node2D" parent="."]
+z_index = 3
+
+[node name="Decoration" type="Node2D" parent="."]
+
+
+[node name="Foreground" type="Node2D" parent="."]
+z_index = 6
+
+[node name="Boundaries" type="Node2D" parent="."]
+
+
+[node name="Title" type="Label" parent="Decoration"]
+offset_left = 72
+offset_top = 16
+offset_right = 452
+offset_bottom = 34
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.16, 0.25, 0.36, 1)
+text = "霜羽山口  /  02  借势开门"
+
+[node name="Subtitle" type="Label" parent="Decoration"]
+offset_left = 72
+offset_top = 34
+offset_right = 462
+offset_bottom = 50
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(0.16, 0.25, 0.36, 1)
+text = "两只蝴蝶，一扇冰封的门。"
+
+[node name="RunupSnow" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+z_index = 0
+tile_map_data = PackedByteArray("AAAAAA0AAQACAAoAAAAAAA4AAQADAAsAAAAAAA8AAQABAAsAAAAAABAAAQACAAsAAAABAA0AAQADAAoAAAABAA4AAQABAAsAAAABAA8AAQACAAsAAAABABAAAQADAAsAAAACAA0AAQABAAoAAAACAA4AAQACAAsAAAACAA8AAQADAAsAAAACABAAAQABAAsAAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = true
+
+[node name="RunupSnowSnow" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+z_index = 1
+tile_map_data = PackedByteArray("AAAAAA0AAQABAAkAAAABAA0AAQACAAkAAAACAA0AAQADAAkAAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = false
+
+[node name="IceRunway" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8.5)
+scale = Vector2(0.5, 0.5)
+z_index = 0
+tile_map_data = PackedByteArray("AAADAA0AAQABAA4AAAADAA4AAQACAA8AAAADAA8AAQABAA8AAAADABAAAQACAA8AAAAEAA0AAQACAA4AAAAEAA4AAQABAA8AAAAEAA8AAQACAA8AAAAEABAAAQABAA8AAAAFAA0AAQABAA4AAAAFAA4AAQACAA8AAAAFAA8AAQABAA8AAAAFABAAAQACAA8AAAAGAA0AAQACAA4AAAAGAA4AAQABAA8AAAAGAA8AAQACAA8AAAAGABAAAQABAA8AAAAHAA0AAQABAA4AAAAHAA4AAQACAA8AAAAHAA8AAQABAA8AAAAHABAAAQACAA8AAAAIAA0AAQACAA4AAAAIAA4AAQABAA8AAAAIAA8AAQACAA8AAAAIABAAAQABAA8AAAAJAA0AAQABAA4AAAAJAA4AAQACAA8AAAAJAA8AAQABAA8AAAAJABAAAQACAA8AAAAKAA0AAQACAA4AAAAKAA4AAQABAA8AAAAKAA8AAQACAA8AAAAKABAAAQABAA8AAAALAA0AAQABAA4AAAALAA4AAQACAA8AAAALAA8AAQABAA8AAAALABAAAQACAA8AAAAMAA0AAQACAA4AAAAMAA4AAQABAA8AAAAMAA8AAQACAA8AAAAMABAAAQABAA8AAAANAA0AAQABAA4AAAANAA4AAQACAA8AAAANAA8AAQABAA8AAAANABAAAQACAA8AAAAOAA0AAQACAA4AAAAOAA4AAQABAA8AAAAOAA8AAQACAA8AAAAOABAAAQABAA8AAAAPAA0AAQABAA4AAAAPAA4AAQACAA8AAAAPAA8AAQABAA8AAAAPABAAAQACAA8AAAAQAA0AAQACAA4AAAAQAA4AAQABAA8AAAAQAA8AAQACAA8AAAAQABAAAQABAA8AAAARAA0AAQABAA4AAAARAA4AAQACAA8AAAARAA8AAQABAA8AAAARABAAAQACAA8AAAASAA0AAQACAA4AAAASAA4AAQABAA8AAAASAA8AAQACAA8AAAASABAAAQABAA8AAAATAA0AAQABAA4AAAATAA4AAQACAA8AAAATAA8AAQABAA8AAAATABAAAQACAA8AAAAUAA0AAQACAA4AAAAUAA4AAQABAA8AAAAUAA8AAQACAA8AAAAUABAAAQABAA8AAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = true
+
+[node name="CampLanding" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+z_index = 0
+tile_map_data = PackedByteArray("AAAZAA0AAQADAAoAAAAZAA4AAQABAAsAAAAZAA8AAQACAAsAAAAZABAAAQADAAsAAAAaAA0AAQABAAoAAAAaAA4AAQACAAsAAAAaAA8AAQADAAsAAAAaABAAAQABAAsAAAAbAA0AAQACAAoAAAAbAA4AAQADAAsAAAAbAA8AAQABAAsAAAAbABAAAQACAAsAAAAcAA0AAQADAAoAAAAcAA4AAQABAAsAAAAcAA8AAQACAAsAAAAcABAAAQADAAsAAAAdAA0AAQABAAoAAAAdAA4AAQACAAsAAAAdAA8AAQADAAsAAAAdABAAAQABAAsAAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = true
+
+[node name="CampLandingSnow" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+z_index = 1
+tile_map_data = PackedByteArray("AAAZAA0AAQAFAAkAAAAaAA0AAQAGAAkAAAAbAA0AAQAHAAkAAAAcAA0AAQABAAkAAAAdAA0AAQACAAkAAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = false
+
+[node name="GateRoof" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+z_index = 0
+tile_map_data = PackedByteArray("AAAYAP7/AQACAAoAAAAYAP//AQADAAsAAAAYAAAAAQABAAsAAAAYAAEAAQACAAsAAAAYAAIAAQADAAsAAAAYAAMAAQABAAsAAAAYAAQAAQACAAsAAAAYAAUAAQADAAsAAAAYAAYAAQABAAsAAAAYAAcAAQACAAsAAAAYAAgAAQADAAsAAAAYAAkAAQABAAsAAAAZAP7/AQADAAoAAAAZAP//AQABAAsAAAAZAAAAAQACAAsAAAAZAAEAAQADAAsAAAAZAAIAAQABAAsAAAAZAAMAAQACAAsAAAAZAAQAAQADAAsAAAAZAAUAAQABAAsAAAAZAAYAAQACAAsAAAAZAAcAAQADAAsAAAAZAAgAAQABAAsAAAAZAAkAAQACAAsAAAAaAP7/AQABAAoAAAAaAP//AQACAAsAAAAaAAAAAQADAAsAAAAaAAEAAQABAAsAAAAaAAIAAQACAAsAAAAaAAMAAQADAAsAAAAaAAQAAQABAAsAAAAaAAUAAQACAAsAAAAaAAYAAQADAAsAAAAaAAcAAQABAAsAAAAaAAgAAQACAAsAAAAaAAkAAQADAAsAAAAbAP7/AQACAAoAAAAbAP//AQADAAsAAAAbAAAAAQABAAsAAAAbAAEAAQACAAsAAAAbAAIAAQADAAsAAAAbAAMAAQABAAsAAAAbAAQAAQACAAsAAAAbAAUAAQADAAsAAAAbAAYAAQABAAsAAAAbAAcAAQACAAsAAAAbAAgAAQADAAsAAAAbAAkAAQABAAsAAAAcAP7/AQADAAoAAAAcAP//AQABAAsAAAAcAAAAAQACAAsAAAAcAAEAAQADAAsAAAAcAAIAAQABAAsAAAAcAAMAAQACAAsAAAAcAAQAAQADAAsAAAAcAAUAAQABAAsAAAAcAAYAAQACAAsAAAAcAAcAAQADAAsAAAAcAAgAAQABAAsAAAAcAAkAAQACAAsAAAAdAP7/AQABAAoAAAAdAP//AQACAAsAAAAdAAAAAQADAAsAAAAdAAEAAQABAAsAAAAdAAIAAQACAAsAAAAdAAMAAQADAAsAAAAdAAQAAQABAAsAAAAdAAUAAQACAAsAAAAdAAYAAQADAAsAAAAdAAcAAQABAAsAAAAdAAgAAQACAAsAAAAdAAkAAQADAAsAAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = true
+
+[node name="GateRoofSnow" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+z_index = 1
+tile_map_data = PackedByteArray("AAAYAP7/AQAEAAkAAAAZAP7/AQAFAAkAAAAaAP7/AQAGAAkAAAAbAP7/AQAHAAkAAAAcAP7/AQABAAkAAAAdAP7/AQACAAkAAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = false
+
+[node name="IceRunway" type="Node2D" parent="Actors"]
+position = Vector2(192.0, 216)
+script = ExtResource("object")
+kind = "BP_IceTriggerVolume"
+
+[node name="Trigger" type="Area2D" parent="Actors/IceRunway"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/IceRunway/Trigger"]
+position = Vector2(0, 0)
+shape = SubResource("IceRunwayShape")
+
+[node name="Checkpoint" type="Node2D" parent="Actors"]
+position = Vector2(24, 210)
+script = ExtResource("object")
+kind = "BP_CheckPoint"
+
+[node name="Trigger" type="Area2D" parent="Actors/Checkpoint"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/Checkpoint/Trigger"]
+position = Vector2(0, 0)
+shape = SubResource("CheckpointShape")
+
+[node name="FlagPole" type="Polygon2D" parent="Actors/Checkpoint"]
+color = Color(0.25, 0.34, 0.40, 1)
+polygon = PackedVector2Array(-1, 14, 1, 14, 1, -24, -1, -24)
+
+[node name="Flag" type="Polygon2D" parent="Actors/Checkpoint"]
+color = Color(0.96, 0.69, 0.28, 1)
+polygon = PackedVector2Array(1, -24, 17, -24, 13, -18, 17, -12, 1, -12)
+
+[node name="CheckpointHint" type="Label" parent="Decoration"]
+offset_left = 8
+offset_top = 232
+offset_right = 168
+offset_bottom = 244
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(0.92, 0.96, 1, 1)
+text = "存档旗 · R 重试"
+
+[node name="SpeedButterfly" type="Node2D" parent="Actors"]
+position = Vector2(164, 212)
+script = ExtResource("object")
+kind = "BP_Button"
+pressed_animation = ExtResource("anim0")
+required_form = 2
+minimum_horizontal_speed = 275.0
+
+[node name="Trigger" type="Area2D" parent="Actors/SpeedButterfly"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/SpeedButterfly/Trigger"]
+position = Vector2(0, 0)
+shape = SubResource("SpeedButterflyShape")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Actors/SpeedButterfly"]
+position = Vector2(0, 0)
+scale = Vector2(1, 1)
+sprite_frames = ExtResource("anim1")
+autoplay = "default"
+offset = Vector2(0.0, 0.0)
+metadata/heron_geometry_ppu = 1.0
+
+[node name="LandingButterfly" type="Node2D" parent="Actors"]
+position = Vector2(408, 212)
+script = ExtResource("object")
+kind = "BP_Button"
+pressed_animation = ExtResource("anim0")
+
+[node name="Trigger" type="Area2D" parent="Actors/LandingButterfly"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/LandingButterfly/Trigger"]
+position = Vector2(0, 0)
+shape = SubResource("LandingButterflyShape")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Actors/LandingButterfly"]
+position = Vector2(0, 0)
+scale = Vector2(1, 1)
+sprite_frames = ExtResource("anim1")
+autoplay = "default"
+offset = Vector2(0.0, 0.0)
+metadata/heron_geometry_ppu = 1.0
+
+[node name="SnowGate1" type="Node2D" parent="Actors"]
+position = Vector2(424, 216)
+script = ExtResource("object")
+kind = "BP_Door"
+linked_buttons = Array[NodePath]([NodePath("../SpeedButterfly"), NodePath("../LandingButterfly")])
+
+[node name="Solid" type="StaticBody2D" parent="Actors/SnowGate1"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/SnowGate1/Solid"]
+position = Vector2(0, 0)
+shape = SubResource("SnowGate1Shape")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Actors/SnowGate1"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("anim2")
+autoplay = "default"
+offset = Vector2(0.0, 0.0)
+metadata/heron_geometry_ppu = 1.0
+
+[node name="SnowGate2" type="Node2D" parent="Actors"]
+position = Vector2(424, 200)
+script = ExtResource("object")
+kind = "BP_Door"
+linked_buttons = Array[NodePath]([NodePath("../SpeedButterfly"), NodePath("../LandingButterfly")])
+
+[node name="Solid" type="StaticBody2D" parent="Actors/SnowGate2"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/SnowGate2/Solid"]
+position = Vector2(0, 0)
+shape = SubResource("SnowGate2Shape")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Actors/SnowGate2"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("anim3")
+autoplay = "default"
+offset = Vector2(0.0, 0.0)
+metadata/heron_geometry_ppu = 1.0
+
+[node name="SnowGate3" type="Node2D" parent="Actors"]
+position = Vector2(424, 184)
+script = ExtResource("object")
+kind = "BP_Door"
+linked_buttons = Array[NodePath]([NodePath("../SpeedButterfly"), NodePath("../LandingButterfly")])
+
+[node name="Solid" type="StaticBody2D" parent="Actors/SnowGate3"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/SnowGate3/Solid"]
+position = Vector2(0, 0)
+shape = SubResource("SnowGate3Shape")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Actors/SnowGate3"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("anim3")
+autoplay = "default"
+offset = Vector2(0.0, 0.0)
+metadata/heron_geometry_ppu = 1.0
+
+[node name="SnowGate4" type="Node2D" parent="Actors"]
+position = Vector2(424, 168)
+script = ExtResource("object")
+kind = "BP_Door"
+linked_buttons = Array[NodePath]([NodePath("../SpeedButterfly"), NodePath("../LandingButterfly")])
+
+[node name="Solid" type="StaticBody2D" parent="Actors/SnowGate4"]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/SnowGate4/Solid"]
+position = Vector2(0, 0)
+shape = SubResource("SnowGate4Shape")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Actors/SnowGate4"]
+position = Vector2(0, 0)
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("anim4")
+autoplay = "default"
+offset = Vector2(0.0, 0.0)
+metadata/heron_geometry_ppu = 0.3125
+
+[node name="LaunchStripe" type="Polygon2D" parent="Decoration"]
+color = Color(0.98, 0.73, 0.29, 1)
+polygon = PackedVector2Array(307, 218, 311, 218, 311, 224, 307, 224)
+
+[node name="IceCrystal" type="Polygon2D" parent="Actors/SpeedButterfly"]
+color = Color(0.37, 0.76, 0.95, 1)
+polygon = PackedVector2Array(-14, 5, -14, -8, -10, -13, -6, -8, -6, 5)
+
+[node name="SpeedHint" type="Label" parent="Decoration"]
+offset_left = 54
+offset_top = 127
+offset_right = 329
+offset_bottom = 145
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(0.16, 0.25, 0.36, 1)
+text = "① 冰封蝴蝶：用企鹅滑快一点"
+
+[node name="PuzzleHint" type="Label" parent="Decoration"]
+offset_left = 150
+offset_top = 155
+offset_right = 370
+offset_bottom = 173
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(0.16, 0.25, 0.36, 1)
+text = "② 裂隙另一边，还有一只"
+
+[node name="RunupHint" type="Label" parent="Decoration"]
+offset_left = 58
+offset_top = 250
+offset_right = 363
+offset_bottom = 264
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(0.95, 0.98, 1, 1)
+text = "没点亮？退回冰道起点，再滑过来。"
+
+[node name="CampLabel" type="Label" parent="Decoration"]
+offset_left = 444
+offset_top = 175
+offset_right = 479
+offset_bottom = 189
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(0.16, 0.25, 0.36, 1)
+text = "营地"
+
+[node name="LanternPost" type="Polygon2D" parent="Decoration"]
+color = Color(0.25, 0.34, 0.40, 1)
+polygon = PackedVector2Array(454, 224, 457, 224, 457, 192, 454, 192)
+
+[node name="LanternLight" type="Polygon2D" parent="Decoration"]
+color = Color(1, 0.81, 0.37, 1)
+polygon = PackedVector2Array(451, 192, 460, 192, 460, 202, 451, 202)
+
+[node name="CampaignExit" type="Node2D" parent="Actors"]
+position = Vector2(458, 203)
+script = ExtResource("object")
+kind = "BP_PassGameTriggerVolume"
+
+[node name="Trigger" type="Area2D" parent="Actors/CampaignExit"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/CampaignExit/Trigger"]
+position = Vector2(0, 0)
+shape = SubResource("CampaignExitShape")
+
+[node name="ReturnToPenguin" type="Node2D" parent="Actors"]
+position = Vector2(-22, 120)
+script = ExtResource("object")
+kind = "BP_ChangeSubLevelVolume"
+target_room = "SubLevel_w3l1"
+
+[node name="Trigger" type="Area2D" parent="Actors/ReturnToPenguin"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/ReturnToPenguin/Trigger"]
+position = Vector2(0, 0)
+shape = SubResource("ReturnToPenguinShape")
+
+[node name="EastBoundary" type="StaticBody2D" parent="Boundaries"]
+position = Vector2(488, 108)
+collision_layer = 1
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/EastBoundary"]
+shape = SubResource("EastBoundaryShape")
+
+[node name="PlayerStart" type="Marker2D" parent="."]
+position = Vector2(24, 208)

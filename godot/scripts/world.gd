@@ -223,7 +223,7 @@ func _interact(object: HeronWorldObject) -> void:
 		"BP_ChangeSubLevelVolume":
 			change_room(String(object.properties.get("改为的关卡名", "")))
 		"BP_Button":
-			if not object.triggered:
+			if not object.triggered and object.can_press_button(player):
 				object.activate_button()
 				for path: NodePath in object.linked_doors:
 					var door: HeronWorldObject = object.get_node_or_null(path) as HeronWorldObject

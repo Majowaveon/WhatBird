@@ -1,0 +1,261 @@
+[gd_scene load_steps=12 format=4]
+
+[ext_resource type="Script" path="res://scripts/editable_room.gd" id="room"]
+
+[ext_resource type="TileSet" path="res://resources/tilesets/w0l1_27c503a4b04bb5c6.tres" id="tiles"]
+
+[ext_resource type="Script" path="res://scripts/world_object.gd" id="object"]
+
+[ext_resource type="FontFile" path="res://assets/Fonts/fusion-pixel-10px-monospaced-zh_hans.otf" id="font"]
+
+[ext_resource type="PackedScene" path="res://scenes/environment/frostpass_backdrop.tscn" id="backdrop"]
+
+[ext_resource type="SpriteFrames" path="res://resources/animations/NPC_PenguinIdle_f892a188.tres" id="anim0"]
+
+[sub_resource type="RectangleShape2D" id="CheckpointShape"]
+size = Vector2(24, 200)
+
+[sub_resource type="RectangleShape2D" id="ForestReturnShape"]
+size = Vector2(80, 20)
+
+[sub_resource type="RectangleShape2D" id="LearnPenguinShape"]
+size = Vector2(56, 200)
+
+[sub_resource type="RectangleShape2D" id="PracticeIceShape"]
+size = Vector2(176, 16)
+
+[sub_resource type="RectangleShape2D" id="EnterIcePuzzleShape"]
+size = Vector2(20, 300)
+
+[node name="w3l1" type="Node2D"]
+texture_filter = 1
+script = ExtResource("room")
+room_tag = "SubLevel_w3l1"
+camera_bounds = Rect2(0, 0, 480, 270)
+preview_form = 3
+
+[node name="Background" parent="." instance=ExtResource("backdrop")]
+
+
+[node name="Terrain" type="Node2D" parent="."]
+
+
+[node name="Actors" type="Node2D" parent="."]
+z_index = 3
+
+[node name="Decoration" type="Node2D" parent="."]
+
+
+[node name="Foreground" type="Node2D" parent="."]
+z_index = 6
+
+[node name="Boundaries" type="Node2D" parent="."]
+
+
+[node name="Title" type="Label" parent="Decoration"]
+offset_left = 72
+offset_top = 16
+offset_right = 452
+offset_bottom = 34
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.16, 0.25, 0.36, 1)
+text = "霜羽山口  /  01  雪地来客"
+
+[node name="Subtitle" type="Label" parent="Decoration"]
+offset_left = 72
+offset_top = 34
+offset_right = 462
+offset_bottom = 50
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(0.16, 0.25, 0.36, 1)
+text = "森林的尽头，一位新朋友正在等你。"
+
+[node name="MeetingSnow" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+z_index = 0
+tile_map_data = PackedByteArray("AAAGAA0AAQACAAoAAAAGAA4AAQADAAsAAAAGAA8AAQABAAsAAAAGABAAAQACAAsAAAAHAA0AAQADAAoAAAAHAA4AAQABAAsAAAAHAA8AAQACAAsAAAAHABAAAQADAAsAAAAIAA0AAQABAAoAAAAIAA4AAQACAAsAAAAIAA8AAQADAAsAAAAIABAAAQABAAsAAAAJAA0AAQACAAoAAAAJAA4AAQADAAsAAAAJAA8AAQABAAsAAAAJABAAAQACAAsAAAAKAA0AAQADAAoAAAAKAA4AAQABAAsAAAAKAA8AAQACAAsAAAAKABAAAQADAAsAAAALAA0AAQABAAoAAAALAA4AAQACAAsAAAALAA8AAQADAAsAAAALABAAAQABAAsAAAAMAA0AAQACAAoAAAAMAA4AAQADAAsAAAAMAA8AAQABAAsAAAAMABAAAQACAAsAAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = true
+
+[node name="MeetingSnowSnow" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+z_index = 1
+tile_map_data = PackedByteArray("AAAGAA0AAQAHAAkAAAAHAA0AAQABAAkAAAAIAA0AAQACAAkAAAAJAA0AAQADAAkAAAAKAA0AAQAEAAkAAAALAA0AAQAFAAkAAAAMAA0AAQAGAAkAAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = false
+
+[node name="PracticeIce" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8.5)
+scale = Vector2(0.5, 0.5)
+z_index = 0
+tile_map_data = PackedByteArray("AAANAA0AAQABAA4AAAANAA4AAQACAA8AAAANAA8AAQABAA8AAAANABAAAQACAA8AAAAOAA0AAQACAA4AAAAOAA4AAQABAA8AAAAOAA8AAQACAA8AAAAOABAAAQABAA8AAAAPAA0AAQABAA4AAAAPAA4AAQACAA8AAAAPAA8AAQABAA8AAAAPABAAAQACAA8AAAAQAA0AAQACAA4AAAAQAA4AAQABAA8AAAAQAA8AAQACAA8AAAAQABAAAQABAA8AAAARAA0AAQABAA4AAAARAA4AAQACAA8AAAARAA8AAQABAA8AAAARABAAAQACAA8AAAASAA0AAQACAA4AAAASAA4AAQABAA8AAAASAA8AAQACAA8AAAASABAAAQABAA8AAAATAA0AAQABAA4AAAATAA4AAQACAA8AAAATAA8AAQABAA8AAAATABAAAQACAA8AAAAUAA0AAQACAA4AAAAUAA4AAQABAA8AAAAUAA8AAQACAA8AAAAUABAAAQABAA8AAAAVAA0AAQABAA4AAAAVAA4AAQACAA8AAAAVAA8AAQABAA8AAAAVABAAAQACAA8AAAAWAA0AAQACAA4AAAAWAA4AAQABAA8AAAAWAA8AAQACAA8AAAAWABAAAQABAA8AAAAXAA0AAQABAA4AAAAXAA4AAQACAA8AAAAXAA8AAQABAA8AAAAXABAAAQACAA8AAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = true
+
+[node name="EastLanding" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+z_index = 0
+tile_map_data = PackedByteArray("AAAYAA0AAQACAAoAAAAYAA4AAQADAAsAAAAYAA8AAQABAAsAAAAYABAAAQACAAsAAAAZAA0AAQADAAoAAAAZAA4AAQABAAsAAAAZAA8AAQACAAsAAAAZABAAAQADAAsAAAAaAA0AAQABAAoAAAAaAA4AAQACAAsAAAAaAA8AAQADAAsAAAAaABAAAQABAAsAAAAbAA0AAQACAAoAAAAbAA4AAQADAAsAAAAbAA8AAQABAAsAAAAbABAAAQACAAsAAAAcAA0AAQADAAoAAAAcAA4AAQABAAsAAAAcAA8AAQACAAsAAAAcABAAAQADAAsAAAAdAA0AAQABAAoAAAAdAA4AAQACAAsAAAAdAA8AAQADAAsAAAAdABAAAQABAAsAAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = true
+
+[node name="EastLandingSnow" type="TileMapLayer" parent="Terrain"]
+position = Vector2(0, 8)
+scale = Vector2(0.5, 0.5)
+z_index = 1
+tile_map_data = PackedByteArray("AAAYAA0AAQAEAAkAAAAZAA0AAQAFAAkAAAAaAA0AAQAGAAkAAAAbAA0AAQAHAAkAAAAcAA0AAQABAAkAAAAdAA0AAQACAAkAAAA=")
+tile_set = ExtResource("tiles")
+collision_enabled = false
+
+[node name="Checkpoint" type="Node2D" parent="Actors"]
+position = Vector2(112, 210)
+script = ExtResource("object")
+kind = "BP_CheckPoint"
+
+[node name="Trigger" type="Area2D" parent="Actors/Checkpoint"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/Checkpoint/Trigger"]
+position = Vector2(0, -80)
+shape = SubResource("CheckpointShape")
+
+[node name="FlagPole" type="Polygon2D" parent="Actors/Checkpoint"]
+color = Color(0.25, 0.34, 0.40, 1)
+polygon = PackedVector2Array(-1, 14, 1, 14, 1, -24, -1, -24)
+
+[node name="Flag" type="Polygon2D" parent="Actors/Checkpoint"]
+color = Color(0.96, 0.69, 0.28, 1)
+polygon = PackedVector2Array(1, -24, 17, -24, 13, -18, 17, -12, 1, -12)
+
+[node name="CheckpointHint" type="Label" parent="Decoration"]
+offset_left = 96
+offset_top = 232
+offset_right = 202
+offset_bottom = 244
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(0.92, 0.96, 1, 1)
+text = "存档旗 · R 重试"
+
+[node name="PenguinFriend" type="Node2D" parent="Actors"]
+position = Vector2(164, 223)
+script = ExtResource("object")
+kind = "Decoration"
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Actors/PenguinFriend"]
+position = Vector2(0, 0)
+scale = Vector2(1, 1)
+sprite_frames = ExtResource("anim0")
+autoplay = "default"
+offset = Vector2(0.0, -32.0)
+metadata/heron_geometry_ppu = 1.0
+
+[node name="LearnPenguin" type="Node2D" parent="Actors"]
+position = Vector2(164, 124)
+script = ExtResource("object")
+kind = "BP_ItemUnlockBird"
+unlock_form = 2
+
+[node name="Trigger" type="Area2D" parent="Actors/LearnPenguin"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/LearnPenguin/Trigger"]
+position = Vector2(0, 0)
+shape = SubResource("LearnPenguinShape")
+
+[node name="FriendName" type="Label" parent="Decoration"]
+offset_left = 144
+offset_top = 147
+offset_right = 204
+offset_bottom = 163
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.16, 0.25, 0.36, 1)
+text = "企鹅"
+
+[node name="Greeting" type="Label" parent="Decoration"]
+offset_left = 92
+offset_top = 100
+offset_right = 382
+offset_bottom = 118
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(0.16, 0.25, 0.36, 1)
+text = "冰上别急着停，先借一点速度。"
+
+[node name="AbilityHint" type="Label" parent="Decoration"]
+offset_left = 102
+offset_top = 248
+offset_right = 422
+offset_bottom = 264
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(0.95, 0.98, 1, 1)
+text = "相遇后按 3 变成企鹅 · 向右试试滑行"
+
+[node name="IceHint" type="Label" parent="Decoration"]
+offset_left = 240
+offset_top = 171
+offset_right = 340
+offset_bottom = 187
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("font")
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(0.16, 0.25, 0.36, 1)
+text = "试滑冰面"
+
+[node name="PracticeIce" type="Node2D" parent="Actors"]
+position = Vector2(296.0, 216)
+script = ExtResource("object")
+kind = "BP_IceTriggerVolume"
+
+[node name="Trigger" type="Area2D" parent="Actors/PracticeIce"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/PracticeIce/Trigger"]
+position = Vector2(0, 0)
+shape = SubResource("PracticeIceShape")
+
+[node name="EnterIcePuzzle" type="Node2D" parent="Actors"]
+position = Vector2(482, 120)
+script = ExtResource("object")
+kind = "BP_ChangeSubLevelVolume"
+target_room = "SubLevel_w3l2"
+
+[node name="Trigger" type="Area2D" parent="Actors/EnterIcePuzzle"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/EnterIcePuzzle/Trigger"]
+position = Vector2(0, 0)
+shape = SubResource("EnterIcePuzzleShape")
+
+[node name="ReturnToForest" type="Node2D" parent="Actors"]
+position = Vector2(52, 306)
+script = ExtResource("object")
+kind = "BP_ChangeSubLevelVolume"
+target_room = "SubLevel_w2l7"
+
+[node name="Trigger" type="Area2D" parent="Actors/ReturnToForest"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/ReturnToForest/Trigger"]
+shape = SubResource("ForestReturnShape")
+
+[node name="PlayerStart" type="Marker2D" parent="."]
+position = Vector2(112, 208)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3]
+[gd_scene load_steps=24 format=3]
 
 [ext_resource type="Script" path="res://scripts/editable_map.gd" id="1_map"]
 [ext_resource type="PackedScene" path="res://scenes/rooms/w0l1.tscn" id="room_w0l1"]
@@ -21,6 +21,8 @@
 [ext_resource type="PackedScene" path="res://scenes/rooms/w2l5.tscn" id="room_w2l5"]
 [ext_resource type="PackedScene" path="res://scenes/rooms/w2l6.tscn" id="room_w2l6"]
 [ext_resource type="PackedScene" path="res://scenes/rooms/w2l7.tscn" id="room_w2l7"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w3l1.tscn" id="room_w3l1"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/w3l2.tscn" id="room_w3l2"]
 
 [node name="TestYxh1" type="Node2D"]
 texture_filter = 1
@@ -88,3 +90,9 @@ position = Vector2(-480.0, 130.0)
 
 [node name="w2l7" parent="." instance=ExtResource("room_w2l7")]
 position = Vector2(-480.0, -270.0)
+
+[node name="w3l1" parent="." instance=ExtResource("room_w3l1")]
+position = Vector2(-96, -560)
+
+[node name="w3l2" parent="." instance=ExtResource("room_w3l2")]
+position = Vector2(384, -560)

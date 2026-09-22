@@ -26,7 +26,7 @@ func _run() -> void:
 	main.start_game()
 	world = main.world
 	await _frames(60)
-	_check(world.rooms.size() == 20, "All 20 original campaign rooms instantiated")
+	_check(world.rooms.size() == 22 and world.rooms.has("sublevel_w3l1") and world.rooms.has("sublevel_w3l2"), "Original 20 campaign rooms and two snow rooms instantiated")
 	_check(world.player.sprite.sprite_frames.get_animation_names().size() == 22, "Four birds have imported animation sets")
 	_check(world.player.on_ground, "Original player spawn settles on real terrain")
 	_check(world.room_tag == "sublevel_w0l1", "Original starting room selected")

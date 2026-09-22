@@ -35,6 +35,21 @@ godot --path godot res://scenes/tests/snow_playground.tscn
 - `Decoration` 下有说明文字和动画展示；`TestHUD` 显示操作和运行状态。只有这两个测试场景使用 `test_scene_hud.gd`。
 - 这两个场景没有通关结算或跳转，便于反复试跑。终点 NPC 是展示节点。
 
+## 霜羽山口战役雪地章节
+
+主菜单「开始」进入总地图 `scenes/maps/testyxh1.tscn`，森林啄木鸟段结束后从 `w2l7` 的上山弹簧进入雪地。雪地没有独立选关入口，包含两个原生房间：
+
+- `w3l1`：与企鹅 NPC 相遇，通过实际接触解锁企鹅形态；右侧安全冰面用于试滑。
+- `w3l2`：利用企鹅滑行速度激活冰封蝴蝶，再越过裂隙触碰第二只蝴蝶，打开 AND 雪门并通关。
+
+每段都有检查点，R 会恢复该段机关并保留永久形态解锁。正式开局只有夜鹭，企鹅必须在相遇后获得。编辑时可分别打开 `w3l1.tscn`、`w3l2.tscn` 按 F6；预览仍按既有规则全解锁。
+
+```sh
+godot --headless --path godot --script res://tests/frostpass_playtest.gd
+```
+
+回归脚本使用 Godot headless 和 Input actions，不操作桌面窗口。从明确的森林末段局部起点验证上山衔接、NPC 解锁、企鹅速度条件、双机关开门、检查点复原、战役重开及 F6；它不代表从开场跑完全部 22 房间。
+
 场景回归检查（需要先完成 Godot 项目导入）：
 
 ```sh

@@ -23,6 +23,10 @@ func _run() -> void:
 		var room: Node2D = world.rooms[tag]["node"] as Node2D
 		var background: Node2D = room.get_node_or_null("Background/BG_" + tag.trim_prefix("sublevel_")) as Node2D
 		var terrain: Node2D = room.get_node_or_null("Terrain/TileMap_" + tag.trim_prefix("sublevel_")) as Node2D
+		if background == null:
+			background = room.get_node_or_null("Background") as Node2D
+		if terrain == null:
+			terrain = room.get_node_or_null("Terrain") as Node2D
 		_check(background != null, tag + ": background node exists")
 		_check(terrain != null, tag + ": terrain node exists")
 		if not background or not terrain:

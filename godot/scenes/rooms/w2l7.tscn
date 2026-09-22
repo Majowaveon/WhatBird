@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4]
+[gd_scene load_steps=35 format=4]
 
 [ext_resource type="Script" path="res://scripts/editable_room.gd" id="1_1im05"]
 [ext_resource type="Script" path="res://scripts/world_object.gd" id="2_52x7o"]
@@ -12,6 +12,7 @@
 [ext_resource type="TileSet" path="res://resources/tilesets/w2l7_dba0de159ec8e00d.tres" id="10_je50x"]
 [ext_resource type="TileSet" path="res://resources/tilesets/BackGround_w3_8aa2baf564a806f0.tres" id="11_my36w"]
 [ext_resource type="TileSet" path="res://resources/tilesets/ForeGround_w3_c8f37a8cf1ee8629.tres" id="12_byqdp"]
+[ext_resource type="FontFile" path="res://assets/Fonts/fusion-pixel-10px-monospaced-zh_hans.otf" id="snow_font"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_872a3"]
 size = Vector2(20.6, 20.6)
@@ -26,7 +27,13 @@ size = Vector2(64, 64)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iml5f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xm4kn"]
-size = Vector2(64, 64)
+size = Vector2(92, 24)
+
+[sub_resource type="RectangleShape2D" id="SnowAscentShape"]
+size = Vector2(20, 12)
+
+[sub_resource type="RectangleShape2D" id="ForestEndShape"]
+size = Vector2(16, 80)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_03kxf"]
 size = Vector2(64, 64)
@@ -64,6 +71,49 @@ transform_limit = 2
 preview_form = 3
 
 [node name="Actors" type="Node2D" parent="."]
+
+[node name="SnowAscent" type="Node2D" parent="Actors"]
+z_index = 5
+position = Vector2(448, 54)
+script = ExtResource("2_52x7o")
+kind = "BP_Spring针叶"
+launch_speed = 570.0
+spring_animation = ExtResource("8_lhi1a")
+
+[node name="Trigger" type="Area2D" parent="Actors/SnowAscent"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/SnowAscent/Trigger"]
+shape = SubResource("SnowAscentShape")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Actors/SnowAscent"]
+position = Vector2(0, -6)
+sprite_frames = ExtResource("9_baf1e")
+autoplay = "default"
+metadata/heron_geometry_ppu = 1.0
+
+[node name="SnowTrailSign" type="Label" parent="Actors"]
+z_index = 5
+offset_left = 356.0
+offset_top = 0.0
+offset_right = 468.0
+offset_bottom = 40.0
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("snow_font")
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(0.95, 0.98, 1, 1)
+theme_override_colors/font_outline_color = Color(0.12, 0.22, 0.28, 1)
+theme_override_constants/outline_size = 2
+text = "↑ 雪地山口\n弹起后向右"
+
+[node name="ForestTrailEnd" type="StaticBody2D" parent="Actors"]
+position = Vector2(480, 32)
+collision_layer = 1
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actors/ForestTrailEnd"]
+shape = SubResource("ForestEndShape")
 
 [node name="BP_Door_w2l7_3" type="Node2D" parent="Actors"]
 position = Vector2(383, 52)
@@ -166,22 +216,21 @@ shape = SubResource("RectangleShape2D_iml5f")
 
 [node name="PaperZDAnimationComponent" type="Node2D" parent="Actors/BP_ChangeSubLevelVolumeLeft_w2l7"]
 
-[node name="BP_PassGameTriggerVolume" type="Node2D" parent="Actors"]
+[node name="EnterSnowChapter" type="Node2D" parent="Actors"]
 z_index = 5
-position = Vector2(462, -26)
-scale = Vector2(1.75, 2.5)
+position = Vector2(460, -80)
 script = ExtResource("2_52x7o")
-object_id = "BP_PassGameTriggerVolume_C_UAID_80FA5B9A0FA2EFBA02_2013019975"
-display_name = "BP_PassGameTriggerVolume"
-kind = "BP_PassGameTriggerVolume"
+display_name = "EnterSnowChapter"
+kind = "BP_ChangeSubLevelVolume"
+target_room = "SubLevel_w3l1"
 
-[node name="Box" type="Node2D" parent="Actors/BP_PassGameTriggerVolume"]
+[node name="Box" type="Node2D" parent="Actors/EnterSnowChapter"]
 
-[node name="@Area2D@131" type="Area2D" parent="Actors/BP_PassGameTriggerVolume/Box"]
+[node name="@Area2D@131" type="Area2D" parent="Actors/EnterSnowChapter/Box"]
 collision_layer = 8
 collision_mask = 2
 
-[node name="@CollisionShape2D@132" type="CollisionShape2D" parent="Actors/BP_PassGameTriggerVolume/Box/@Area2D@131"]
+[node name="@CollisionShape2D@132" type="CollisionShape2D" parent="Actors/EnterSnowChapter/Box/@Area2D@131"]
 shape = SubResource("RectangleShape2D_xm4kn")
 
 [node name="BP_空气墙8" type="Node2D" parent="Actors"]

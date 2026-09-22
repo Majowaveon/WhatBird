@@ -17,6 +17,9 @@ signal exited(object: HeronWorldObject, body: Node2D)
 @export var pickup_amount: int = 1
 @export var launch_speed: float = 390.0
 @export var break_delay: float = 1.0
+@export_group("Button Conditions")
+@export_enum("Any:-1", "Heron:0", "Mallard:1", "Penguin:2", "Woodpecker:3") var required_form: int = -1
+@export_range(0.0, 400.0, 5.0) var minimum_horizontal_speed: float = 0.0
 @export_group("Appearance")
 @export var spring_animation: SpriteFrames
 @export var pressed_animation: SpriteFrames
@@ -185,6 +188,10 @@ func set_active(enabled: bool) -> void:
 			child.visible = enabled
 	for shape: CollisionShape2D in collision_shapes:
 		shape.set_deferred("disabled", not enabled)
+
+func can_press_button(player: HeronPlayer) -> bool:
+	return (required_form < 0 or player.bird == required_form) \
+		and absf(player.velocity.x) >= minimum_horizontal_speed
 
 func activate_button() -> void:
 	triggered = true
