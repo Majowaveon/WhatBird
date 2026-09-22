@@ -4,6 +4,7 @@ build/
 
 # Local tools and diagnostics
 .cache/
+.zcode/
 __pycache__/
 *.py[cod]
 *.log
