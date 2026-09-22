@@ -21,6 +21,7 @@ var deaths: int = 0
 var elapsed: float = 0.0
 var finished: bool = false
 var resetting: bool = false
+var interaction_generation: int = 0
 var death_velocity: Vector2 = Vector2.ZERO
 var camera_tween: Tween
 var waters: Dictionary = {}
@@ -39,11 +40,13 @@ func load_map(data: Dictionary, map_name: String = "Map/TestYxh1") -> void:
 	loaded_map = map_name
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	var preview_path: String = String(ProjectSettings.get_meta("heron_scene_preview", ""))
-	var scene_path: String = preview_path if not preview_path.is_empty() else "res://scenes/maps/testyxh1.tscn"
 	scene_preview = not preview_path.is_empty()
-	var use_scene: bool = (scene_preview or map_name == "Map/TestYxh1") and "--data-driven" not in OS.get_cmdline_user_args() and ResourceLoader.exists(scene_path)
+	var scene_path: String = preview_path if scene_preview else "res://scenes/maps/testyxh1.tscn"
+	var use_scene: bool = scene_preview or (map_name == "Map/TestYxh1" and "--data-driven" not in OS.get_cmdline_user_args() and ResourceLoader.exists(scene_path))
 	if use_scene:
-		_load_editable_scene(scene_path)
+		if not _load_editable_scene(scene_path):
+			scene_preview = false
+			return
 	else:
 		map_data = data.get("maps", {}).get(map_name, {})
 		if map_data.is_empty():
@@ -97,8 +100,20 @@ func load_map(data: Dictionary, map_name: String = "Map/TestYxh1") -> void:
 	player_changed.emit(player)
 	get_viewport().size_changed.connect(_fit_camera)
 
-func _load_editable_scene(path: String) -> void:
-	editable_scene = (load(path) as PackedScene).instantiate() as Node2D
+func _load_editable_scene(path: String) -> bool:
+	if not ResourceLoader.exists(path):
+		push_error("Missing map scene: " + path)
+		return false
+	var packed: PackedScene = load(path) as PackedScene
+	if packed == null:
+		push_error("Invalid map scene: " + path)
+		return false
+	var scene: Node = packed.instantiate()
+	if not (scene is HeronEditableMap or scene is HeronEditableRoom):
+		push_error("Map scene must use HeronEditableMap or HeronEditableRoom: " + path)
+		scene.free()
+		return false
+	editable_scene = scene as Node2D
 	add_child(editable_scene)
 	var nodes: Array[Node] = [editable_scene]
 	nodes.append_array(editable_scene.find_children("*", "", true, false))
@@ -130,6 +145,7 @@ func _load_editable_scene(path: String) -> void:
 		var room_node: Node = rooms[initial_room]["node"]
 		spawn = room_node.get_node_or_null("PlayerStart") as Marker2D
 		initial_spawn = spawn.global_position if spawn else rooms[initial_room]["rect"].get_center()
+	return true
 
 func _create_tile_map(actor: Dictionary) -> void:
 	var p: Dictionary = actor.get("components", {}).get("RenderComponent", {}).get("properties", {})
@@ -203,9 +219,13 @@ func _physics_process(delta: float) -> void:
 			_on_death()
 
 func _on_object_entered(object: HeronWorldObject, body: Node2D) -> void:
-	if body != player or not object.active or finished:
+	if body != player or not object.active or finished or resetting:
 		return
-	_interact.call_deferred(object)
+	_interact_queued.call_deferred(object, interaction_generation)
+
+func _interact_queued(object: HeronWorldObject, generation: int) -> void:
+	if generation == interaction_generation:
+		_interact(object)
 
 func _interact(object: HeronWorldObject) -> void:
 	if not is_instance_valid(object) or not object.active or finished or resetting:
@@ -276,6 +296,24 @@ func _update_environment() -> void:
 	if is_instance_valid(player):
 		player.set_environment(waters.size(), ice.size())
 
+func _debug_environment_at(player_transform: Transform2D) -> Dictionary:
+	# Test the reset state: all volumes will be active, even if shapes are still disabled.
+	# Area2D overlap lists still describe the last physics step after a teleport.
+	var environment: Dictionary = {"water": {}, "ice": {}}
+	for object: HeronWorldObject in objects.values():
+		if not is_instance_valid(object) or object.is_queued_for_deletion() or not object.is_inside_tree():
+			continue
+		if object.kind not in ["BP_WaterTriggerVolume", "BP_IceTriggerVolume"]:
+			continue
+		for shape: CollisionShape2D in object.collision_shapes:
+			if not is_instance_valid(shape) or shape.shape == null or shape.is_queued_for_deletion() or not shape.is_inside_tree():
+				continue
+			if shape.shape.collide(shape.global_transform, player.collision.shape, player_transform):
+				var volumes: Dictionary = environment["water" if object.kind == "BP_WaterTriggerVolume" else "ice"]
+				volumes[object.name] = object
+				break
+	return environment
+
 func _update_doors() -> void:
 	for object: HeronWorldObject in objects.values():
 		if object.kind != "BP_Door" or object.triggered:
@@ -343,6 +381,113 @@ func _fit_camera() -> void:
 	if camera and rooms.has(room_tag):
 		camera.zoom = Vector2.ONE * _room_zoom(rooms[room_tag]["rect"])
 
+func debug_room_options() -> Array[Dictionary]:
+	var options: Array[Dictionary] = []
+	var tags: Array[String] = []
+	for tag: String in rooms:
+		if _debug_room(tag) != null:
+			tags.append(tag)
+	tags.sort()
+	for tag: String in tags:
+		options.append({"tag": tag, "label": String(rooms[tag]["label"]).trim_prefix("SubLevel_").trim_prefix("Sublevel_")})
+	return options
+
+func debug_jump_to_room(tag: String) -> bool:
+	if finished or resetting or not is_inside_tree():
+		return false
+	if not is_instance_valid(player) or not is_instance_valid(camera) or not is_instance_valid(foreground_water):
+		return false
+	if player.is_queued_for_deletion() or camera.is_queued_for_deletion() or foreground_water.is_queued_for_deletion():
+		return false
+	if not player.is_inside_tree() or not camera.is_inside_tree() or not foreground_water.is_inside_tree():
+		return false
+	if not is_instance_valid(player.collision) or player.collision.shape == null or player.collision.is_queued_for_deletion():
+		return false
+	if not player.collision.is_inside_tree() or not player.global_transform.is_finite() or not player.collision.global_transform.is_finite():
+		return false
+	var canonical: String = tag.to_lower()
+	var room: HeronEditableRoom = _debug_room(canonical)
+	if room == null:
+		return false
+	var zoom_value: float = _room_zoom(rooms[canonical]["rect"])
+	if not is_finite(zoom_value) or zoom_value <= 0.0:
+		return false
+	var spawn: Marker2D = room.get_node("PlayerStart") as Marker2D
+	var form: int = clampi(room.preview_form, HeronPlayer.Bird.HERON, HeronPlayer.Bird.WOODPECKER)
+	var spawn_transform: Transform2D = player.collision.global_transform
+	spawn_transform.origin += spawn.global_position - player.global_position
+	if not spawn_transform.is_finite():
+		return false
+	var spawn_environment: Dictionary = _debug_environment_at(spawn_transform)
+	var spawn_waters: Dictionary = spawn_environment["water"]
+	if form != HeronPlayer.Bird.MALLARD and not spawn_waters.is_empty():
+		return false
+	resetting = true
+	interaction_generation += 1
+	_reset_objects(true)
+	waters.clear()
+	ice.clear()
+	death_velocity = Vector2.ZERO
+	for bird: int in range(HeronPlayer.FORM_NAMES.size()):
+		player.unlock_bird(bird)
+	checkpoint = spawn.global_position
+	checkpoint_room = canonical
+	checkpoint_bird = form
+	player.collision.set_deferred("disabled", false)
+	player.reset_at(checkpoint, checkpoint_bird)
+	# An instant room change replaces any debug charges with the authored limit.
+	change_room(canonical, true)
+	waters.assign(spawn_environment["water"])
+	ice.assign(spawn_environment["ice"])
+	_update_environment()
+	resetting = false
+	player.frozen = false
+	player_changed.emit(player)
+	return true
+
+func _debug_room(tag: String) -> HeronEditableRoom:
+	if tag.is_empty():
+		return null
+	var entry: Variant = rooms.get(tag)
+	if not entry is Dictionary:
+		return null
+	var node: Variant = entry.get("node")
+	if not is_instance_valid(node):
+		return null
+	var room: HeronEditableRoom = node as HeronEditableRoom
+	if not is_instance_valid(room) or room.is_queued_for_deletion() or not room.is_inside_tree() or not is_ancestor_of(room):
+		return null
+	if room.room_tag.to_lower() != tag or not room.global_transform.is_finite():
+		return null
+	var bounds_value: Variant = entry.get("rect")
+	if not bounds_value is Rect2:
+		return null
+	var bounds: Rect2 = bounds_value
+	if not bounds.is_finite() or not bounds.end.is_finite() or not bounds.get_center().is_finite() or bounds.size.x <= 0.0 or bounds.size.y <= 0.0:
+		return null
+	if not room.camera_bounds.is_finite() or room.camera_bounds.size.x <= 0.0 or room.camera_bounds.size.y <= 0.0 or not is_finite(room.foreground_waterline):
+		return null
+	var authored_bounds: Rect2 = room.world_bounds()
+	if not authored_bounds.is_finite() or not authored_bounds.end.is_finite() or authored_bounds.size.x <= 0.0 or authored_bounds.size.y <= 0.0:
+		return null
+	var label: Variant = entry.get("label")
+	var limit: Variant = limits.get(tag)
+	if not (label is String or label is StringName) or not limit is int or limit < -1 or room.transform_limit != limit:
+		return null
+	var spawn: Marker2D = room.get_node_or_null("PlayerStart") as Marker2D
+	if not is_instance_valid(spawn) or spawn.is_queued_for_deletion() or not spawn.global_transform.is_finite():
+		return null
+	return room
+
+func debug_add_fish(amount: int) -> bool:
+	if not is_instance_valid(player) or player.is_queued_for_deletion() or finished or resetting or amount <= 0 or amount > 999:
+		return false
+	var previous: int = player.remaining_transforms
+	if previous < 0:
+		return false
+	player.add_transform_count(amount)
+	return player.remaining_transforms > previous
+
 func restart() -> void:
 	if resetting or finished:
 		return
@@ -361,10 +506,18 @@ func _on_death() -> void:
 	if is_instance_valid(player) and is_inside_tree():
 		_respawn()
 
-func _respawn() -> void:
+func _reset_objects(all_objects: bool = false) -> void:
 	for object: HeronWorldObject in objects.values():
-		if object.kind in ["BP_Button", "BP_Door", "BP_DestructibleWood", "BP_ItemAddHenshinTimes"]:
+		if not is_instance_valid(object) or object.is_queued_for_deletion():
+			continue
+		if all_objects or object.kind in ["BP_Button", "BP_Door", "BP_DestructibleWood", "BP_ItemAddHenshinTimes"]:
 			object.reset_object()
+			if all_objects:
+				object.cooldown = 0.0
+
+func _respawn() -> void:
+	interaction_generation += 1
+	_reset_objects()
 	waters.clear()
 	ice.clear()
 	death_velocity = Vector2.ZERO

@@ -49,7 +49,25 @@ def main():
     print(f"Jump checks={len(jump_report['checks'])}, failed={len(jump_report['failures'])}")
     for failure in jump_report['failures']:
         print('FAIL:', failure)
-    return 0 if tested and report['passed'] and jump_tested and jump_report['passed'] else 1
+    checkpoint_tested, checkpoint_output = run(base + ['--script', 'res://tests/checkpoint_regression.gd'], logs / 'checkpoint.log')
+    checkpoint_line = next((line for line in checkpoint_output.splitlines() if line.startswith('HERON_CHECKPOINT_REGRESSION ')), '')
+    if not checkpoint_line:
+        print('No checkpoint regression completion report was produced.')
+        return 1
+    checkpoint_report = json.loads(checkpoint_line.removeprefix('HERON_CHECKPOINT_REGRESSION '))
+    print(f"Checkpoint checks={len(checkpoint_report['checks'])}, failed={len(checkpoint_report['failures'])}")
+    for failure in checkpoint_report['failures']:
+        print('FAIL:', failure)
+    debug_tested, debug_output = run(base + ['--script', 'res://tests/debug_menu_regression.gd'], logs / 'debug-menu.log')
+    debug_line = next((line for line in debug_output.splitlines() if line.startswith('HERON_DEBUG_MENU_REGRESSION ')), '')
+    if not debug_line:
+        print('No debug menu regression completion report was produced.')
+        return 1
+    debug_report = json.loads(debug_line.removeprefix('HERON_DEBUG_MENU_REGRESSION '))
+    print(f"Debug menu checks={len(debug_report['checks'])}, failed={len(debug_report['failures'])}")
+    for failure in debug_report['failures']:
+        print('FAIL:', failure)
+    return 0 if tested and report['passed'] and jump_tested and jump_report['passed'] and checkpoint_tested and checkpoint_report['passed'] and debug_tested and debug_report['passed'] else 1
 
 
 if __name__ == '__main__':

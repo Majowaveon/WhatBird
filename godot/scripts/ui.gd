@@ -7,6 +7,9 @@ signal menu_requested
 signal resume_requested
 signal quit_requested
 signal form_requested(form: int)
+signal debug_requested
+signal debug_room_requested(tag: String)
+signal debug_fish_requested(amount: int)
 
 const ASSETS := "res://assets/"
 const PROMPTS := ASSETS + "Resources/1-bit-input-prompts-pixel-16/Tiles__White_/"
@@ -32,6 +35,17 @@ var _menu_buttons: VBoxContainer
 var _start_button: Button
 var _credits_button: Button
 var _resume_button: Button
+var _open_debug_button: Button
+var _debug: Control
+var _debug_panel: PanelContainer
+var _debug_room: OptionButton
+var _debug_jump: Button
+var _debug_fish_amount: SpinBox
+var _debug_fish_add: Button
+var _debug_balance: Label
+var _debug_status: Label
+var _debug_back: Button
+var _debug_popup_dismissed_frame: int = -1
 var _victory_button: Button
 var _victory_stats: Label
 var _credits_image: TextureRect
@@ -93,6 +107,42 @@ func show_pause() -> void:
 	_resume_button.grab_focus()
 
 
+func show_debug(room_options: Array[Dictionary], current_room: String) -> void:
+	_ensure_ui()
+	_set_mode("debug")
+	_debug_room.clear()
+	var selected: int = 0
+	for option: Dictionary in room_options:
+		var index := _debug_room.item_count
+		var tag := str(option.get("tag", ""))
+		_debug_room.add_item(str(option.get("label", tag)))
+		_debug_room.set_item_metadata(index, tag)
+		if tag == current_room:
+			selected = index
+	var has_rooms := _debug_room.item_count > 0
+	_debug_room.disabled = not has_rooms
+	_debug_jump.disabled = not has_rooms
+	if has_rooms:
+		_debug_room.select(selected)
+	else:
+		_debug_room.text = "暂无房间"
+	_debug_status.text = ""
+	_refresh_debug_balance()
+	if has_rooms:
+		_debug_room.grab_focus()
+	else:
+		_debug_back.grab_focus()
+
+
+func is_debug_open() -> bool:
+	return _mode == "debug"
+
+
+func set_debug_status(message: String) -> void:
+	_ensure_ui()
+	_debug_status.text = message
+
+
 func show_victory(elapsed: float, deaths: int) -> void:
 	_ensure_ui()
 	var seconds := maxi(0, int(elapsed))
@@ -143,6 +193,7 @@ func _ensure_ui() -> void:
 	_build_menu()
 	_build_hud()
 	_build_pause()
+	_build_debug()
 	_build_victory()
 	_build_credits()
 	_toast = _label("", 24)
@@ -217,13 +268,114 @@ func _build_hud() -> void:
 func _build_pause() -> void:
 	_pause = _screen("Pause", true)
 	_dim(_pause)
-	var column := _center_column(_pause, Vector2(320, 320))
+	var column := _center_column(_pause, Vector2(320, 380))
 	column.add_child(_label("暂停", 48))
 	_resume_button = _button("继续", func() -> void: resume_requested.emit())
 	column.add_child(_resume_button)
+	_open_debug_button = _button("调试", _request_debug)
+	_open_debug_button.name = "OpenDebug"
+	column.add_child(_open_debug_button)
 	column.add_child(_button("重新开始", func() -> void: restart_requested.emit()))
 	column.add_child(_button("返回主菜单", func() -> void: menu_requested.emit()))
 	column.add_child(_button("退出", func() -> void: quit_requested.emit()))
+
+
+func _build_debug() -> void:
+	_debug = _screen("Debug", true)
+	_dim(_debug)
+	_debug_panel = PanelContainer.new()
+	_debug_panel.name = "DebugPanel"
+	_debug.add_child(_debug_panel)
+	var panel_style := _open_debug_button.get_theme_stylebox("normal").duplicate() as StyleBoxTexture
+	panel_style.content_margin_left = 16.0
+	panel_style.content_margin_right = 16.0
+	panel_style.content_margin_top = 16.0
+	panel_style.content_margin_bottom = 16.0
+	_debug_panel.add_theme_stylebox_override("panel", panel_style)
+	var column := VBoxContainer.new()
+	column.alignment = BoxContainer.ALIGNMENT_CENTER
+	column.add_theme_constant_override("separation", 12)
+	_debug_panel.add_child(column)
+	column.add_child(_label("调试", 40))
+	column.add_child(_label("目标房间", 22))
+	var room_row := HBoxContainer.new()
+	room_row.add_theme_constant_override("separation", 12)
+	column.add_child(room_row)
+	_debug_room = OptionButton.new()
+	_debug_room.name = "DebugRoom"
+	_debug_room.fit_to_longest_item = false
+	_debug_room.clip_text = true
+	_debug_room.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+	_debug_room.custom_minimum_size = Vector2(0, 48)
+	_debug_room.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_style_button(_debug_room)
+	_debug_room.add_theme_font_size_override("font_size", 24)
+	room_row.add_child(_debug_room)
+	var popup := _debug_room.get_popup()
+	var popup_theme := Theme.new()
+	popup_theme.default_font = _root.theme.default_font
+	popup_theme.default_font_size = 24
+	popup_theme.set_stylebox("panel", "PopupMenu", panel_style)
+	popup_theme.set_stylebox("hover", "PopupMenu", _debug_room.get_theme_stylebox("hover"))
+	popup_theme.set_color("font_color", "PopupMenu", Color.WHITE)
+	popup_theme.set_color("font_hover_color", "PopupMenu", Color.WHITE)
+	popup_theme.set_color("font_outline_color", "PopupMenu", Color(0.20, 0.20, 0.20))
+	popup_theme.set_constant("outline_size", "PopupMenu", 3)
+	popup_theme.set_constant("v_separation", "PopupMenu", 8)
+	popup.theme = popup_theme
+	popup.popup_hide.connect(_on_debug_popup_hidden)
+	_debug_jump = _button("跳转", _request_debug_room, Vector2(96, 48))
+	_debug_jump.name = "DebugJump"
+	room_row.add_child(_debug_jump)
+	var balance_row := HBoxContainer.new()
+	balance_row.alignment = BoxContainer.ALIGNMENT_CENTER
+	balance_row.add_theme_constant_override("separation", 8)
+	column.add_child(balance_row)
+	var fish_icon := _image(ASSETS + "UI/T_avatar_henshin_icon.png")
+	fish_icon.custom_minimum_size = Vector2(20, 32)
+	balance_row.add_child(fish_icon)
+	_debug_balance = _label("", 24)
+	_debug_balance.name = "DebugBalance"
+	_debug_balance.clip_text = true
+	_debug_balance.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	balance_row.add_child(_debug_balance)
+	var fish_row := HBoxContainer.new()
+	fish_row.add_theme_constant_override("separation", 12)
+	column.add_child(fish_row)
+	_debug_fish_amount = SpinBox.new()
+	_debug_fish_amount.name = "DebugFishAmount"
+	_debug_fish_amount.min_value = 1.0
+	_debug_fish_amount.max_value = 999.0
+	_debug_fish_amount.step = 1.0
+	_debug_fish_amount.rounded = true
+	_debug_fish_amount.value = 10.0
+	_debug_fish_amount.custom_minimum_size = Vector2(0, 48)
+	_debug_fish_amount.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_debug_fish_amount.focus_mode = Control.FOCUS_NONE
+	fish_row.add_child(_debug_fish_amount)
+	var amount_edit := _debug_fish_amount.get_line_edit()
+	amount_edit.get_menu().popup_hide.connect(_on_debug_popup_hidden)
+	amount_edit.focus_mode = Control.FOCUS_ALL
+	amount_edit.alignment = HORIZONTAL_ALIGNMENT_CENTER
+	amount_edit.add_theme_font_size_override("font_size", 24)
+	amount_edit.add_theme_color_override("font_color", Color.WHITE)
+	amount_edit.add_theme_color_override("font_outline_color", Color(0.20, 0.20, 0.20))
+	amount_edit.add_theme_constant_override("outline_size", 3)
+	for state: String in ["normal", "read_only", "focus"]:
+		amount_edit.add_theme_stylebox_override(state, _debug_room.get_theme_stylebox("disabled" if state == "read_only" else state))
+	_debug_fish_add = _button("增加", _request_debug_fish, Vector2(96, 48))
+	_debug_fish_add.name = "DebugFishAdd"
+	fish_row.add_child(_debug_fish_add)
+	_debug_status = _label("", 22)
+	_debug_status.name = "DebugStatus"
+	_debug_status.custom_minimum_size.y = 32.0
+	_debug_status.clip_text = true
+	_debug_status.max_lines_visible = 1
+	_debug_status.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
+	column.add_child(_debug_status)
+	_debug_back = _button("返回", _hide_debug, Vector2(192, 48))
+	_debug_back.name = "DebugBack"
+	column.add_child(_debug_back)
 
 
 func _build_victory() -> void:
@@ -261,13 +413,20 @@ func _build_credits() -> void:
 
 func _set_mode(mode: String) -> void:
 	_mode = mode
+	_debug_room.get_popup().hide()
+	_debug_fish_amount.get_line_edit().get_menu().hide()
+	_debug_popup_dismissed_frame = -1
 	_menu.visible = mode == "menu"
-	_hud.visible = mode in ["hud", "pause", "victory"]
+	_hud.visible = mode in ["hud", "pause", "debug", "victory"]
 	_pause.visible = mode == "pause"
+	_debug.visible = mode == "debug"
 	_victory.visible = mode == "victory"
 	_credits.hide()
-	_set_menu_enabled(true)
+	_set_menu_enabled(mode == "menu")
+	_portrait.disabled = mode != "hud"
 	_form_picker.hide()
+	for button: Button in _form_buttons:
+		button.focus_mode = Control.FOCUS_ALL if mode == "hud" else Control.FOCUS_NONE
 	_toast.hide()
 	var focused := _root.get_viewport().gui_get_focus_owner()
 	if focused != null and _root.is_ancestor_of(focused):
@@ -279,18 +438,24 @@ func _layout() -> void:
 	if viewport_size.x <= 0.0 or viewport_size.y <= 0.0:
 		return
 	# Preserve the original right-side menu without cropping its title on narrow windows.
+	var menu_size: Vector2 = _menu_buttons.get_combined_minimum_size().max(Vector2(150, 0))
+	var menu_y: float = maxf(16.0, minf(viewport_size.y * 0.55, viewport_size.y - menu_size.y - 16.0))
 	var title_width := minf(380.0, maxf(_title.get_minimum_size().x, viewport_size.x - 32.0))
 	var title_center := clampf(viewport_size.x * 0.80, title_width * 0.5 + 16.0, viewport_size.x - title_width * 0.5 - 16.0)
-	_title.position = Vector2(title_center - title_width * 0.5, minf(viewport_size.y * 0.30, viewport_size.y - 310.0))
+	_title.position = Vector2(title_center - title_width * 0.5, maxf(16.0, minf(viewport_size.y * 0.30, menu_y - 136.0)))
 	_title.size = Vector2(title_width, 112)
-	_menu_buttons.position = Vector2(clampf(viewport_size.x * 0.90 - 75.0, 16.0, viewport_size.x - 166.0), minf(viewport_size.y * 0.55, viewport_size.y - 174.0))
-	_menu_buttons.size = Vector2(150, 158)
+	_menu_buttons.position = Vector2(clampf(viewport_size.x * 0.90 - menu_size.x * 0.5, 16.0, maxf(16.0, viewport_size.x - menu_size.x - 16.0)), menu_y)
+	_menu_buttons.size = menu_size
 	var credits_scale := minf(1.0, minf((viewport_size.x - 32.0) / 1080.0, (viewport_size.y - 32.0) / 705.0))
 	var credits_size := Vector2(1080, 705) * maxf(0.01, credits_scale)
 	_credits_image.size = credits_size
 	_credits_image.position = (viewport_size - credits_size) * 0.5
 	_credits_close.size = Vector2(48, 48) * credits_scale
 	_credits_close.position = _credits_image.position + Vector2(995, 28) * credits_scale
+	var debug_size := Vector2(minf(480.0, maxf(288.0, viewport_size.x - 32.0)), 400.0)
+	_debug_panel.size = debug_size
+	_debug_panel.position = (viewport_size - _debug_panel.size) * 0.5
+	_debug_room.get_popup().max_size = Vector2i(maxi(1, int(viewport_size.x - 32.0)), maxi(1, int(minf(320.0, viewport_size.y - 32.0))))
 	_refresh_charges()
 
 
@@ -302,6 +467,20 @@ func _refresh_player() -> void:
 		button.set_pressed_no_signal(form == _bird)
 	_refresh_charges()
 	_refresh_tooltips()
+	_refresh_debug_balance()
+
+
+func _refresh_debug_balance() -> void:
+	var unlimited := _remaining < 0
+	var focused := get_viewport().gui_get_focus_owner()
+	_debug_balance.text = "小鱼干: %s" % ("不限" if unlimited else str(_remaining))
+	_debug_fish_add.disabled = unlimited
+	_debug_fish_add.focus_mode = Control.FOCUS_NONE if unlimited else Control.FOCUS_ALL
+	_debug_fish_amount.editable = not unlimited
+	_debug_fish_amount.get_line_edit().focus_mode = Control.FOCUS_NONE if unlimited else Control.FOCUS_ALL
+	if unlimited and is_debug_open():
+		if focused == _debug_fish_add or focused == _debug_fish_amount.get_line_edit():
+			_debug_back.grab_focus()
 
 
 func _refresh_charges() -> void:
@@ -365,6 +544,39 @@ func _request_form(form: int) -> void:
 	form_requested.emit(form)
 
 
+func _request_debug() -> void:
+	if _mode == "pause":
+		debug_requested.emit()
+
+
+func _request_debug_room() -> void:
+	if not is_debug_open() or _debug_room.selected < 0 or _debug_room.disabled:
+		return
+	var tag := str(_debug_room.get_item_metadata(_debug_room.selected))
+	debug_room_requested.emit(tag)
+
+
+func _request_debug_fish() -> void:
+	if not is_debug_open() or _remaining < 0:
+		return
+	_debug_fish_amount.apply()
+	var amount := clampi(int(_debug_fish_amount.value), 1, 999)
+	debug_fish_requested.emit(amount)
+
+
+func _hide_debug() -> void:
+	if not is_debug_open():
+		return
+	_set_mode("pause")
+	_open_debug_button.grab_focus()
+
+
+func _on_debug_popup_hidden() -> void:
+	if is_debug_open():
+		# Native popups can consume Escape before this viewport receives the same event.
+		_debug_popup_dismissed_frame = Engine.get_process_frames()
+
+
 func _show_credits() -> void:
 	if _mode == "menu":
 		_set_menu_enabled(false)
@@ -390,8 +602,20 @@ func _set_menu_enabled(enabled: bool) -> void:
 func _input(event: InputEvent) -> void:
 	if not is_instance_valid(_root) or not event.is_action_pressed("pause") or event.is_echo():
 		return
-	# Only dismiss local popups here; main.gd owns Escape, gameplay input and tree.paused.
-	if _credits.visible:
+	# Main owns tree.paused; debug navigation only consumes Escape locally.
+	if is_debug_open():
+		var popup := _debug_room.get_popup()
+		var amount_menu := _debug_fish_amount.get_line_edit().get_menu()
+		if popup.visible:
+			popup.hide()
+			_debug_room.grab_focus()
+		elif amount_menu.visible:
+			amount_menu.hide()
+			_debug_fish_amount.get_line_edit().grab_focus()
+		elif _debug_popup_dismissed_frame != Engine.get_process_frames():
+			_hide_debug()
+		get_viewport().set_input_as_handled()
+	elif _credits.visible:
 		_hide_credits()
 		get_viewport().set_input_as_handled()
 	elif _form_picker.visible:
@@ -460,6 +684,12 @@ func _button(text: String, callback: Callable, dimensions: Vector2 = Vector2(256
 	button.text = text
 	button.custom_minimum_size = dimensions
 	button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	_style_button(button)
+	button.pressed.connect(callback)
+	return button
+
+
+func _style_button(button: Button) -> void:
 	button.add_theme_font_size_override("font_size", 28)
 	button.add_theme_color_override("font_color", Color.WHITE)
 	button.add_theme_color_override("font_hover_color", Color.WHITE)
@@ -487,8 +717,6 @@ func _button(text: String, callback: Callable, dimensions: Vector2 = Vector2(256
 		elif state == "focus":
 			style.draw_center = false
 		button.add_theme_stylebox_override(state, style)
-	button.pressed.connect(callback)
-	return button
 
 
 static func _texture(path: String) -> Texture2D:
